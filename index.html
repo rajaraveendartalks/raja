@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raja Raveendar Official Hub | Raja’s Legacy Lounge (Raja Raveendar Talks) & Network</title>
+  <meta name="description"
+    content="Official Website of Telugu Actor, Producer & Host Raja Raveendar. Explore all 15 episodes of Raja’s Legacy Lounge (Raja Raveendar Talks), verified channel analytics, brand partners, and the Raja Raveendar Network for Viewers, Guests, Sponsors, Creators, Influencers & Interns." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Telugu:wght@500;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- 1. TOP GUIDING PHILOSOPHY & MILESTONE RIBBON -->
+  <div class="milestone-ribbon">
+    <span data-i18n="milestoneBadge">🎬 “జీవితం ఒక ప్రయాణం… ప్రతి మనిషి ఒక కథ” (Life is a journey… every person has a
+      story) — 15 Episodes of Raja’s Legacy Lounge!</span>
+    <a href="#catalog-section" class="ribbon-cta">Watch All 15 Episodes →</a>
+  </div>
+
+  <!-- 2. STICKY EDITORIAL LIGHT NAVBAR -->
+  <header class="navbar">
+    <a href="#" class="brand-logo">
+      <div class="brand-monogram">RR</div>
+      <div class="brand-text">
+        <h1>RAJA RAVEENDAR</h1>
+        <span data-i18n="brandSub">ACTOR • PRODUCER • CELEBRITY MANAGER • HOST OF RAJA'S LEGACY LOUNGE</span>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#catalog-section" data-i18n="navCatalog">Legacy Lounge (15 Eps)</a></li>
+      <li><a href="#analytics-section" data-i18n="navAnalytics">Channel Analytics</a></li>
+      <li><a href="#guests-section" data-i18n="navGuests">Guests & Connect</a></li>
+      <li><a href="#community-section" data-i18n="navCommunity">Viewer Discussions & Q&A</a></li>
+      <li><a href="#sponsors-section" data-i18n="navSponsors">Brand Partners (6)</a></li>
+      <li><a href="#network-section" data-i18n="navNetwork">Creators & Interns Network</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <!-- Bilingual Toggle (EN | తెలుగు) -->
+      <div class="lang-toggle" title="Switch Language (English / Telugu)">
+        <button class="lang-btn active" data-lang="en" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" data-lang="te" onclick="setLanguage('te')">తెలుగు</button>
+      </div>
+
+      <!-- Network Points Pill -->
+      <a href="#goodies-section" class="btn btn-gold" style="padding:7px 14px; font-size:0.8rem;">
+        ⭐ <span class="user-points-count">150</span> Pts • Network
+      </a>
+      <a href="admin.html" class="btn btn-secondary" style="padding:7px 14px; font-size:0.8rem;"
+        title="Open Admin CMS to Upload Real Data">
+        ⚙️ Admin CMS
+      </a>
+    </div>
+  </header>
+
+  <!-- 3. SUNLIT NETFLIX-STYLE HERO BILLBOARD -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-billboard">
+        <div class="hero-content">
+          <div class="hero-badge-row">
+            <span class="pill-badge pill-crimson" data-i18n="heroTag">RAJA’S LEGACY LOUNGE • RAJA RAVEENDAR TALKS</span>
+            <span class="pill-badge pill-gold">689.3K+ YT SUBS • 2.56 CR+ VIEWS</span>
+          </div>
+
+          <h2 data-i18n="heroTitle">A Three-Decade Cinematic Journey & The Voice Behind Raja’s Legacy Lounge</h2>
+          <div class="hero-subtitle-te" data-i18n="heroTitleTe">“జీవితం ఒక ప్రయాణం… ప్రతి మనిషి ఒక కథ” — రాజా రవీందర్
+            టాక్స్</div>
+          <p data-i18n="heroDesc">
+            With a career spanning over three decades and hundreds of films in the Telugu film industry, Raja Raveendar
+            bridges Film & Entertainment Personalities, Political Leaders, Policy Makers, Doctors & Wellness Coaches,
+            Public Intellectuals, and Tech Innovators through unscripted, impactful long-form conversations.
+          </p>
+
+          <div class="hero-cta-group">
+            <button class="btn btn-primary" onclick="openEpisodeModal('ep-15')" data-i18n="watchFeaturedBtn">
+              ▶ Watch Ep 15: Raghurama Krishnam Raju
+            </button>
+            <button class="btn btn-secondary" onclick="openGuestMessageModal('guest-15', 'Sri Raghurama Krishnam Raju')"
+              data-i18n="messageGuestBtn">
+              💬 Send Query / Business Lead to Guest
+            </button>
+            <a href="#community-section" class="btn btn-gold" data-i18n="joinPanelBtn">
+              ✨ Suggest Upcoming Questions
+            </a>
+            <a href="#network-section" class="btn btn-secondary" data-i18n="networkBtn">
+              🚀 Join Creator / Influencer / Intern Network
+            </a>
+          </div>
+
+          <div class="hero-mini-meta">
+            <span>🎬 <strong>30+ Years</strong> in Telugu Cinema</span>
+            <span>📺 <strong>2.56 Crore+</strong> YouTube Views</span>
+            <span>📸 <strong>8.2M</strong> Monthly IG Reel Views</span>
+            <span>📈 <strong>6.49M</strong> Facebook Views (+1,362%)</span>
+          </div>
+        </div>
+
+        <!-- Featured Episode Interactive Preview Card -->
+        <div class="hero-preview-card">
+          <div class="hero-preview-img-wrap" onclick="openEpisodeModal('ep-01')">
+            <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1000&q=80"
+              alt="Raja's Legacy Lounge Studio" />
+            <div class="hero-play-floating">
+              <div class="play-circle-btn">▶</div>
+            </div>
+          </div>
+          <div class="hero-preview-footer">
+            <div>
+              <span class="domain-tag domain-Technology-Cinema">RAJA’S LEGACY LOUNGE • 15 EPISODES STREAMING</span>
+              <h4 style="margin-top:4px;">From RGV, Jayasudha & Dr. Rajasekhar to Dr. Nori, Divi & RRR</h4>
+              <span>Unscripted Long-Form Dialogues • 689.3K+ Subscribers • 2.56 Cr+ Views</span>
+            </div>
+            <button class="btn btn-primary" style="padding:9px 16px; font-size:0.82rem;"
+              onclick="openEpisodeModal('ep-13')">
+              Watch #1 Hit (Ep 13)
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. VERIFIED MULTI-PLATFORM REACH & CHANNEL ANALYTICS (FOR VIEWERS, SPONSORS & PRODUCERS) -->
+  <section id="analytics-section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="pill-badge pill-crimson">VERIFIED CREATOR DASHBOARD REPORTS (2026)</span>
+          <h2 data-i18n="statsTitle">Verified Multi-Platform Reach & Channel Analytics (2026)</h2>
+          <p data-i18n="statsSub">689.3K+ YouTube Subscribers • 2.56 Crore+ YT Views • 8.2M Monthly IG Reel Views •
+            6.49M Facebook Views</p>
+        </div>
+        <a href="https://www.youtube.com/@RajaRaveendarTalks" target="_blank" class="btn btn-secondary">
+          📺 Official YouTube: Raja Raveendar Talks ↗
+        </a>
+      </div>
+
+      <!-- Top 4 KPI Cards -->
+      <div class="stats-grid" id="stats-grid" style="margin-bottom:32px;"></div>
+
+      <!-- Interactive Multi-Platform Analytics Report (YouTube Monthly Table, Instagram 8.2M Report, Facebook 6.49M Report) -->
+      <div id="analytics-dashboard-box"></div>
+    </div>
+  </section>
+
+  <!-- 5. THREE-DECADE CINEMATIC JOURNEY & WHAT SETS LEGACY LOUNGE APART -->
+  <section id="persona-section" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="pill-badge pill-gold" data-i18n="personaBadge">PROFILE & GUIDING PHILOSOPHY</span>
+          <h2 data-i18n="personaTitle">What Sets Raja Raveendar & Legacy Lounge Apart</h2>
+          <p data-i18n="personaSub">“జీవితం ఒక ప్రయాణం… ప్రతి మనిషి ఒక కథ” — Multidisciplinary Conversations, Authentic Storytelling, and
+            Responsible Long-Form Content.</p>
+        </div>
+      </div>
+      <div class="persona-tabs" id="persona-tabs"></div>
+      <div class="persona-display-card" id="persona-display"></div>
+    </div>
+  </section>
+
+  <!-- 6. DAYTIME NETFLIX-STYLE PODCAST GALLERY (ALL 15 REAL EPISODES OF RAJA'S LEGACY LOUNGE) -->
+  <section id="catalog-section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="pill-badge pill-crimson" data-i18n="catalogBadge">RAJA RAVEENDAR TALKS - LEGACY LOUNGE</span>
+          <h2 data-i18n="catalogTitle">Raja’s Legacy Lounge — All 15 Published Episodes (Netflix View)</h2>
+          <p data-i18n="catalogSub">Explore all 15 unfiltered episodes on Raja Raveendar Talks. Click any episode for
+            video references, topic discussions, audience polls, or to send a business lead/query to the guest.</p>
+        </div>
+        <div class="search-input-wrap">
+          <input type="text" placeholder="🔍 Search RGV, Jayasudha, Dr. Nori, Divi, RRR..."
+            oninput="handleEpisodeSearch(this.value)" />
+        </div>
+      </div>
+
+      <!-- Netflix Horizontal Swimlanes (Ordered by Category Position in Admin CMS) -->
+      <div id="netflix-swimlanes-container"></div>
+    </div>
+  </section>
+
+  <!-- 7. VIRAL REELS SHELF (9:16 VERTICAL FORMAT — 8.2M IG & 6.49M FB REACH) -->
+  <section id="reels-section" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="pill-badge pill-crimson" data-i18n="reelsBadge">94.4% REELS DISTRIBUTION • 92.8% NON-FOLLOWER REACH</span>
+          <h2 data-i18n="reelsTitle">🔥 Viral Reels & Multi-Platform Hits (94.4% Reel Distribution)</h2>
+          <p data-i18n="reelsSub">8.2M Monthly Instagram Reel Views (3.4M Unique Viewers) & 6.49M Facebook Views with
+            92.8% Non-Follower Organic Discovery</p>
+        </div>
+        <div class="swimlane-controls">
+          <button class="carousel-arrow" onclick="scrollSwimlane('reels-row', -1)">‹</button>
+          <button class="carousel-arrow" onclick="scrollSwimlane('reels-row', 1)">›</button>
+        </div>
+      </div>
+      <div class="netflix-row" id="reels-row"></div>
+    </div>
+  </section>
+
+  <!-- 8. SHAREABLE WISDOM QUOTES WALL -->
+  <section id="wisdom-section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="pill-badge pill-gold">UNFILTERED DIALOGUES • WHATSAPP SHARE</span>
+          <h2 data-i18n="wisdomTitle">✨ Iconic Quotes & Unfiltered Moments from Legacy Lounge</h2>
+          <p data-i18n="wisdomSub">Shareable insights from Ram Gopal Varma, Dr. Nori Dattatreyudu, Jayasudha, Bandla
+            Ganesh, Dr. Rajasekhar & more</p>
+        </div>
+      </div>
+      <div class="wisdom-grid" id="wisdom-grid"></div>
+    </div>
+  </section>
+
+  <!-- 9. DISTINGUISHED GUEST DIRECTORY & BUSINESS LEAD / QUERY FORWARDING -->
+  <section id="guests-section" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="pill-badge pill-crimson">FOR GENERAL VIEWERS • CONNECT WITH GUESTS</span>
+          <h2 data-i18n="guestsTitle">🌟 Legacy Lounge Guest Hall of Fame — Send a Query or Business Lead</h2>
+          <p data-i18n="guestsSub">Write a query, appreciation note, or business lead for any of our guests—our team
+            reviews and forwards your message directly to the guest.</p>
+        </div>
+        <div class="category-pills" id="guest-filter-pills">
+          <button class="cat-pill active" data-domain="All" onclick="filterGuests('All')">All Featured Guests</button>
+          <button class="cat-pill" data-domain="Entertainment" onclick="filterGuests('Entertainment')">🎬 Cinema
+            Icons</button>
+          <button class="cat-pill" data-domain="Healthcare" onclick="filterGuests('Healthcare')">🏥 Doctors &
+            Health</button>
+          <button class="cat-pill" data-domain="Technology & Cinema" onclick="filterGuests('Technology & Cinema')">🤖 AI
+            & Strategy</button>
+          <button class="cat-pill" data-domain="Politics & Society" onclick="filterGuests('Politics & Society')">🏛️
+            Political Leaders</button>
+        </div>
+      </div>
+      <div class="guests-grid" id="guests-grid"></div>
+    </div>
+  </section>
+
+  <!-- 10. VIEWER DISCUSSIONS, TOPIC THREADS & UPCOMING EPISODE QUESTIONS -->
+  <section id="community-section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="pill-badge pill-crimson">FOR VIEWERS • DISCUSSIONS & QUESTION BANK</span>
+          <h2 data-i18n="communityTitle">🧠 Viewer Discussions, Topic Threads & Upcoming Episode Questions</h2>
+          <p data-i18n="communitySub">Join episode topic discussions, read top viewer comments & video references,
+            upvote questions for upcoming guests, and unlock community goodies.</p>
+        </div>
+      </div>
+
+      <div class="community-layout">
+        <!-- Left Column: Suggest & Upvote Questions for Next/Upcoming Episodes -->
+        <div class="panel-box">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+            <h3 style="font-size:1.22rem; font-weight:800;">🗳️ Suggest & Upvote Questions for Upcoming Guests</h3>
+            <span class="pill-badge pill-gold">Asked on Legacy Lounge</span>
+          </div>
+          <p style="font-size:0.88rem; color:var(--text-secondary); margin-bottom:18px;">
+            Suggest valuable questions for our next guests on <strong>Raja’s Legacy Lounge</strong>. Upvote the
+            questions you want Raja Raveendar to ask on set!
+          </p>
+
+          <form onsubmit="submitNewPanelQuestion(event)"
+            style="background:var(--bg-primary); padding:18px; border-radius:12px; border:1px solid var(--border-light); margin-bottom:22px;">
+            <div style="font-weight:800; font-size:0.9rem; margin-bottom:10px;">✍️ Suggest a Question for Coming
+              Episodes (+30 Points)</div>
+            <div class="dual-forms-grid" style="gap:10px;">
+              <div class="form-group" style="margin-bottom:10px;">
+                <label>Your Name & City *</label>
+                <input type="text" id="kp-author" class="form-control" placeholder="e.g., Srinivas (Hyderabad)"
+                  required />
+              </div>
+              <div class="form-group" style="margin-bottom:10px;">
+                <label>Upcoming Guest Category *</label>
+                <select id="kp-guest-target" class="form-control">
+                  <option value="Upcoming Ep 16: Industrialist & Infrastructure Visionary">Ep 16: Industrialist &
+                    Infrastructure Leader</option>
+                  <option value="Upcoming Ep 17: Senior Preventive Doctor & Wellness Coach">Ep 17: Preventive Healthcare
+                    & Wellness Expert</option>
+                  <option value="Upcoming Ep 18: Tollywood Filmmakers & Actors Special">Ep 18: Film & Entertainment
+                    Personality</option>
+                  <option value="Upcoming Policy Maker / Public Intellectual">Policy Maker / Public Intellectual
+                  </option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group" style="margin-bottom:10px;">
+              <label>Your Question for the Guest *</label>
+              <textarea id="kp-question-text" rows="2" class="form-control"
+                placeholder="Write a thoughtful question you want Raja Raveendar to ask..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%; padding:10px;">
+              ➕ Submit Question to Episode Question Bank
+            </button>
+          </form>
+
+          <div id="questions-list"></div>
+        </div>
+
+        <!-- Right Column: Most Interesting Comments, Video References & Topic Discussions -->
+        <div class="panel-box screening-card">
+          <span class="pill-badge pill-crimson">💬 MOST INTERESTING VIEWER COMMENTS & REFERENCES</span>
+          <h3 style="font-size:1.22rem; font-weight:800; margin:8px 0 6px;">🔥 Trending Episode Discussions & Video
+            References</h3>
+          <p style="font-size:0.86rem; color:var(--text-secondary); margin-bottom:16px;">
+            Explore highlighted viewer discussions and reference notes from our top-performing episodes. Click any
+            episode below to join its live comment thread!
+          </p>
+
+          <div style="display:grid; gap:12px; margin-bottom:18px;">
+            <div
+              style="background:#FFFFFF; border:1px solid var(--border-light); border-left:4px solid var(--accent-crimson); border-radius:10px; padding:14px;">
+              <div style="font-size:0.75rem; font-weight:800; color:var(--accent-crimson);">EPISODE 01 • RAM GOPAL VARMA
+                ON THE AI REVOLUTION</div>
+              <p style="font-size:0.88rem; font-weight:700; margin:4px 0;">“How AI will let small teams create
+                blockbuster-scale visuals without ₹500Cr budgets.”</p>
+              <div style="font-size:0.78rem; color:var(--text-secondary); margin-bottom:8px;">Top Comment by Harsha V.:
+                "Starting Legacy Lounge with RGV on AI was a masterstroke!"</div>
+              <button class="ep-btn-sm primary" style="width:auto; padding:6px 14px;"
+                onclick="openEpisodeModal('ep-01')">💬 Join Ep 01 Discussion</button>
+            </div>
+
+            <div
+              style="background:#FFFFFF; border:1px solid var(--border-light); border-left:4px solid #0D9488; border-radius:10px; padding:14px;">
+              <div style="font-size:0.75rem; font-weight:800; color:#0D9488;">EPISODE 06 & 14 • DR. NORI DATTATREYUDU &
+                CORPORATE HOSPITALS REALITY</div>
+              <p style="font-size:0.88rem; font-weight:700; margin:4px 0;">“Early cancer detection protocols +
+                protecting middle-class families from hospital billing shocks.”</p>
+              <div style="font-size:0.78rem; color:var(--text-secondary); margin-bottom:8px;">Top Comment by Prasad M.:
+                "Every family needs to watch Episode 6 and Episode 14."</div>
+              <div style="display:flex; gap:8px;">
+                <button class="ep-btn-sm primary" style="width:auto; padding:6px 14px;"
+                  onclick="openEpisodeModal('ep-06')">💬 Ep 06 Thread</button>
+                <button class="ep-btn-sm" style="width:auto; padding:6px 14px;" onclick="openEpisodeModal('ep-14')">💬
+                  Ep 14 Thread</button>
+              </div>
+            </div>
+
+            <div
+              style="background:#FFFFFF; border:1px solid var(--border-light); border-left:4px solid #D97706; border-radius:10px; padding:14px;">
+              <div style="font-size:0.75rem; font-weight:800; color:#D97706;">EPISODE 13 & 11 • DIVI VADTHYA (#1 MOST
+                VIEWED HIT) & MACHA BVS RAVI</div>
+              <p style="font-size:0.88rem; font-weight:700; margin:4px 0;">“From M.Tech Gold Medalist to GodFather +
+                Balayya's Unstoppable Backstage Secrets.”</p>
+              <div style="display:flex; gap:8px; margin-top:8px;">
+                <button class="ep-btn-sm primary" style="width:auto; padding:6px 14px;"
+                  onclick="openEpisodeModal('ep-13')">💬 Ep 13 Thread</button>
+                <button class="ep-btn-sm" style="width:auto; padding:6px 14px;" onclick="openEpisodeModal('ep-11')">💬
+                  Ep 11 Thread</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. COMMUNITY GOODIES & BRAND PARTNER VOUCHERS -->
+  <section id="goodies-section" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="pill-badge pill-gold">COMMUNITY REWARDS</span>
+          <h2 data-i18n="goodiesTitle">🎁 Community Goodies & Brand Partner Vouchers</h2>
+          <p data-i18n="goodiesSub">Active contributors in topic discussions, question voting, and episode polls unlock
+            exclusive partner rewards.</p>
+        </div>
+        <div
+          style="background:var(--bg-surface); padding:10px 18px; border-radius:999px; border:1px solid var(--border-light); font-weight:800; font-size:0.9rem;">
+          Your Network Balance: <span style="color:var(--accent-crimson);" class="user-points-count">150</span> Points
+        </div>
+      </div>
+      <div class="goodies-grid" id="goodies-grid"></div>
+    </div>
+  </section>
+
+  <!-- 12. OFFICIAL BRAND PARTNERS (ALL 6 REAL BRANDS) & SPONSOR / PRODUCER SIGN-IN PORTAL -->
+  <section id="sponsors-section">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="pill-badge pill-crimson">FOR SPONSORS & PRODUCERS</span>
+          <h2 data-i18n="sponsorsTitle">🤝 Official Brand Partners — Raja’s Legacy Lounge</h2>
+          <p data-i18n="sponsorsSub">Proudly supported by visionary brands: 360 Life Luxury Residences, Mirrors Luxury
+            Salons, Suchirindia, Khammam Lakeview Club (KLC), Ashya Foods & DiaGrand.</p>
+        </div>
+      </div>
+
+      <!-- All 6 Real Brand Partners Grid -->
+      <div class="sponsors-grid" id="sponsors-grid"></div>
+
+      <!-- For Sponsors or Producers Sign-In / Onboarding Portal -->
+      <div class="form-card"
+        style="background:linear-gradient(135deg, #FFFFFF 0%, #FFF5F5 100%); border:1.5px solid #FECDD3;">
+        <div class="dual-forms-grid" style="align-items:center;">
+          <div>
+            <span class="pill-badge pill-crimson">FOR SPONSORS OR PRODUCERS</span>
+            <h3 style="font-size:1.55rem; font-weight:900; margin:10px 0;">Sign Up as a Title Sponsor, Brand Partner or
+              Project Co-Producer</h3>
+            <p style="color:var(--text-secondary); margin-bottom:14px;">
+              Backed by <strong>689.3K+ YouTube subscribers (2.56 Cr+ views)</strong>, <strong>8.2M Instagram Reel views
+                (38K followers)</strong>, and <strong>6.49M Facebook views (+1,362%)</strong>, Raja Raveendar Network
+              offers unmatched high-trust visibility for brands and producers.
+            </p>
+            <ul style="list-style:none; display:grid; gap:8px; font-size:0.88rem; font-weight:700;">
+              <li>🏆 <strong>Title Sponsor / Presenting Partner:</strong> Full studio branding, host mentions & mid-roll
+                integrations</li>
+              <li>📱 <strong>High-Share Reels Partner:</strong> Branded placements across 94.4% Reel distribution</li>
+              <li>🎬 <strong>Co-Production & Original Projects:</strong> Partner on upcoming talk shows, web series &
+                films</li>
+              <li>📊 <strong>Transparent ROI:</strong> Full access to verified YouTube, Instagram & Facebook analytics
+              </li>
+            </ul>
+          </div>
+
+          <form onsubmit="submitNewSponsorPitch(event)"
+            style="background:var(--bg-surface); padding:24px; border-radius:16px; border:1px solid var(--border-light);">
+            <h4 style="font-size:1.12rem; font-weight:800; margin-bottom:14px;">📈 Sponsor / Producer Registration</h4>
+            <div class="dual-forms-grid" style="gap:12px;">
+              <div class="form-group">
+                <label>Brand / Production House Name *</label>
+                <input type="text" id="sp-company" class="form-control" placeholder="Company or Individual Name"
+                  required />
+              </div>
+              <div class="form-group">
+                <label>Contact Person & Designation *</label>
+                <input type="text" class="form-control" placeholder="Founder / CMO / Producer" required />
+              </div>
+            </div>
+            <div class="dual-forms-grid" style="gap:12px;">
+              <div class="form-group">
+                <label>Phone / WhatsApp & Email *</label>
+                <input type="text" class="form-control" placeholder="+91 98XXX XXXXX / email" required />
+              </div>
+              <div class="form-group">
+                <label>Partnership Role *</label>
+                <select id="sp-tier-select" class="form-control">
+                  <option value="Title Sponsor">Title Sponsor (Raja’s Legacy Lounge)</option>
+                  <option value="Brand Partner">Brand Partner (Mid-Roll & Reels Integration)</option>
+                  <option value="Project Co-Producer">Producer / Co-Producer for Originals</option>
+                  <option value="Influencer Campaign Brand">Brand Campaign via Influencer Network</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Project / Campaign Brief</label>
+              <textarea rows="2" class="form-control"
+                placeholder="Share your brand goals or production interest..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              🤝 Register as Title Sponsor / Brand Partner
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. THE RAJA RAVEENDAR NETWORK: CREATORS, INFLUENCERS, INTERNS & GUEST REGISTRATION -->
+  <section id="network-section" style="background:var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="pill-badge pill-crimson">THE RAJA RAVEENDAR NETWORK</span>
+          <h2 data-i18n="networkTitle">🌐 The Raja Raveendar Network: Creators, Influencers, Interns & Guests</h2>
+          <p data-i18n="networkSub">A complete ecosystem for Original Creators (Music, Short Films, Web Series),
+            Influencers, Interns (SEO, Editing, DOP, Music, Research, AI), and VVIP Guests.</p>
+        </div>
+      </div>
+
+      <!-- Row 1: Creators / Influencers Talent Pool + Internships Portal -->
+      <div class="dual-forms-grid" style="margin-bottom:28px;">
+        <!-- Card A: For Creators & Influencers (Talent Pool + Paid Brand Collabs) -->
+        <div class="form-card" style="border-top: 5px solid var(--accent-crimson);">
+          <span class="pill-badge pill-crimson">FOR CREATORS & INFLUENCERS</span>
+          <h3 style="font-size:1.35rem; font-weight:900; margin:8px 0 6px;">🎬 Creator Talent Pool & Influencer Network
+          </h3>
+          <p style="font-size:0.86rem; color:var(--text-secondary); margin-bottom:14px;">
+            <strong>For Creators:</strong> Upload your work profile and showcase your originals (<strong>Music, Music
+              Videos, Short Films, Web Series, Web Services</strong>) to get industry recognition.<br />
+            <strong>For Influencers:</strong> Register to join our Influencer Network for paid brand collaborations!
+          </p>
+
+          <form onsubmit="submitCreatorProfile(event)" style="margin-bottom:18px;">
+            <div class="dual-forms-grid" style="gap:10px;">
+              <div class="form-group" style="margin-bottom:10px;">
+                <label>Your Name & City *</label>
+                <input type="text" id="cr-name" class="form-control" placeholder="e.g., Rahul V. (Hyderabad)"
+                  required />
+              </div>
+              <div class="form-group" style="margin-bottom:10px;">
+                <label>Registration Category *</label>
+                <select id="cr-type" class="form-control">
+                  <option value="Original Short Film / Web Series Creator">🎬 Original Short Film / Web Series Creator
+                  </option>
+                  <option value="Original Music / Music Video Artist">🎵 Original Music / Music Video Creator</option>
+                  <option value="Influencer (Paid Brand Collaborations)">📱 Influencer (For Paid Brand Collaborations)
+                  </option>
+                  <option value="Web Services & Digital Creator">💻 Web Services / Digital Tech Creator</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group" style="margin-bottom:10px;">
+              <label>Title of Your Original Work / Portfolio / Social Handle Link *</label>
+              <input type="text" id="cr-work" class="form-control"
+                placeholder="e.g., Original Short Film Title / YouTube or Instagram Link" required />
+            </div>
+            <div class="form-group" style="margin-bottom:12px;">
+              <label>Key Skills, Follower Count (if Influencer) & Opportunity Sought *</label>
+              <input type="text" id="cr-skills" class="form-control"
+                placeholder="e.g., Direction, Music Composing, 85K IG Followers - Open to Brand Collabs" required />
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              🚀 Register in Creator Talent Pool & Influencer Network
+            </button>
+          </form>
+
+          <div>
+            <h4 style="font-size:0.9rem; font-weight:800; margin-bottom:8px;">🌟 Featured in Our Creator Talent Pool:
+            </h4>
+            <div id="creator-pool-list"></div>
+          </div>
+        </div>
+
+        <!-- Card B: For Interns (SEO, Editing, DOP, Music, Content Research, AI Content Creators) -->
+        <div class="form-card" style="border-top: 5px solid #4F46E5;">
+          <span class="pill-badge pill-gold">FOR INTERNS • HANDS-ON MEDIA & AI LAUNCHPAD</span>
+          <h3 style="font-size:1.35rem; font-weight:900; margin:8px 0 6px;">🎓 Apply for Internships at Raja Raveendar
+            Network</h3>
+          <p style="font-size:0.86rem; color:var(--text-secondary); margin-bottom:14px;">
+            Work directly on <strong>Raja’s Legacy Lounge</strong> and digital productions! Click any of the 6
+            specialized departments below to apply:
+          </p>
+
+          <!-- 6 Internship Track Cards -->
+          <div class="intern-tracks-grid" id="intern-tracks-grid"></div>
+
+          <!-- Internship Application Form -->
+          <form onsubmit="submitInternshipApplication(event)">
+            <div class="dual-forms-grid" style="gap:10px;">
+              <div class="form-group" style="margin-bottom:10px;">
+                <label>Applicant Name & City *</label>
+                <input type="text" id="intern-name" class="form-control" placeholder="Full Name" required />
+              </div>
+              <div class="form-group" style="margin-bottom:10px;">
+                <label>Select Internship Field *</label>
+                <select id="intern-role-select" class="form-control">
+                  <option value="AI Content Creators">🤖 AI Content Creators</option>
+                  <option value="Video Editing (Long-Form & Reels)">✂️ Editing (Podcasts & Reels)</option>
+                  <option value="DOP & Multi-Cam Cinematography">🎥 DOP (Cinematography & Lighting)</option>
+                  <option value="Music & Sound Design">🎵 Music & Audio Production</option>
+                  <option value="Content & Guest Research">📚 Content Research & Scripting</option>
+                  <option value="YouTube & Social Media SEO">📈 SEO & Channel Analytics</option>
+                </select>
+              </div>
+            </div>
+            <div class="dual-forms-grid" style="gap:10px;">
+              <div class="form-group" style="margin-bottom:10px;">
+                <label>WhatsApp Number & Email *</label>
+                <input type="text" class="form-control" placeholder="+91 98XXX XXXXX / email" required />
+              </div>
+              <div class="form-group" style="margin-bottom:10px;">
+                <label>Portfolio / Drive / Reel Link *</label>
+                <input type="text" class="form-control" placeholder="Link to your sample edits, AI work, or resume"
+                  required />
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              🎓 Submit Internship Application
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Row 2: For Guests (Share Inspirational Stories & Achievements to Feature on the Podcast) -->
+      <div class="form-card" style="border-top: 5px solid var(--accent-gold);">
+        <div class="dual-forms-grid" style="align-items:center;">
+          <div>
+            <span class="pill-badge pill-gold">FOR GUESTS • SHARE YOUR STORY</span>
+            <h3 style="font-size:1.5rem; font-weight:900; margin:8px 0;">👑 Have an Inspirational Story or Achievement?
+              Be a Guest on Raja’s Legacy Lounge</h3>
+            <p style="color:var(--text-secondary); font-size:0.92rem; margin-bottom:14px;">
+              “జీవితం ఒక ప్రయాణం… ప్రతి మనిషి ఒక కథ.” If you are a pioneer, leader, doctor, artist, entrepreneur, or
+              change-maker with an inspiring journey to share, register your profile and achievements below. Our
+              editorial team reviews every submission and connects with shortlisted guests.
+            </p>
+            <div
+              style="background:var(--bg-primary); padding:14px; border-radius:12px; border:1px solid var(--border-light); font-size:0.85rem;">
+              <strong>Domains We Welcome:</strong> Film & Entertainment Personalities • Political Leaders & Policy
+              Makers • Doctors & Wellness Coaches • Public Intellectuals • Industrialists & Tech Innovators.
+            </div>
+          </div>
+
+          <form onsubmit="submitVVIPApplication(event)">
+            <div class="dual-forms-grid" style="gap:10px;">
+              <div class="form-group">
+                <label>Guest Name & Designation *</label>
+                <input type="text" id="vvip-name" class="form-control" placeholder="Full Name & Title" required />
+              </div>
+              <div class="form-group">
+                <label>Domain / Industry *</label>
+                <select id="vvip-domain" class="form-control">
+                  <option value="Doctors & Wellness Coaches">🏥 Doctors & Wellness Coaches</option>
+                  <option value="Film & Entertainment">🎬 Film & Entertainment Personalities</option>
+                  <option value="Political Leaders & Policy Makers">🏛️ Political Leaders & Policy Makers</option>
+                  <option value="Industrialists & Tech Innovators">💻 Industrialists & Tech Innovators</option>
+                  <option value="Public Intellectuals & Inspirational Stories">🌟 Public Intellectuals & Inspirational
+                    Stories</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Profile Summary, Key Achievements & Social/Web Links *</label>
+              <input type="text" class="form-control"
+                placeholder="Share achievements, awards, organization & profile URL" required />
+            </div>
+            <div class="form-group">
+              <label>What Story or Message Would You Like to Share with Our Audience? *</label>
+              <textarea rows="2" class="form-control" placeholder="Briefly describe your journey and key insights..."
+                required></textarea>
+            </div>
+            <div class="form-group">
+              <label>Direct Phone / WhatsApp & Email (For Editorial Shortlisting) *</label>
+              <input type="text" class="form-control" placeholder="+91 98XXX XXXXX / email" required />
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              👑 Submit Guest Profile & Achievements for Editorial Review
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container"
+      style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;">
+      <div>
+        <strong style="color:var(--text-primary); font-size:1.05rem;">RAJA RAVEENDAR OFFICIAL • RAJA’S LEGACY LOUNGE
+          (RAJA RAVEENDAR TALKS)</strong>
+        <p style="margin-top:4px;">“జీవితం ఒక ప్రయాణం… ప్రతి మనిషి ఒక కథ” (Life is a journey… every person has a story)
+          • 689.3K+ YT Subscribers</p>
+      </div>
+      <div style="display:flex; gap:14px; flex-wrap:wrap;">
+        <a href="#catalog-section" style="color:var(--accent-crimson); font-weight:700; text-decoration:none;">15
+          Episodes</a>
+        <a href="#analytics-section"
+          style="color:var(--text-secondary); font-weight:700; text-decoration:none;">Analytics</a>
+        <a href="#guests-section" style="color:var(--text-secondary); font-weight:700; text-decoration:none;">Guests</a>
+        <a href="#sponsors-section" style="color:var(--text-secondary); font-weight:700; text-decoration:none;">Brand
+          Partners</a>
+        <a href="#network-section" style="color:var(--text-secondary); font-weight:700; text-decoration:none;">Creators
+          & Interns</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- GLOBAL INTERACTIVE MODAL -->
+  <div class="modal-backdrop" id="global-modal-backdrop" onclick="if(event.target === this) closeModal()">
+    <div class="modal-window">
+      <button class="modal-close" onclick="closeModal()" title="Close">✕</button>
+      <div id="global-modal-content"></div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- SCRIPTS -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

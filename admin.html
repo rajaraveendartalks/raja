@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin CMS & Leads Portal | Raja Raveendar Official Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .admin-layout {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      min-height: calc(100vh - 75px);
+    }
+    .admin-sidebar {
+      background: var(--bg-surface);
+      border-right: 1px solid var(--border-light);
+      padding: 20px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .admin-nav-btn {
+      width: 100%;
+      text-align: left;
+      padding: 11px 14px;
+      border-radius: 12px;
+      border: 1px solid transparent;
+      background: transparent;
+      font-family: inherit;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--text-secondary);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: var(--transition);
+    }
+    .admin-nav-btn:hover {
+      background: var(--bg-primary);
+      color: var(--text-primary);
+    }
+    .admin-nav-btn.active {
+      background: var(--accent-crimson-light);
+      color: var(--accent-crimson);
+      border-color: #FECDD3;
+    }
+    .admin-main {
+      padding: 28px 36px;
+      background: var(--bg-primary);
+    }
+    .cms-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-sm);
+    }
+    .cms-item-row {
+      display: grid;
+      grid-template-columns: 110px 1fr auto;
+      gap: 16px;
+      align-items: center;
+      padding: 14px;
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      margin-bottom: 12px;
+      background: var(--bg-primary);
+    }
+    .cms-item-row img {
+      width: 110px;
+      height: 66px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid var(--border-light);
+    }
+    .inbox-badge {
+      background: var(--accent-crimson);
+      color: #FFF;
+      font-size: 0.72rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+    .upload-box {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Admin Header -->
+  <header class="navbar">
+    <div class="brand-logo">
+      <div class="brand-monogram">RR</div>
+      <div class="brand-text">
+        <h1>RAJA RAVEENDAR — ADMIN CMS & INBOX</h1>
+        <span>MANAGE EPISODES, CATEGORIES, REELS, TITLES, PROFILE & SUBMISSIONS</span>
+      </div>
+    </div>
+    <div class="nav-actions">
+      <button class="btn btn-primary" onclick="saveAllSiteDataToBackend()">
+        💾 Save & Publish All Changes Live
+      </button>
+      <a href="index.html" target="_blank" class="btn btn-secondary">
+        🌐 View Live Website ↗
+      </a>
+    </div>
+  </header>
+
+  <div class="admin-layout">
+    <!-- Left Sidebar Navigation -->
+    <aside class="admin-sidebar">
+      <div style="font-size:0.73rem; font-weight:800; color:var(--text-muted); padding:0 12px 4px; text-transform:uppercase;">
+        Website Content & Layout
+      </div>
+      <button class="admin-nav-btn active" data-tab="episodes" onclick="switchAdminTab('episodes')">
+        <span>🎬 Episodes (Videos)</span>
+      </button>
+      <button class="admin-nav-btn" data-tab="categories" onclick="switchAdminTab('categories')">
+        <span>🗂️ Categories & Row Order</span>
+      </button>
+      <button class="admin-nav-btn" data-tab="reels" onclick="switchAdminTab('reels')">
+        <span>🔥 Viral Reels (Shorts)</span>
+      </button>
+      <button class="admin-nav-btn" data-tab="headings" onclick="switchAdminTab('headings')">
+        <span>✏️ Site Titles & Headings</span>
+      </button>
+      <button class="admin-nav-btn" data-tab="personas" onclick="switchAdminTab('personas')">
+        <span>🎭 Profile & Philosophy</span>
+      </button>
+      <button class="admin-nav-btn" data-tab="guests" onclick="switchAdminTab('guests')">
+        <span>🌟 Guests Profiles</span>
+      </button>
+      <button class="admin-nav-btn" data-tab="sponsors" onclick="switchAdminTab('sponsors')">
+        <span>🤝 Brand Partners</span>
+      </button>
+      <button class="admin-nav-btn" data-tab="stats" onclick="switchAdminTab('stats')">
+        <span>📊 Views & Followers</span>
+      </button>
+
+      <div style="font-size:0.73rem; font-weight:800; color:var(--text-muted); padding:14px 12px 4px; text-transform:uppercase;">
+        Audience & Network Inbox
+      </div>
+      <button class="admin-nav-btn" data-tab="inbox-guests" onclick="switchAdminTab('inbox-guests')">
+        <span>💬 Guest Queries & Leads</span>
+        <span class="inbox-badge" id="count-guestMessages">0</span>
+      </button>
+      <button class="admin-nav-btn" data-tab="inbox-sponsors" onclick="switchAdminTab('inbox-sponsors')">
+        <span>💼 Sponsor & Brand Leads</span>
+        <span class="inbox-badge" id="count-sponsorInquiries">0</span>
+      </button>
+      <button class="admin-nav-btn" data-tab="inbox-creators" onclick="switchAdminTab('inbox-creators')">
+        <span>🎬 Creators & Influencers</span>
+        <span class="inbox-badge" id="count-creatorRegistrations">0</span>
+      </button>
+      <button class="admin-nav-btn" data-tab="inbox-interns" onclick="switchAdminTab('inbox-interns')">
+        <span>🎓 Intern Applications</span>
+        <span class="inbox-badge" id="count-internshipApplications">0</span>
+      </button>
+      <button class="admin-nav-btn" data-tab="inbox-vvip" onclick="switchAdminTab('inbox-vvip')">
+        <span>👑 VVIP Guest Requests</span>
+        <span class="inbox-badge" id="count-vvipApplications">0</span>
+      </button>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="admin-main" id="admin-main-panel"></main>
+  </div>
+
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="data.js"></script>
+  <script>
+    let currentTab = "episodes";
+    let editingEpisodeIndex = -1;
+    let editingReelIndex = -1;
+    let editingPersonaIndex = 0;
+    let editingCategoryIndex = -1;
+    let editingGuestIndex = -1;
+    let editingSponsorIndex = -1;
+
+    let submissionsData = {
+      guestMessages: [],
+      sponsorInquiries: [],
+      brandMessages: [],
+      creatorRegistrations: [],
+      internshipApplications: [],
+      vvipApplications: [],
+      viewerQuestions: [],
+      episodeComments: []
+    };
+
+    // Ensure categories array exists
+    if (!window.RR_DATA.categories || !window.RR_DATA.categories.length) {
+      window.RR_DATA.categories = [
+        { id: "cat-all", name: "All Episodes", rowTitleEn: "🏆 Raja’s Legacy Lounge — All 15 Published Episodes", rowTitleTe: "🏆 రాజాస్ లెగసీ లాంజ్ — మొత్తం 15 ఎపిసోడ్‌లు", isAllRow: true, visible: true },
+        { id: "cat-ent", name: "Entertainment", rowTitleEn: "🎬 Tollywood Icons & Unfiltered Cinema Stories", rowTitleTe: "🎬 సినిమా ప్రముఖుల అన్‌ఫిల్టర్డ్ ఎపిసోడ్‌లు (Entertainment)", isAllRow: false, visible: true },
+        { id: "cat-health", name: "Healthcare", rowTitleEn: "🏥 Healthcare: Dr. Nori Dattatreyudu, Dr. K. Shilpi Reddy & Hospital Reality", rowTitleTe: "🏥 ఆరోగ్యం, క్యాన్సర్ అవగాహన & కార్పొరేట్ హాస్పిటల్స్ (Healthcare)", isAllRow: false, visible: true },
+        { id: "cat-tech", name: "Technology & Cinema", rowTitleEn: "🤖 AI in Cinema & Show Strategy (RGV, Macha BVS Ravi)", rowTitleTe: "🤖 సినిమాపై AI ప్రభావం & వ్యూహాలు (Technology & Cinema)", isAllRow: false, visible: true },
+        { id: "cat-culture", name: "Culture & Storytelling", rowTitleEn: "📚 Culture, Indian Epics & Youth Perspectives", rowTitleTe: "📚 సంస్కృతి, కథలు & యువత (Culture & Storytelling)", isAllRow: false, visible: true },
+        { id: "cat-politics", name: "Politics & Society", rowTitleEn: "🏛️ Politics, Governance & Grassroots Leadership", rowTitleTe: "🏛️ రాజకీయాలు & ప్రజా పాలన (Politics & Society)", isAllRow: false, visible: true }
+      ];
+    }
+
+    function extractYouTubeId(url) {
+      if (!url) return null;
+      const match = String(url).match(/(?:v=|youtu\.be\/|embed\/|shorts\/)([a-zA-Z0-9_-]{11})/);
+      return match && match[1] ? match[1] : null;
+    }
+
+    function resolveThumbUrl(thumb, fallbackVideoUrl) {
+      const ytFromThumb = extractYouTubeId(thumb);
+      if (ytFromThumb && !String(thumb).includes("img.youtube.com")) {
+        return `https://img.youtube.com/vi/${ytFromThumb}/hqdefault.jpg`;
+      }
+      if (!thumb || thumb.trim() === "") {
+        const ytFromVideo = extractYouTubeId(fallbackVideoUrl);
+        if (ytFromVideo) return `https://img.youtube.com/vi/${ytFromVideo}/hqdefault.jpg`;
+      }
+      return thumb;
+    }
+
+    function showToast(msg) {
+      const c = document.getElementById("toast-container");
+      const t = document.createElement("div");
+      t.className = "toast";
+      t.innerHTML = msg;
+      c.appendChild(t);
+      setTimeout(() => t.remove(), 4000);
+    }
+
+    async function fetchSubmissions() {
+      try {
+        const res = await fetch("/api/submissions");
+        const json = await res.json();
+        if (json.ok && json.submissions) {
+          submissionsData = json.submissions;
+          updateInboxCounters();
+        }
+      } catch (e) {}
+    }
+
+    function updateInboxCounters() {
+      const keys = ["guestMessages", "sponsorInquiries", "creatorRegistrations", "internshipApplications", "vvipApplications"];
+      keys.forEach((k) => {
+        const el = document.getElementById("count-" + k);
+        if (el) {
+          let total = (submissionsData[k] || []).length;
+          if (k === "sponsorInquiries") total += (submissionsData.brandMessages || []).length;
+          el.textContent = total;
+        }
+      });
+    }
+
+    async function saveAllSiteDataToBackend() {
+      try {
+        const res = await fetch("/api/admin/save-data", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ data: window.RR_DATA })
+        });
+        const json = await res.json();
+        if (json.ok) {
+          showToast("✅ Published! All changes are now live on the main website.");
+        } else {
+          showToast("❌ Error saving: " + json.error);
+        }
+      } catch (err) {
+        showToast("❌ Could not connect to server.py.");
+      }
+    }
+
+    async function uploadImageFile(fileInputEl, targetInputId, previewImgId) {
+      const file = fileInputEl.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = async function (evt) {
+        const dataUrl = evt.target.result;
+        try {
+          const res = await fetch("/api/upload", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ filename: file.name, dataUrl })
+          });
+          const json = await res.json();
+          if (json.ok) {
+            document.getElementById(targetInputId).value = json.url;
+            if (previewImgId && document.getElementById(previewImgId)) {
+              document.getElementById(previewImgId).src = json.url;
+            }
+            showToast("📸 Image uploaded to " + json.url);
+          }
+        } catch (e) {
+          showToast("❌ Upload failed: " + e.message);
+        }
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function autoFetchYouTubeThumb(ytInputId, thumbInputId) {
+      const url = document.getElementById(ytInputId).value.trim();
+      const ytId = extractYouTubeId(url);
+      if (ytId) {
+        const thumbUrl = `https://img.youtube.com/vi/${ytId}/hqdefault.jpg`;
+        document.getElementById(thumbInputId).value = thumbUrl;
+        showToast("✅ Auto-filled YouTube Thumbnail for Video ID: " + ytId);
+      } else {
+        showToast("ℹ️ Paste a YouTube video or Shorts URL (e.g. https://www.youtube.com/watch?v=... or /shorts/...) to auto-fetch thumbnail.");
+      }
+    }
+
+    function switchAdminTab(tab) {
+      currentTab = tab;
+      document.querySelectorAll(".admin-nav-btn").forEach((b) => {
+        b.classList.toggle("active", b.dataset.tab === tab);
+      });
+      renderCurrentTab();
+    }
+
+    function renderCurrentTab() {
+      const panel = document.getElementById("admin-main-panel");
+      if (currentTab === "episodes") return renderEpisodesCMS(panel);
+      if (currentTab === "categories") return renderCategoriesCMS(panel);
+      if (currentTab === "reels") return renderReelsCMS(panel);
+      if (currentTab === "headings") return renderHeadingsCMS(panel);
+      if (currentTab === "personas") return renderPersonasCMS(panel);
+      if (currentTab === "guests") return renderGuestsCMS(panel);
+      if (currentTab === "sponsors") return renderSponsorsCMS(panel);
+      if (currentTab === "stats") return renderStatsCMS(panel);
+      if (currentTab.startsWith("inbox-")) return renderInboxTab(panel, currentTab);
+    }
+
+    // ========================================================================
+    // TAB 1: EPISODES CMS (Dynamic Category Selector)
+    // ========================================================================
+    function renderEpisodesCMS(panel) {
+      const eps = window.RR_DATA.episodes;
+      const selectableCats = window.RR_DATA.categories.filter((c) => !c.isAllRow);
+      panel.innerHTML = `
+        <div class="cms-card">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:6px;">
+            <h2 style="font-size:1.4rem; font-weight:900;">🎬 Add New Episode / Edit Episode</h2>
+            <button class="btn btn-gold" style="padding:7px 14px; font-size:0.8rem;" onclick="switchAdminTab('categories')">
+              🗂️ Manage / Create Categories & Row Order →
+            </button>
+          </div>
+          <p style="font-size:0.86rem; color:var(--text-secondary); margin-bottom:16px;">
+            Choose which Category Row this video should be displayed under (it will also automatically appear in the 'All Episodes' row).
+          </p>
+          <form onsubmit="saveEpisodeForm(event)">
+            <div class="dual-forms-grid" style="gap:14px;">
+              <div class="form-group">
+                <label>Episode Number *</label>
+                <input type="number" id="ep-num" class="form-control" value="${eps.length + 1}" required />
+              </div>
+              <div class="form-group">
+                <label>Display in Category Row *</label>
+                <select id="ep-cat" class="form-control">
+                  ${selectableCats.map((c) => `<option value="${c.name}">${c.name} (${c.rowTitleEn})</option>`).join("")}
+                </select>
+              </div>
+            </div>
+            <div class="dual-forms-grid" style="gap:14px;">
+              <div class="form-group">
+                <label>Episode Title (English) *</label>
+                <input type="text" id="ep-title-en" class="form-control" placeholder="e.g., Guest Name Unfiltered | Legacy Lounge" required />
+              </div>
+              <div class="form-group">
+                <label>Episode Title (Telugu) *</label>
+                <input type="text" id="ep-title-te" class="form-control" placeholder="తెలుగు టైటిల్..." required />
+              </div>
+            </div>
+            <div class="dual-forms-grid" style="gap:14px;">
+              <div class="form-group">
+                <label>Guest Name *</label>
+                <input type="text" id="ep-guest" class="form-control" placeholder="e.g., Ram Gopal Varma" required />
+              </div>
+              <div class="form-group">
+                <label>Guest Role / Designation *</label>
+                <input type="text" id="ep-role" class="form-control" placeholder="e.g., Acclaimed Film Director" required />
+              </div>
+            </div>
+            <div class="dual-forms-grid" style="gap:14px;">
+              <div class="form-group">
+                <label>Direct YouTube Video URL *</label>
+                <div style="display:flex; gap:8px;">
+                  <input type="text" id="ep-yt" class="form-control" placeholder="https://www.youtube.com/watch?v=..." oninput="autoFetchYouTubeThumb('ep-yt', 'ep-thumb')" required />
+                  <button type="button" class="btn btn-gold" style="white-space:nowrap; padding:8px 14px;" onclick="autoFetchYouTubeThumb('ep-yt', 'ep-thumb')">
+                    ⚡ Auto-Thumb
+                  </button>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Thumbnail Image URL or Upload from Computer *</label>
+                <div class="upload-box">
+                  <input type="text" id="ep-thumb" class="form-control" style="flex:1;" placeholder="/uploads/... or https://..." required />
+                  <label class="btn btn-secondary" style="padding:8px 14px; cursor:pointer;">
+                    📁 Upload Image
+                    <input type="file" accept="image/*" style="display:none;" onchange="uploadImageFile(this, 'ep-thumb')" />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="dual-forms-grid" style="gap:14px;">
+              <div class="form-group">
+                <label>Duration / Format Label</label>
+                <input type="text" id="ep-dur" class="form-control" value="Full Episode" />
+              </div>
+              <div class="form-group">
+                <label>Views / Highlight Badge</label>
+                <input type="text" id="ep-views" class="form-control" value="Trending Episode" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Episode Description / Summary *</label>
+              <textarea id="ep-sum" rows="2" class="form-control" placeholder="Write the episode summary..." required></textarea>
+            </div>
+            <div style="display:flex; gap:10px;">
+              <button type="submit" class="btn btn-primary" id="ep-submit-btn">➕ Add / Save Episode & Publish</button>
+              <button type="button" class="btn btn-secondary" onclick="resetEpisodeForm()">Clear Form</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="cms-card">
+          <h3 style="font-size:1.2rem; font-weight:800; margin-bottom:14px;">All Published Episodes (${eps.length})</h3>
+          ${eps
+            .map(
+              (ep, idx) => `
+            <div class="cms-item-row">
+              <img src="${resolveThumbUrl(ep.thumbnail, ep.youtubeUrl)}" alt="${ep.title}" />
+              <div>
+                <div style="font-size:0.76rem; font-weight:800; color:var(--accent-crimson);">EPISODE ${ep.epNumber} • Category Row: [${ep.category}] • ${ep.views}</div>
+                <div style="font-weight:800; font-size:0.98rem;">${ep.title}</div>
+                <div style="font-size:0.82rem; color:var(--text-secondary);">Guest: ${ep.guestName} • <a href="${ep.youtubeUrl}" target="_blank">YouTube Link ↗</a></div>
+              </div>
+              <div style="display:flex; gap:8px;">
+                <button class="ep-btn-sm" onclick="loadEpisodeIntoForm(${idx})">✏️ Edit</button>
+                <button class="ep-btn-sm" style="color:#B91C1C;" onclick="deleteEpisode(${idx})">🗑️ Delete</button>
+              </div>
+            </div>
+          `
+            )
+            .join("")}
+        </div>
+      `;
+    }
+
+    function loadEpisodeIntoForm(idx) {
+      editingEpisodeIndex = idx;
+      const ep = window.RR_DATA.episodes[idx];
+      document.getElementById("ep-num").value = ep.epNumber;
+      const catSel = document.getElementById("ep-cat");
+      if (![...catSel.options].some((o) => o.value === ep.category)) {
+        const opt = document.createElement("option");
+        opt.value = ep.category;
+        opt.textContent = ep.category;
+        catSel.appendChild(opt);
+      }
+      catSel.value = ep.category;
+      document.getElementById("ep-title-en").value = ep.title;
+      document.getElementById("ep-title-te").value = ep.titleTe;
+      document.getElementById("ep-guest").value = ep.guestName;
+      document.getElementById("ep-role").value = ep.guestRole;
+      document.getElementById("ep-yt").value = ep.youtubeUrl;
+      document.getElementById("ep-thumb").value = ep.thumbnail;
+      document.getElementById("ep-dur").value = ep.duration;
+      document.getElementById("ep-views").value = ep.views;
+      document.getElementById("ep-sum").value = ep.summary;
+      document.getElementById("ep-submit-btn").textContent = "💾 Update Episode #" + ep.epNumber;
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function resetEpisodeForm() {
+      editingEpisodeIndex = -1;
+      renderCurrentTab();
+    }
+
+    async function saveEpisodeForm(e) {
+      e.preventDefault();
+      const epNum = parseInt(document.getElementById("ep-num").value, 10);
+      const ytUrl = document.getElementById("ep-yt").value.trim();
+      let thumbUrl = document.getElementById("ep-thumb").value.trim();
+      thumbUrl = resolveThumbUrl(thumbUrl, ytUrl);
+
+      const newObj = {
+        id: "ep-" + String(epNum).padStart(2, "0"),
+        epNumber: epNum,
+        category: document.getElementById("ep-cat").value,
+        categoryLabel: document.getElementById("ep-cat").value,
+        title: document.getElementById("ep-title-en").value.trim(),
+        titleTe: document.getElementById("ep-title-te").value.trim(),
+        guestId: "guest-" + String(epNum).padStart(2, "0"),
+        guestName: document.getElementById("ep-guest").value.trim(),
+        guestRole: document.getElementById("ep-role").value.trim(),
+        duration: document.getElementById("ep-dur").value.trim(),
+        views: document.getElementById("ep-views").value.trim(),
+        releaseBadge: `EPISODE ${String(epNum).padStart(2, "0")}`,
+        thumbnail: thumbUrl,
+        youtubeUrl: ytUrl,
+        summary: document.getElementById("ep-sum").value.trim(),
+        takeaways: [
+          "Unfiltered conversation on Raja's Legacy Lounge",
+          "Key insights shared by " + document.getElementById("ep-guest").value.trim()
+        ],
+        references: [],
+        discussions: [],
+        poll: {
+          question: "What did you enjoy most about this episode?",
+          options: ["Unfiltered honesty", "Guest life lessons", "Raja Raveendar's questions", "Inspiring takeaways"],
+          couponCode: "LEGACY" + epNum,
+          sponsorReward: "Exclusive Partner Privilege Voucher"
+        }
+      };
+
+      if (editingEpisodeIndex >= 0) {
+        const old = window.RR_DATA.episodes[editingEpisodeIndex];
+        newObj.takeaways = old.takeaways || newObj.takeaways;
+        newObj.poll = old.poll || newObj.poll;
+        window.RR_DATA.episodes[editingEpisodeIndex] = newObj;
+        editingEpisodeIndex = -1;
+      } else {
+        window.RR_DATA.episodes.unshift(newObj);
+      }
+
+      await saveAllSiteDataToBackend();
+      renderCurrentTab();
+    }
+
+    async function deleteEpisode(idx) {
+      if (!confirm("Delete this episode?")) return;
+      window.RR_DATA.episodes.splice(idx, 1);
+      await saveAllSiteDataToBackend();
+      renderCurrentTab();
+    }
+
+    // ========================================================================
+    // TAB 2: CATEGORIES & ROW POSITION MANAGER
+    // ========================================================================
+    function renderCategoriesCMS(panel) {
+      const cats = window.RR_DATA.categories;
+      panel.innerHTML = `
+        <div class="cms-card">
+          <h2 style="font-size:1.4rem; font-weight:900; margin-bottom:6px;">🗂️ Create Category & Position Video Rows</h2>
+          <p style="font-size:0.88rem; color:var(--text-secondary); margin-bottom:18px;">
+            Every category below is displayed as a horizontal Netflix-style video row on your website (no clicking required by visitors). Use <strong>⬆️ Move Up</strong> and <strong>⬇️ Move Down</strong> to change the exact order of rows, or create a new category!
+          </p>
+
+          <form onsubmit="saveCategoryForm(event)" style="background:var(--bg-primary); padding:18px; border-radius:12px; border:1px solid var(--border-light); margin-bottom:20px;">
+            <div style="font-weight:800; margin-bottom:10px;" id="cat-form-heading">➕ Create a New Category Row</div>
+            <div class="dual-forms-grid" style="gap:12px;">
+              <div class="form-group">
+                <label>Category Short Name (Used in Episode Dropdown) *</label>
+                <input type="text" id="cat-name" class="form-control" placeholder="e.g., Spiritual & Life / Business" required />
+              </div>
+              <div class="form-group">
+                <label>Row Heading Displayed on Site (English) *</label>
+                <input type="text" id="cat-title-en" class="form-control" placeholder="e.g., 🕉️ Spiritual & Life Wisdom Episodes" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Row Heading Displayed on Site (Telugu) *</label>
+              <input type="text" id="cat-title-te" class="form-control" placeholder="e.g., 🕉️ ఆధ్యాత్మిక & జీవన విధానం ఎపిసోడ్‌లు" required />
+            </div>
+            <div style="display:flex; gap:10px;">
+              <button type="submit" class="btn btn-primary" id="cat-submit-btn">➕ Save Category Row & Publish</button>
+              <button type="button" class="btn btn-secondary" onclick="editingCategoryIndex=-1; renderCurrentTab();">Reset</button>
+            </div>
+          </form>
+
+          <h3 style="font-size:1.15rem; font-weight:800; margin-bottom:12px;">Current Category Rows & Display Order (Top to Bottom)</h3>
+          ${cats
+            .map((c, idx) => {
+              const count = c.isAllRow
+                ? window.RR_DATA.episodes.length
+                : window.RR_DATA.episodes.filter((e) => e.category === c.name).length;
+              return `
+              <div class="cms-item-row" style="grid-template-columns: 50px 1fr auto;">
+                <div style="font-weight:900; font-size:1.1rem; color:var(--accent-crimson); text-align:center;">
+                  #${idx + 1}
+                </div>
+                <div>
+                  <div style="font-weight:800; font-size:1rem;">
+                    ${c.rowTitleEn}
+                    <span class="pill-badge ${c.visible !== false ? "pill-gold" : ""}" style="margin-left:6px;">
+                      ${c.name} (${count} Videos)
+                    </span>
+                  </div>
+                  <div style="font-size:0.82rem; color:var(--text-secondary); margin-top:2px;">Telugu: ${c.rowTitleTe}</div>
+                </div>
+                <div style="display:flex; gap:6px; align-items:center; flex-wrap:wrap;">
+                  <button class="ep-btn-sm" onclick="moveCategory(${idx}, -1)" ${idx === 0 ? "disabled" : ""} title="Move Row Up">⬆️ Up</button>
+                  <button class="ep-btn-sm" onclick="moveCategory(${idx}, 1)" ${idx === cats.length - 1 ? "disabled" : ""} title="Move Row Down">⬇️ Down</button>
+                  <button class="ep-btn-sm" onclick="toggleCategoryVisibility(${idx})">
+                    ${c.visible !== false ? "👁️ Visible" : "🙈 Hidden"}
+                  </button>
+                  <button class="ep-btn-sm" onclick="editCategory(${idx})">✏️ Edit</button>
+                  ${
+                    !c.isAllRow
+                      ? `<button class="ep-btn-sm" style="color:#B91C1C;" onclick="deleteCategory(${idx})">🗑️</button>`
+                      : ""
+                  }
+                </div>
+              </div>
+            `;
+            })
+            .join("")}
+        </div>
+      `;
+    }
+
+    async function moveCategory(idx, dir) {
+      const cats = window.RR_DATA.categories;
+      const target = idx + dir;
+      if (target < 0 || target >= cats.length) return;
+      const temp = cats[idx];
+      cats[idx] = cats[target];
+      cats[target] = temp;
+      await saveAllSiteDataToBackend();
+      renderCurrentTab();
+    }
+
+    async function toggleCategoryVisibility(idx) {
+      const c = window.RR_DATA.categories[idx];
+      c.visible = c.visible === false ? true : false;
+      await saveAllSiteDataToBackend();
+      renderCurrentTab();
+    }
+
+    function editCategory(idx) {
+      editingCategoryIndex = idx;
+      const c = window.RR_DATA.categories[idx];
+      document.getElementById("cat-form-heading").textContent = `✏️ Editing Category Row #${idx + 1}: ${c.name}`;
+      document.getElementById("cat-name").value = c.name;
+      document.getElementById("cat-title-en").value = c.rowTitleEn;
+      document.getElementById("cat-title-te").value = c.rowTitleTe;
+      document.getElementById("cat-submit-btn").textContent = "💾 Update Category Row & Publish";
+    }
+
+    async function saveCategoryForm(e) {
+      e.preventDefault();
+      const name = document.getElementById("cat-name").value.trim();
+      const rowTitleEn = document.getElementById("cat-title-en").value.trim();
+      const rowTitleTe = document.getElementById("cat-title-te").value.trim();
+
+      if (editingCategoryIndex >= 0) {
+        const old = window.RR_DATA.categories[editingCategoryIndex];
+        const oldName = old.name;
+        old.name = name;
+        old.rowTitleEn = rowTitleEn;
+        old.rowTitleTe = rowTitleTe;
+        // Update episodes that used the old category name
+        if (oldName !== name && !old.isAllRow) {
+          window.RR_DATA.episodes.forEach((ep) => {
+            if (ep.category === oldName) ep.category = name;
+          });
+        }
+        editingCategoryIndex = -1;
+      } else {
+        window.RR_DATA.categories.push({
+          id: "cat-" + Date.now(),
+          name,
+          rowTitleEn,
+          rowTitleTe,
+          isAllRow: false,
+          visible: true
+        });
+      }
+      await saveAllSiteDataToBackend();
+      renderCurrentTab();
+    }
+
+    async function deleteCategory(idx) {
+      if (!confirm("Delete this category row?")) return;
+      window.RR_DATA.categories.splice(idx, 1);
+      await saveAllSiteDataToBackend();
+      renderCurrentTab();
+    }
+
+    // ========================================================================
+    // TAB 3: VIRAL REELS CMS (With Auto-YouTube Shorts Thumbnail & Video Preview)
+    // ========================================================================
+    function renderReelsCMS(panel) {
+      const reels = window.RR_DATA.viralReels;
+      panel.innerHTML = `
+        <div class="cms-card">
+          <h2 style="font-size:1.4rem; font-weight:900; margin-bottom:6px;">🔥 Add / Edit Viral Reel (YouTube Shorts / IG Reel)</h2>
+          <p style="font-size:0.86rem; color:var(--text-secondary); margin-bottom:14px;">
+            Paste a YouTube Shorts link (e.g. <code>https://www.youtube.com/shorts/yHt6xzpRjmA</code>)—it will automatically generate the cover thumbnail AND play the video inside the Reel preview modal!
+          </p>
+          <form onsubmit="saveReelForm(event)">
+            <div class="dual-forms-grid" style="gap:12px;">
+              <div class="form-group">
+                <label>Reel Title (English) *</label>
+                <input type="text" id="rl-title" class="form-control" required />
+              </div>
+              <div class="form-group">
+                <label>Reel Title (Telugu) *</label>
+                <input type="text" id="rl-title-te" class="form-control" required />
+              </div>
+            </div>
+            <div class="dual-forms-grid" style="gap:12px;">
+              <div class="form-group">
+                <label>Guest & Episode Reference *</label>
+                <input type="text" id="rl-guest" class="form-control" placeholder="e.g., Bandla Ganesh (Ep 04)" required />
+              </div>
+              <div class="form-group">
+                <label>Views Count *</label>
+                <input type="text" id="rl-views" class="form-control" placeholder="e.g., 30,31,238 Views" required />
+              </div>
+            </div>
+            <div class="dual-forms-grid" style="gap:12px;">
+              <div class="form-group">
+                <label>YouTube Shorts / Reel Video Link *</label>
+                <div style="display:flex; gap:8px;">
+                  <input type="text" id="rl-video" class="form-control" placeholder="https://www.youtube.com/shorts/..." oninput="autoFetchYouTubeThumb('rl-video', 'rl-thumb')" required />
+                  <button type="button" class="btn btn-gold" style="white-space:nowrap; padding:8px 14px;" onclick="autoFetchYouTubeThumb('rl-video', 'rl-thumb')">
+                    ⚡ Auto-Thumb
+                  </button>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Reel Cover Image URL (Auto-filled or Upload Custom Image) *</label>
+                <div class="upload-box">
+                  <input type="text" id="rl-thumb" class="form-control" style="flex:1;" placeholder="Auto-filled from Shorts URL or upload image" required />
+                  <label class="btn btn-secondary" style="padding:8px 14px; cursor:pointer;">
+                    📁 Upload Cover
+                    <input type="file" accept="image/*" style="display:none;" onchange="uploadImageFile(this, 'rl-thumb')" />
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Key Quote / Story Description *</label>
+              <textarea id="rl-quote" rows="2" class="form-control" required></textarea>
+            </div>
+            <div style="display:flex; gap:10px;">
+              <button type="submit" class="btn btn-primary" id="rl-submit-btn">➕ Save Viral Reel & Publish</button>
+              <button type="button" class="btn btn-secondary" onclick="editingReelIndex=-1; renderCurrentTab();">Clear</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="cms-card">
+          <h3 style="margin-bottom:14px;">Current Viral Reels (${reels.length})</h3>
+          ${reels
+            .map((r, i) => {
+              const thumbSrc = resolveThumbUrl(r.thumbnail, r.videoUrl);
+              return `
+              <div class="cms-item-row">
+                <img src="${thumbSrc}" alt="${r.title}" style="height:90px; width:64px; object-fit:cover;" />
+                <div>
+                  <div style="font-size:0.75rem; font-weight:800; color:var(--accent-crimson);">🔥 ${r.views} • ${r.guest}</div>
+                  <div style="font-weight:800;">${r.title}</div>
+                  <div style="font-size:0.82rem; color:var(--text-secondary);">${r.titleTe}</div>
+                </div>
+                <div style="display:flex; gap:8px;">
+                  <button class="ep-btn-sm" onclick="editReel(${i})">✏️ Edit</button>
+                  <button class="ep-btn-sm" style="color:#B91C1C;" onclick="window.RR_DATA.viralReels.splice(${i},1); saveAllSiteDataToBackend(); renderCurrentTab();">🗑️ Remove</button>
+                </div>
+              </div>
+            `;
+            })
+            .join("")}
+        </div>
+      `;
+    }
+
+    function editReel(idx) {
+      editingReelIndex = idx;
+      const r = window.RR_DATA.viralReels[idx];
+      document.getElementById("rl-title").value = r.title || "";
+      document.getElementById("rl-title-te").value = r.titleTe || "";
+      document.getElementById("rl-guest").value = r.guest || "";
+      document.getElementById("rl-views").value = r.views || "";
+      document.getElementById("rl-video").value = r.videoUrl || r.thumbnail || "";
+      document.getElementById("rl-thumb").value = resolveThumbUrl(r.thumbnail, r.videoUrl) || "";
+      document.getElementById("rl-quote").value = r.quote || "";
+      document.getElementById("rl-submit-btn").textContent = "💾 Update Viral Reel & Publish";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    async function saveReelForm(e) {
+      e.preventDefault();
+      const videoUrl = document.getElementById("rl-video").value.trim();
+      let thumb = document.getElementById("rl-thumb").value.trim();
+      thumb = resolveThumbUrl(thumb, videoUrl);
+
+      const obj = {
+        id: editingReelIndex >= 0 ? window.RR_DATA.viralReels[editingReelIndex].id : "reel-" + Date.now(),
+        title: document.getElementById("rl-title").value.trim(),
+        titleTe: document.getElementById("rl-title-te").value.trim(),
+        category: "Entertainment",
+        views: document.getElementById("rl-views").value.trim(),
+        likes: "50K+ Likes",
+        guest: document.getElementById("rl-guest").value.trim(),
+        videoUrl,
+        thumbnail: thumb,
+        quote: document.getElementById("rl-quote").value.trim()
+      };
+
+      if (editingReelIndex >= 0) {
+        window.RR_DATA.viralReels[editingReelIndex] = obj;
+        editingReelIndex = -1;
+      } else {
+        window.RR_DATA.viralReels.unshift(obj);
+      }
+      await saveAllSiteDataToBackend();
+      renderCurrentTab();
+    }
+
+    // ========================================================================
+    // TAB 4: SITE TITLES, HEADINGS & BADGES EDITOR
+    // ========================================================================
+    function renderHeadingsCMS(panel) {
+      const en = window.RR_DATA.i18n.en;
+      const te = window.RR_DATA.i18n.te;
+      const fields = [
+        { key: "catalogBadge", label: "Episodes Catalog Top Badge (e.g., RAJA RAVEENDAR TALKS - LEGACY LOUNGE)" },
+        { key: "catalogTitle", label: "Episodes Catalog Main Heading (e.g., Raja’s Legacy Lounge — All 15 Published Episodes)" },
+        { key: "catalogSub", label: "Episodes Catalog Subtitle / Description" },
+        { key: "personaBadge", label: "Profile Section Top Badge (e.g., PROFILE & GUIDING PHILOSOPHY)" },
+        { key: "personaTitle", label: "Profile Section Main Heading (e.g., What Sets Raja Raveendar & Legacy Lounge Apart)" },
+        { key: "personaSub", label: "Profile Section Subtitle" },
+        { key: "milestoneBadge", label: "Top Announcement Ribbon Text" },
+        { key: "brandSub", label: "Header Logo Subtitle (Below RAJA RAVEENDAR)" },
+        { key: "heroTag", label: "Hero Banner Top Badge" },
+        { key: "heroTitle", label: "Hero Banner Main Heading" },
+        { key: "heroTitleTe", label: "Hero Banner Highlight Quote / Subheading" },
+        { key: "heroDesc", label: "Hero Banner Description Paragraph" },
+        { key: "reelsBadge", label: "Viral Reels Section Badge" },
+        { key: "reelsTitle", label: "Viral Reels Section Heading" },
+        { key: "reelsSub", label: "Viral Reels Section Subtitle" },
+        { key: "statsTitle", label: "Analytics Section Heading" },
+        { key: "guestsTitle", label: "Guests Section Heading" },
+        { key: "communityTitle", label: "Community Discussions Section Heading" },
+        { key: "sponsorsTitle", label: "Brand Partners Section Heading" },
+        { key: "networkTitle", label: "Creators & Interns Network Section Heading" }
+      ];
+
+      panel.innerHTML = `
+        <div class="cms-card">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+            <div>
+              <h2 style="font-size:1.4rem; font-weight:900;">✏️ Edit Website Titles, Badges & Section Headings</h2>
+              <p style="font-size:0.86rem; color:var(--text-secondary);">
+                Change any heading or badge below (in English & Telugu) and click <strong>Save & Publish</strong>.
+              </p>
+            </div>
+            <button class="btn btn-primary" onclick="saveAllSiteDataToBackend()">💾 Save Headings Live</button>
+          </div>
+
+          ${fields
+            .map(
+              (f) => `
+            <div style="background:var(--bg-primary); padding:14px 16px; border-radius:12px; border:1px solid var(--border-light); margin-bottom:12px;">
+              <div style="font-weight:800; font-size:0.86rem; color:var(--accent-crimson); margin-bottom:8px;">${f.label}</div>
+              <div class="dual-forms-grid" style="gap:12px;">
+                <div class="form-group" style="margin-bottom:0;">
+                  <label>English Text</label>
+                  <input type="text" class="form-control" value="${(en[f.key] || "").replace(/"/g, "&quot;")}"
+                         oninput="window.RR_DATA.i18n.en['${f.key}'] = this.value" />
+                </div>
+                <div class="form-group" style="margin-bottom:0;">
+                  <label>Telugu Text (తెలుగు)</label>
+                  <input type="text" class="form-control" value="${(te[f.key] || "").replace(/"/g, "&quot;")}"
+                         oninput="window.RR_DATA.i18n.te['${f.key}'] = this.value" />
+                </div>
+              </div>
+            </div>
+          `
+            )
+            .join("")}
+
+          <button class="btn btn-primary" style="width:100%;" onclick="saveAllSiteDataToBackend()">
+            💾 Save & Publish All Title Changes Live
+          </button>
+        </div>
+      `;
+    }
+
+    // ========================================================================
+    // TAB 5: PROFILE & GUIDING PHILOSOPHY EDITOR (TEXT & IMAGE)
+    // ========================================================================
+    function renderPersonasCMS(panel) {
+      const en = window.RR_DATA.i18n.en;
+      const personas = window.RR_DATA.personas;
+      const activeP = personas[editingPersonaIndex] || personas[0];
+
+      panel.innerHTML = `
+        <div class="cms-card">
+          <h2 style="font-size:1.4rem; font-weight:900; margin-bottom:6px;">🎭 Edit "Profile & Guiding Philosophy" Section & Images</h2>
+          <p style="font-size:0.86rem; color:var(--text-secondary); margin-bottom:16px;">
+            Edit the section heading (<em>PROFILE & GUIDING PHILOSOPHY / What Sets Raja Raveendar & Legacy Lounge Apart</em>) and each of the 4 profile tabs (including text, bullet points, and uploading a photo).
+          </p>
+
+          <!-- Section Header Fields -->
+          <div style="background:var(--bg-primary); padding:16px; border-radius:12px; border:1px solid var(--border-light); margin-bottom:20px;">
+            <div style="font-weight:800; margin-bottom:10px; color:var(--accent-crimson);">Section Header Texts</div>
+            <div class="dual-forms-grid" style="gap:12px;">
+              <div class="form-group" style="margin-bottom:8px;">
+                <label>Top Badge Text</label>
+                <input type="text" class="form-control" value="${(en.personaBadge || "PROFILE & GUIDING PHILOSOPHY").replace(/"/g, "&quot;")}"
+                       oninput="window.RR_DATA.i18n.en.personaBadge = this.value" />
+              </div>
+              <div class="form-group" style="margin-bottom:8px;">
+                <label>Main Section Heading</label>
+                <input type="text" class="form-control" value="${(en.personaTitle || "").replace(/"/g, "&quot;")}"
+                       oninput="window.RR_DATA.i18n.en.personaTitle = this.value" />
+              </div>
+            </div>
+            <div class="form-group" style="margin-bottom:0;">
+              <label>Section Subtitle</label>
+              <input type="text" class="form-control" value="${(en.personaSub || "").replace(/"/g, "&quot;")}"
+                     oninput="window.RR_DATA.i18n.en.personaSub = this.value" />
+            </div>
+          </div>
+
+          <!-- Select which of the 4 Profile Tabs to Edit -->
+          <div style="margin-bottom:16px;">
+            <div style="font-weight:800; font-size:0.9rem; margin-bottom:8px;">Select Profile Tab to Edit Text & Image:</div>
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+              ${personas
+                .map(
+                  (p, idx) => `
+                <button type="button" class="persona-tab-btn ${idx === editingPersonaIndex ? "active" : ""}"
+                        onclick="editingPersonaIndex=${idx}; renderCurrentTab();">
+                  Tab ${idx + 1}: ${p.role}
+                </button>
+              `
+                )
+                .join("")}
+            </div>
+          </div>
+
+          <!-- Active Profile Tab Editor -->
+          <form onsubmit="savePersonaTabForm(event)" style="background:var(--bg-primary); padding:20px; border-radius:14px; border:1px solid var(--border-light);">
+            <div style="display:grid; grid-template-columns: 1fr 240px; gap:20px; align-items:start;">
+              <div>
+                <div class="dual-forms-grid" style="gap:12px;">
+                  <div class="form-group">
+                    <label>Tab Button Title (English) *</label>
+                    <input type="text" id="p-role" class="form-control" value="${activeP.role.replace(/"/g, "&quot;")}" required />
+                  </div>
+                  <div class="form-group">
+                    <label>Tab Button Title (Telugu) *</label>
+                    <input type="text" id="p-role-te" class="form-control" value="${(activeP.roleTe || "").replace(/"/g, "&quot;")}" required />
+                  </div>
+                </div>
+                <div class="dual-forms-grid" style="gap:12px;">
+                  <div class="form-group">
+                    <label>Small Badge Text *</label>
+                    <input type="text" id="p-badge" class="form-control" value="${activeP.badge.replace(/"/g, "&quot;")}" required />
+                  </div>
+                  <div class="form-group">
+                    <label>Main Headline *</label>
+                    <input type="text" id="p-headline" class="form-control" value="${activeP.headline.replace(/"/g, "&quot;")}" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Paragraph Description *</label>
+                  <textarea id="p-desc" rows="3" class="form-control" required>${activeP.description}</textarea>
+                </div>
+                <div class="form-group">
+                  <label>3 Key Bullet Highlights (One per line) *</label>
+                  <textarea id="p-highlights" rows="3" class="form-control" required>${(activeP.highlights || []).join("\n")}</textarea>
+                </div>
+                <div class="form-group">
+                  <label>Profile Image URL or Upload from Computer *</label>
+                  <div class="upload-box">
+                    <input type="text" id="p-img" class="form-control" style="flex:1;" value="${activeP.image}" oninput="document.getElementById('p-img-preview').src = this.value" required />
+                    <label class="btn btn-secondary" style="padding:8px 14px; cursor:pointer;">
+                      📁 Upload Photo
+                      <input type="file" accept="image/*" style="display:none;" onchange="uploadImageFile(this, 'p-img', 'p-img-preview')" />
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <label style="font-size:0.8rem; font-weight:800; display:block; margin-bottom:6px;">Live Image Preview:</label>
+                <img id="p-img-preview" src="${activeP.image}" alt="${activeP.role}" style="width:100%; aspect-ratio:16/10; object-fit:cover; border-radius:12px; border:1px solid var(--border-light);" />
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; margin-top:12px;">
+              💾 Save Profile Section & Publish Live
+            </button>
+          </form>
+        </div>
+      `;
+    }
+
+    async function savePersonaTabForm(e) {
+      e.preventDefault();
+      const p = window.RR_DATA.personas[editingPersonaIndex];
+      p.role = document.getElementById("p-role").value.trim();
+      p.roleTe = document.getElementById("p-role-te").value.trim();
+      p.badge = document.getElementById("p-badge").value.trim();
+      p.headline = document.getElementById("p-headline").value.trim();
+      p.description = document.getElementById("p-desc").value.trim();
+      p.highlights = document
+        .getElementById("p-highlights")
+        .value.split("\n")
+        .map((s) => s.trim())
+        .filter(Boolean);
+      p.image = document.getElementById("p-img").value.trim();
+
+      await saveAllSiteDataToBackend();
+      renderCurrentTab();
+    }
+
+    // ========================================================================
+    // TAB 6: GUESTS PROFILES CMS (Add, Edit, Upload Photo & Reorder)
+    // ========================================================================
+    function renderGuestsCMS(panel) {
+      const guests = window.RR_DATA.guests;
+      const cats = window.RR_DATA.categories.filter((c) => !c.isAllRow);
+      panel.innerHTML = `
+        <div class="cms-card">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+            <div>
+              <h2 style="font-size:1.4rem; font-weight:900;" id="g-form-heading">
+                ${editingGuestIndex >= 0 ? `✏️ Editing Guest Profile: ${guests[editingGuestIndex].name}` : "🌟 Add / Edit Distinguished Guest Profile"}
+              </h2>
+              <p style="font-size:0.85rem; color:var(--text-secondary);">
+                Click <strong>✏️ Edit</strong> on any guest below to modify their name, designation, photo, bio, or tags.
+              </p>
+            </div>
+            <button type="button" class="btn btn-secondary" style="padding:8px 16px;" onclick="resetGuestForm()">🔄 Clear / Add New</button>
+          </div>
+
+          <form onsubmit="saveGuestProfileForm(event)">
+            <div style="display:grid; grid-template-columns: 1fr 180px; gap:20px; align-items:start;">
+              <div>
+                <div class="dual-forms-grid" style="gap:12px;">
+                  <div class="form-group">
+                    <label>Guest Full Name *</label>
+                    <input type="text" id="g-name" class="form-control" placeholder="e.g., Dr. Nori Dattatreyudu" required />
+                  </div>
+                  <div class="form-group">
+                    <label>Domain / Category *</label>
+                    <select id="g-dom" class="form-control">
+                      ${cats.map((c) => `<option value="${c.name}">${c.name}</option>`).join("")}
+                    </select>
+                  </div>
+                </div>
+                <div class="dual-forms-grid" style="gap:12px;">
+                  <div class="form-group">
+                    <label>Designation / Title *</label>
+                    <input type="text" id="g-title" class="form-control" placeholder="e.g., Padma Bhushan Awardee & World-Renowned Oncologist" required />
+                  </div>
+                  <div class="form-group">
+                    <label>Organization / Affiliation *</label>
+                    <input type="text" id="g-org" class="form-control" placeholder="e.g., Memorial Sloan Kettering / KIMS Cuddles" value="Raja’s Legacy Lounge" required />
+                  </div>
+                </div>
+                <div class="dual-forms-grid" style="gap:12px;">
+                  <div class="form-group">
+                    <label>Episode Reference *</label>
+                    <input type="text" id="g-ep" class="form-control" placeholder="e.g., Episode 09" required />
+                  </div>
+                  <div class="form-group">
+                    <label>Specialties / Highlights (Comma-separated)</label>
+                    <input type="text" id="g-spec" class="form-control" placeholder="e.g., Cancer Cure Innovations, Padma Bhushan 2026" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Guest Photo (Upload Photo from Computer or Paste Image URL) *</label>
+                  <div class="upload-box">
+                    <input type="text" id="g-avatar" class="form-control" style="flex:1;" placeholder="Paste image URL or click Upload Guest Photo..." oninput="updateGuestPhotoPreview(this.value)" required />
+                    <label class="btn btn-secondary" style="padding:8px 14px; cursor:pointer;">
+                      📁 Upload Guest Photo
+                      <input type="file" accept="image/*" style="display:none;" onchange="uploadImageFile(this, 'g-avatar', 'g-avatar-preview')" />
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Bio Summary *</label>
+                  <textarea id="g-bio" rows="3" class="form-control" placeholder="Short biography and episode highlights..." required></textarea>
+                </div>
+              </div>
+
+              <div style="text-align:center; background:var(--bg-primary); padding:16px; border-radius:14px; border:1px solid var(--border-light);">
+                <label style="font-size:0.78rem; font-weight:800; display:block; margin-bottom:10px; color:var(--text-secondary);">Photo Preview</label>
+                <img id="g-avatar-preview" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Guest Preview" style="width:110px; height:110px; border-radius:50%; object-fit:cover; border:3px solid var(--accent-crimson); margin:0 auto;" />
+              </div>
+            </div>
+
+            <div style="display:flex; gap:10px; margin-top:8px;">
+              <button type="submit" class="btn btn-primary" id="g-submit-btn">
+                ${editingGuestIndex >= 0 ? "💾 Update Guest Profile & Publish" : "➕ Add Guest Profile & Publish"}
+              </button>
+              <button type="button" class="btn btn-secondary" onclick="resetGuestForm()">Cancel / Clear</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="cms-card">
+          <h3 style="margin-bottom:14px;">All Featured Guests (${guests.length})</h3>
+          ${guests
+            .map(
+              (g, i) => `
+            <div class="cms-item-row" style="${editingGuestIndex === i ? "border:2px solid var(--accent-crimson); background:#FFF5F5;" : ""}">
+              <img src="${g.avatar}" alt="${g.name}" style="width:66px; height:66px; border-radius:50%; object-fit:cover;" />
+              <div>
+                <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                  <span style="font-weight:800; font-size:1rem;">${g.name} (${g.episodeRef})</span>
+                  <span class="pill-badge pill-crimson">${g.domain || "Guest"}</span>
+                </div>
+                <div style="font-size:0.82rem; font-weight:700; color:var(--accent-gold); margin-top:2px;">${g.title} • ${g.org || "Raja’s Legacy Lounge"}</div>
+                <div style="font-size:0.82rem; color:var(--text-secondary); margin-top:3px;">${g.bio}</div>
+              </div>
+              <div style="display:flex; gap:6px; flex-wrap:wrap;">
+                <button class="ep-btn-sm" onclick="moveGuest(${i}, -1)" ${i === 0 ? "disabled" : ""} title="Move Up">⬆️</button>
+                <button class="ep-btn-sm" onclick="moveGuest(${i}, 1)" ${i === guests.length - 1 ? "disabled" : ""} title="Move Down">⬇️</button>
+                <button class="ep-btn-sm" style="border-color:var(--accent-crimson); color:var(--accent-crimson);" onclick="editGuest(${i})">✏️ Edit</button>
+                <button class="ep-btn-sm" style="color:#B91C1C;" onclick="deleteGuest(${i})">🗑️ Remove</button>
+              </div>
+            </div>
+          `
+            )
+            .join("")}
+        </div>
+      `;
+
+      if (editingGuestIndex >= 0 && guests[editingGuestIndex]) {
+        populateGuestFormInputs(guests[editingGuestIndex]);
+      }
+    }
+
+    function updateGuestPhotoPreview(url) {
+      const img = document.getElementById("g-avatar-preview");
+      if (img && url && url.trim()) img.src = url.trim();
+    }
+
+    function populateGuestFormInputs(g) {
+      const domSelect = document.getElementById("g-dom");
+      if (domSelect && g.domain && ![...domSelect.options].some((o) => o.value === g.domain)) {
+        const opt = document.createElement("option");
+        opt.value = g.domain;
+        opt.textContent = g.domain;
+        domSelect.appendChild(opt);
+      }
+      document.getElementById("g-name").value = g.name || "";
+      document.getElementById("g-dom").value = g.domain || "Entertainment";
+      document.getElementById("g-title").value = g.title || "";
+      document.getElementById("g-org").value = g.org || "Raja’s Legacy Lounge";
+      document.getElementById("g-ep").value = g.episodeRef || "";
+      document.getElementById("g-spec").value = (g.specialties || []).join(", ");
+      document.getElementById("g-avatar").value = g.avatar || "";
+      document.getElementById("g-bio").value = g.bio || "";
+      updateGuestPhotoPreview(g.avatar);
+    }
+
+    function editGuest(idx) {
+      editingGuestIndex = idx;
+      renderCurrentTab();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function resetGuestForm() {
+      editingGuestIndex = -1;
+      renderCurrentTab();
+    }
+
+    async function moveGuest(idx, dir) {
+      const target = idx + dir;
+      if (target < 0 || target >= window.RR_DATA.guests.length) return;
+      const temp = window.RR_DATA.guests[idx];
+      window.RR_DATA.guests[idx] = window.RR_DATA.guests[target];
+      window.RR_DATA.guests[target] = temp;
+      editingGuestIndex = -1;
+      await saveAllSiteDataToBackend();
+      renderCurrentTab();
+    }
+
+    async function deleteGuest(idx) {
+      if (!confirm(`Remove "${window.RR_DATA.guests[idx].name}" from Featured Guests?`)) return;
+      window.RR_DATA.guests.splice(idx, 1);
+      editingGuestIndex = -1;
+      await saveAllSiteDataToBackend();
+      renderCurrentTab();
+    }
+
+    async function saveGuestProfileForm(e) {
+      e.preventDefault();
+      const domVal = document.getElementById("g-dom").value;
+      const specRaw = document.getElementById("g-spec").value.trim();
+      const specialties = specRaw
+        ? specRaw.split(",").map((s) => s.trim()).filter(Boolean)
+        : [domVal, "Legacy Lounge Guest"];
+
+      const existing = editingGuestIndex >= 0 ? window.RR_DATA.guests[editingGuestIndex] : null;
+      const guestObj = {
+        id: existing ? existing.id : "guest-" + Date.now(),
+        name: document.getElementById("g-name").value.trim(),
+        domain: domVal,
+        title: document.getElementById("g-title").value.trim(),
+        org: document.getElementById("g-org").value.trim() || "Raja’s Legacy Lounge",
+        episodeRef: document.getElementById("g-ep").value.trim(),
+        avatar: document.getElementById("g-avatar").value.trim(),
+        bio: document.getElementById("g-bio").value.trim(),
+        specialties,
+        messages: existing && existing.messages ? existing.messages : []
+      };
+
+      if (editingGuestIndex >= 0) {
+        window.RR_DATA.guests[editingGuestIndex] = guestObj;
+        editingGuestIndex = -1;
+      } else {
+        window.RR_DATA.guests.unshift(guestObj);
+      }
+      await saveAllSiteDataToBackend();
+      renderCurrentTab();
+    }
+
+    // ========================================================================
+    // TAB 7: BRAND PARTNERS (SPONSORS) CMS (Add, Edit & Reorder)
+    // ========================================================================
+    function renderSponsorsCMS(panel) {
+      const sps = window.RR_DATA.sponsors;
+      panel.innerHTML = `
+        <div class="cms-card">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+            <div>
+              <h2 style="font-size:1.4rem; font-weight:900;">
+                ${editingSponsorIndex >= 0 ? `✏️ Editing Brand Partner: ${sps[editingSponsorIndex].name}` : "🤝 Add / Edit Official Brand Partner / Sponsor"}
+              </h2>
+              <p style="font-size:0.85rem; color:var(--text-secondary);">
+                Click <strong>✏️ Edit</strong> on any brand partner below to update their name, tier, tagline, or exclusive offer.
+              </p>
+            </div>
+            <button type="button" class="btn btn-secondary" style="padding:8px 16px;" onclick="editingSponsorIndex=-1; renderCurrentTab();">🔄 Clear / Add New</button>
+          </div>
+          <form onsubmit="saveSponsorForm(event)">
+            <div class="dual-forms-grid" style="gap:12px;">
+              <div class="form-group">
+                <label>Brand Name *</label>
+                <input type="text" id="sp-name" class="form-control" placeholder="e.g., 360 Life Luxury Residences" required />
+              </div>
+              <div class="form-group">
+                <label>Partnership Tier / Category *</label>
+                <input type="text" id="sp-tier" class="form-control" placeholder="e.g., Presenting Luxury Partner" required />
+              </div>
+            </div>
+            <div class="dual-forms-grid" style="gap:12px;">
+              <div class="form-group">
+                <label>Logo Badge Text *</label>
+                <input type="text" id="sp-logo" class="form-control" placeholder="e.g., 360 LIFE" required />
+              </div>
+              <div class="form-group">
+                <label>Integration Note *</label>
+                <input type="text" id="sp-int" class="form-control" value="Official Brand Partner – Raja’s Legacy Lounge" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Brand Description / Tagline *</label>
+              <input type="text" id="sp-tag" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label>Exclusive Viewer Offer / Callout *</label>
+              <input type="text" id="sp-offer" class="form-control" required />
+            </div>
+            <div style="display:flex; gap:10px;">
+              <button type="submit" class="btn btn-primary">
+                ${editingSponsorIndex >= 0 ? "💾 Update Brand Partner & Publish" : "➕ Add Brand Partner & Publish"}
+              </button>
+              <button type="button" class="btn btn-secondary" onclick="editingSponsorIndex=-1; renderCurrentTab();">Cancel / Clear</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="cms-card">
+          <h3 style="margin-bottom:14px;">Active Brand Partners (${sps.length})</h3>
+          ${sps
+            .map(
+              (s, i) => `
+            <div class="cms-item-row" style="grid-template-columns: 1fr auto; ${editingSponsorIndex === i ? "border:2px solid var(--accent-crimson); background:#FFF5F5;" : ""}">
+              <div>
+                <div style="font-weight:800; font-size:1rem;">${s.name} <span class="pill-badge pill-crimson">${s.tier}</span></div>
+                <div style="font-size:0.84rem; color:var(--text-secondary); margin-top:4px;">${s.tagline}</div>
+                <div style="font-size:0.8rem; font-weight:700; color:#92400E; margin-top:4px;">Offer: ${s.exclusiveOffer}</div>
+              </div>
+              <div style="display:flex; gap:6px; align-items:center;">
+                <button class="ep-btn-sm" style="border-color:var(--accent-crimson); color:var(--accent-crimson);" onclick="editSponsor(${i})">✏️ Edit</button>
+                <button class="ep-btn-sm" style="color:#B91C1C;" onclick="window.RR_DATA.sponsors.splice(${i},1); editingSponsorIndex=-1; saveAllSiteDataToBackend(); renderCurrentTab();">🗑️ Remove</button>
+              </div>
+            </div>
+          `
+            )
+            .join("")}
+        </div>
+      `;
+
+      if (editingSponsorIndex >= 0 && sps[editingSponsorIndex]) {
+        const s = sps[editingSponsorIndex];
+        document.getElementById("sp-name").value = s.name || "";
+        document.getElementById("sp-tier").value = s.tier || "";
+        document.getElementById("sp-logo").value = s.logoText || (s.name || "").toUpperCase();
+        document.getElementById("sp-int").value = s.integration || "Official Brand Partner – Raja’s Legacy Lounge";
+        document.getElementById("sp-tag").value = s.tagline || "";
+        document.getElementById("sp-offer").value = s.exclusiveOffer || "";
+      }
+    }
+
+    function editSponsor(idx) {
+      editingSponsorIndex = idx;
+      renderCurrentTab();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    async function saveSponsorForm(e) {
+      e.preventDefault();
+      const name = document.getElementById("sp-name").value.trim();
+      const existing = editingSponsorIndex >= 0 ? window.RR_DATA.sponsors[editingSponsorIndex] : null;
+      const spObj = {
+        id: existing ? existing.id : "sp-" + Date.now(),
+        name,
+        tier: document.getElementById("sp-tier").value.trim(),
+        category: document.getElementById("sp-tier").value.trim(),
+        logoText: document.getElementById("sp-logo").value.trim() || name.toUpperCase(),
+        accentColor: existing && existing.accentColor ? existing.accentColor : "#C8102E",
+        tagline: document.getElementById("sp-tag").value.trim(),
+        integration: document.getElementById("sp-int").value.trim() || "Official Brand Partner – Raja’s Legacy Lounge",
+        exclusiveOffer: document.getElementById("sp-offer").value.trim(),
+        website: "#sponsors-section"
+      };
+
+      if (editingSponsorIndex >= 0) {
+        window.RR_DATA.sponsors[editingSponsorIndex] = spObj;
+        editingSponsorIndex = -1;
+      } else {
+        window.RR_DATA.sponsors.push(spObj);
+      }
+      await saveAllSiteDataToBackend();
+      renderCurrentTab();
+    }
+
+    // ========================================================================
+    // TAB 8: SOCIAL MEDIA VIEWS & FOLLOWERS CMS
+    // ========================================================================
+    function renderStatsCMS(panel) {
+      const stats = window.RR_DATA.socialStats;
+      panel.innerHTML = `
+        <div class="cms-card">
+          <h2 style="font-size:1.4rem; font-weight:900; margin-bottom:8px;">📊 Update Views & Followers Numbers</h2>
+          <p style="font-size:0.88rem; color:var(--text-secondary); margin-bottom:18px;">
+            Edit the numbers below whenever your YouTube Subscribers, Views, Instagram Reels, or Facebook Views grow, and click Save.
+          </p>
+          ${stats
+            .map(
+              (s, i) => `
+            <div style="background:var(--bg-primary); padding:16px; border-radius:12px; border:1px solid var(--border-light); margin-bottom:12px;">
+              <div style="font-weight:800; margin-bottom:8px;">${s.icon} ${s.label} (${s.platform})</div>
+              <div class="dual-forms-grid" style="gap:12px;">
+                <div class="form-group" style="margin-bottom:0;">
+                  <label>Main Number (e.g. 689.3 or 8.2)</label>
+                  <input type="text" class="form-control" value="${s.value}" oninput="window.RR_DATA.socialStats[${i}].value = this.value" />
+                </div>
+                <div class="form-group" style="margin-bottom:0;">
+                  <label>Suffix (e.g. K+, Cr+, M Views)</label>
+                  <input type="text" class="form-control" value="${s.suffix}" oninput="window.RR_DATA.socialStats[${i}].suffix = this.value" />
+                </div>
+              </div>
+              <div class="form-group" style="margin-top:8px; margin-bottom:0;">
+                <label>Subtext (Followers / Reach Note)</label>
+                <input type="text" class="form-control" value="${s.subtext}" oninput="window.RR_DATA.socialStats[${i}].subtext = this.value" />
+              </div>
+            </div>
+          `
+            )
+            .join("")}
+          <button class="btn btn-primary" onclick="saveAllSiteDataToBackend()">💾 Save Updated Views & Followers</button>
+        </div>
+      `;
+    }
+
+    // ========================================================================
+    // TAB 9: AUDIENCE & NETWORK INBOX TABS
+    // ========================================================================
+    function renderInboxTab(panel, tabKey) {
+      let list = [];
+      let title = "";
+      if (tabKey === "inbox-guests") {
+        title = "💬 Viewer Queries, Feedback & Business Leads for Guests";
+        list = submissionsData.guestMessages || [];
+      } else if (tabKey === "inbox-sponsors") {
+        title = "💼 Title Sponsor, Brand Partner & Brand Inquiries";
+        list = [...(submissionsData.sponsorInquiries || []), ...(submissionsData.brandMessages || [])];
+      } else if (tabKey === "inbox-creators") {
+        title = "🎬 Creator Talent Pool & Influencer Registrations";
+        list = submissionsData.creatorRegistrations || [];
+      } else if (tabKey === "inbox-interns") {
+        title = "🎓 Internship Applications (SEO, Editing, DOP, Music, Research, AI)";
+        list = submissionsData.internshipApplications || [];
+      } else if (tabKey === "inbox-vvip") {
+        title = "👑 VVIP Guest Story & Profile Registrations";
+        list = submissionsData.vvipApplications || [];
+      }
+
+      panel.innerHTML = `
+        <div class="cms-card">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+            <h2 style="font-size:1.35rem; font-weight:900;">${title} (${list.length})</h2>
+            <button class="btn btn-secondary" onclick="fetchSubmissions().then(()=>renderCurrentTab())">🔄 Refresh Inbox</button>
+          </div>
+          ${
+            list.length === 0
+              ? `<p style="color:var(--text-muted); padding:20px 0;">No submissions in this inbox yet.</p>`
+              : list
+                  .map(
+                    (item) => `
+              <div style="background:var(--bg-primary); border:1px solid var(--border-light); border-left:4px solid var(--accent-crimson); border-radius:12px; padding:16px; margin-bottom:12px;">
+                <div style="display:flex; justify-content:space-between; font-size:0.78rem; color:var(--text-muted); font-weight:700; margin-bottom:6px;">
+                  <span>🕒 ${item.timestamp || "Recent"}</span>
+                  <span class="pill-badge pill-gold">${item.category || item.type || "Submission"}</span>
+                </div>
+                <pre style="white-space:pre-wrap; font-family:inherit; font-size:0.9rem; color:var(--text-primary);">${JSON.stringify(item, null, 2)}</pre>
+              </div>
+            `
+                  )
+                  .join("")
+          }
+        </div>
+      `;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      fetchSubmissions();
+      renderCurrentTab();
+    });
+  </script>
+</body>
+</html>

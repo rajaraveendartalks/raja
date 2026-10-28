@@ -1,0 +1,1232 @@
+{
+  "i18n": {
+    "en": {
+      "brandSub": "ACTOR • PRODUCER • CELEBRITY MANAGER • HOST OF RAJA'S LEGACY LOUNGE",
+      "navCatalog": "Legacy Lounge (15 Eps)",
+      "navAnalytics": "Channel Analytics",
+      "navGuests": "Guests & Connect",
+      "navCommunity": "Viewer Discussions & Q&A",
+      "navSponsors": "Brand Partners (6)",
+      "navNetwork": "Creators & Interns Network",
+      "milestoneBadge": "🎬 “జీవితం ఒక ప్రయాణం… ప్రతి మనిషి ఒక కథ” (Life is a journey… every person has a story) — 15 Episodes of Raja’s Legacy Lounge!",
+      "heroTag": "RAJA’S LEGACY LOUNGE • RAJA RAVEENDAR TALKS",
+      "heroTitle": "A Three-Decade Cinematic Journey & The Voice Behind Raja’s Legacy Lounge",
+      "heroTitleTe": "“జీవితం ఒక ప్రయాణం… ప్రతి మనిషి ఒక కథ” — రాజా రవీందర్ టాక్స్",
+      "heroDesc": "With a career spanning over three decades and hundreds of films in the Telugu film industry, Raja Raveendar bridges Film & Entertainment Personalities, Political Leaders, Policy Makers, Doctors & Wellness Coaches, Public Intellectuals, and Tech Innovators through unscripted, impactful long-form conversations.",
+      "watchFeaturedBtn": "▶ Watch Ep 15: Raghurama Krishnam Raju",
+      "messageGuestBtn": "💬 Send Query / Business Lead to Guest",
+      "joinPanelBtn": "✨ Suggest Upcoming Questions",
+      "networkBtn": "🚀 Join Creator / Influencer / Intern Network",
+      "statsTitle": "Verified Multi-Platform Reach & Channel Analytics (2026)",
+      "statsSub": "689.3K+ YouTube Subscribers • 2.56 Crore+ YT Views • 8.2M Monthly IG Reel Views • 6.49M Facebook Views",
+      "personaTitle": "What Sets Raja Raveendar & Legacy Lounge Apart",
+      "catalogTitle": "Raja’s Legacy Lounge — All 15 Published Episodes",
+      "catalogSub": "Explore all 15 unfiltered episodes on Raja Raveendar Talks. Click any episode for video references, topic discussions, audience polls, or to send a business lead/query to the guest.",
+      "reelsTitle": "🔥 Viral Reels & Multi-Platform Hits (94.4% Reel Distribution)",
+      "reelsSub": "8.2M Monthly Instagram Reel Views (3.4M Unique Viewers) & 6.49M Facebook Views with 92.8% Non-Follower Organic Discovery",
+      "wisdomTitle": "✨ Iconic Quotes & Unfiltered Moments from Legacy Lounge",
+      "wisdomSub": "Shareable insights from Ram Gopal Varma, Dr. Nori Dattatreyudu, Jayasudha, Bandla Ganesh, Dr. Rajasekhar & more",
+      "guestsTitle": "🌟 Legacy Lounge Guest Hall of Fame — Send a Query or Business Lead",
+      "guestsSub": "Write a query, appreciation note, or business lead for any of our guests—our team reviews and forwards your message directly to the guest.",
+      "communityTitle": "🧠 Viewer Discussions, Topic Threads & Upcoming Episode Questions",
+      "communitySub": "Join episode topic discussions, read top viewer comments & video references,upvote questions for upcoming guests, and unlock community goodies.",
+      "goodiesTitle": "🎁 Community Goodies & Brand Partner Vouchers",
+      "goodiesSub": "Active contributors in topic discussions, question voting, and episode polls unlock exclusive partner rewards.",
+      "sponsorsTitle": "🤝 Official Brand Partners — Raja’s Legacy Lounge",
+      "sponsorsSub": "Proudly supported by visionary brands: 360 Life Luxury Residences, Mirrors Luxury Salons, Suchirindia, Khammam Lakeview Club (KLC), Ashya Foods & DiaGrand.",
+      "networkTitle": "🌐 The Raja Raveendar Network: Creators, Influencers, Interns & Guests",
+      "networkSub": "A complete ecosystem for Original Creators (Music, Short Films, Web Series), Influencers, Interns (SEO, Editing, DOP, Music, Research, AI), and VVIP Guests.",
+      "personaBadge": "PROFILE & GUIDING PHILOSOPHY",
+      "personaSub": "“జీవితం ఒక ప్రయాణం… ప్రతి మనిషి ఒక కథ” — Multidisciplinary Conversations, Authentic Storytelling, and Responsible Long-Form Content.",
+      "catalogBadge": "RAJA RAVEENDAR TALKS - LEGACY LOUNGE",
+      "reelsBadge": "94.4% REELS DISTRIBUTION • 92.8% NON-FOLLOWER REACH"
+    },
+    "te": {
+      "brandSub": "నటుడు • నిర్మాత • సెలబ్రిటీ మేనేజర్ • రాజాస్ లెగసీ లాంజ్ హోస్ట్",
+      "navCatalog": "లెగసీ లాంజ్ (15 ఎపిసోడ్స్)",
+      "navAnalytics": "ఛానెల్ గణాంకాలు",
+      "navGuests": "అతిథులు & మెసేజ్",
+      "navCommunity": "చర్చా వేదిక & ప్రశ్నలు",
+      "navSponsors": "బ్రాండ్ పార్ట్‌నర్స్ (6)",
+      "navNetwork": "క్రియేటర్స్ & ఇంటర్న్స్ నెట్‌వర్క్",
+      "milestoneBadge": "🎬 “జీవితం ఒక ప్రయాణం… ప్రతి మనిషి ఒక కథ” — రాజాస్ లెగసీ లాంజ్ 15 అద్భుతమైన ఎపిసోడ్‌లు!",
+      "heroTag": "రాజాస్ లెగసీ లాంజ్ • రాజా రవీందర్ టాక్స్",
+      "heroTitle": "మూడు దశాబ్దాల సినీ ప్రస్థానం & 'రాజాస్ లెగసీ లాంజ్' జైత్రయాత్ర",
+      "heroTitleTe": "“జీవితం ఒక ప్రయాణం… ప్రతి మనిషి ఒక కథ”",
+      "heroDesc": "తెలుగు చిత్ర పరిశ్రమలో 30 ఏళ్లకు పైగా అనుభవం, వందలాది చిత్రాల్లో నటించిన రాజా రవీందర్.. సినీ ప్రముఖులు, రాజకీయ నాయకులు, డాక్టర్లు మరియు టెక్ నిపుణులతో నిజాయితీతో కూడిన సంభాషణలను మీ ముందుకు తెస్తున్నారు.",
+      "watchFeaturedBtn": "▶ Ep 15: రఘురామ కృష్ణంరాజు ఎపిసోడ్",
+      "messageGuestBtn": "💬 అతిథికి మెసేజ్ / బిజినెస్ లీడ్ పంపండి",
+      "joinPanelBtn": "✨ రాబోయే ఎపిసోడ్ కోసం ప్రశ్నలు అడగండి",
+      "networkBtn": "🚀 క్రియేటర్ / ఇన్‌ఫ్లుయెన్సర్ / ఇంటర్న్ రిజిస్ట్రేషన్",
+      "statsTitle": "రాజా రవీందర్ టాక్స్ — సోషల్ మీడియా & ఛానెల్ వృద్ధి గణాంకాలు (2026)",
+      "statsSub": "689.3K+ యూట్యూబ్ సబ్‌స్క్రైబర్లు • 2.56 కోట్ల వ్యూస్ • 82 లక్షల ఇన్‌స్టాగ్రామ్ రీల్స్ వ్యూస్ • 64.9 లక్షల ఫేస్‌బుక్ వ్యూస్",
+      "personaTitle": "రాజా రవీందర్ & లెగసీ లాంజ్ ప్రత్యేకతలు",
+      "catalogTitle": "రాజాస్ లెగసీ లాంజ్ — మొత్తం 15 ఎపిసోడ్‌లు",
+      "catalogSub": "రామ్ గోపాల్ వర్మ, జయసుధ, డా. రాజశేఖర్, డా. నోరి దత్తాత్రేయుడు, బండ్ల గణేష్, దివి, రఘురామ కృష్ణంరాజు తదితరుల ఎపిసోడ్‌లు చూడండి.",
+      "reelsTitle": "🔥 వైరల్ రీల్స్ & షార్ట్స్ (94.4% రీల్స్ రీచ్)",
+      "reelsSub": "ఇన్‌స్టాగ్రామ్‌లో 8.2 మిలియన్ వ్యూస్ మరియు ఫేస్‌బుక్‌లో 6.49 మిలియన్ వ్యూస్ సాధించిన క్లిప్స్",
+      "wisdomTitle": "✨ లెగసీ లాంజ్ నుండి ఆణిముత్యాలు (Unfiltered Quotes)",
+      "wisdomSub": "మా అతిథులు పంచుకున్న జీవిత సత్యాలు వాట్సాప్ & ఇన్‌స్టాగ్రామ్‌లో షేర్ చేయండి",
+      "guestsTitle": "🌟 మా విశిష్ట అతిథులు — నేరుగా క్వెరీ లేదా బిజినెస్ లీడ్ పంపండి",
+      "guestsSub": "మా అతిథులకు మీ ప్రశ్నలు, అభిప్రాయాలు లేదా బిజినెస్ లీడ్స్ పంపండి. మా టీమ్ వాటిని నేరుగా అతిథులకు చేరవేస్తుంది.",
+      "communityTitle": "🧠 ఎపిసోడ్ చర్చా వేదిక (Discussions) & రాబోయే అతిథుల కోసం ప్రశ్నలు",
+      "communitySub": "ప్రతి ఎపిసోడ్‌పై మీ కామెంట్స్ పంచుకోండి, వీడియో రిఫరెన్స్‌లు చూడండి మరియు రాబోయే అతిథుల కోసం ప్రశ్నలను సూచించండి.",
+      "goodiesTitle": "🎁 కమ్యూనిటీ బహుమతులు & బ్రాండ్ కూపన్లు",
+      "goodiesSub": "చర్చల్లో మరియు పోల్స్‌లో పాల్గొనే ప్రేక్షకులకు మా బ్రాండ్ పార్ట్‌నర్స్ నుండి ప్రత్యేక ఆఫర్లు.",
+      "sponsorsTitle": "🤝 రాజాస్ లెగసీ లాంజ్ — అధికారిక బ్రాండ్ పార్ట్‌నర్స్",
+      "sponsorsSub": "360 Life, Mirrors Luxury Salons, Suchirindia, Khammam Lakeview Club (KLC), Ashya Foods & DiaGrand.",
+      "networkTitle": "🌐 రాజా రవీందర్ నెట్‌వర్క్: క్రియేటర్స్, ఇన్‌ఫ్లుయెన్సర్స్, ఇంటర్న్స్ & అతిథులు",
+      "networkSub": "మ్యూజిక్, షార్ట్ ఫిలిమ్స్, వెబ్ సిరీస్ క్రియేటర్స్, ఇన్‌ఫ్లుయెన్సర్స్ మరియు ఇంటర్న్‌షిప్ అవకాశాల కోసం ప్రత్యేక వేదిక.",
+      "personaBadge": "ప్రొఫైల్ & సిద్ధాంతం",
+      "personaSub": "“జీవితం ఒక ప్రయాణం… ప్రతి మనిషి ఒక కథ” — విభిన్న రంగాల ప్రముఖులతో నిజాయితీతో కూడిన సంభాషణలు.",
+      "catalogBadge": "రాజా రవీందర్ టాక్స్ - లెగసీ లాంజ్",
+      "reelsBadge": "94.4% రీల్స్ రీచ్ • 92.8% ఆర్గానిక్ వ్యూస్"
+    }
+  },
+  "socialStats": [
+    {
+      "id": "yt_subs",
+      "label": "YouTube Subscribers",
+      "labelTe": "యూట్యూబ్ సబ్‌స్క్రైబర్లు",
+      "value": "689.3",
+      "suffix": "K+",
+      "subtext": "Official Channel: Raja Raveendar Talks",
+      "platform": "YouTube Followers",
+      "color": "#C8102E",
+      "icon": "👥",
+      "link": "https://www.youtube.com/@RajaRaveendarTalks"
+    },
+    {
+      "id": "yt_views",
+      "label": "YouTube Total Views",
+      "labelTe": "యూట్యూబ్ మొత్తం వ్యూస్",
+      "value": "2.56",
+      "suffix": " Cr+",
+      "subtext": "15 Episodes of Raja’s Legacy Lounge",
+      "platform": "YouTube Views",
+      "color": "#E11D48",
+      "icon": "▶️",
+      "link": "https://www.youtube.com/@RajaRaveendarTalks"
+    },
+    {
+      "id": "ig_performance",
+      "label": "Instagram @rajaraveendar",
+      "labelTe": "ఇన్‌స్టాగ్రామ్ రీల్ వ్యూస్ & ఫాలోవర్లు",
+      "value": "8.2",
+      "suffix": "M Views",
+      "subtext": "38K Followers • 3.4M Unique Viewers",
+      "platform": "Instagram Reels",
+      "color": "#D97706",
+      "icon": "📸",
+      "link": "#analytics-section"
+    },
+    {
+      "id": "fb_performance",
+      "label": "Facebook Analytics",
+      "labelTe": "ఫేస్‌బుక్ వ్యూస్ (+1,362%)",
+      "value": "6.49",
+      "suffix": "M Views",
+      "subtext": "+1,362% Growth • 92.8% Non-Follower Reach",
+      "platform": "Facebook Reach",
+      "color": "#0D9488",
+      "icon": "📈",
+      "link": "#analytics-section"
+    }
+  ],
+  "analyticsReport": {
+    "instagramKPIs": [
+      {
+        "metric": "Reel Views",
+        "value": "8.2M (82L)",
+        "insight": "@rajaraveendar 30-Day Reel Views"
+      },
+      {
+        "metric": "Followers",
+        "value": "38K Followers",
+        "insight": "Official Instagram Community"
+      },
+      {
+        "metric": "Unique Viewers",
+        "value": "3.4M (34L)",
+        "insight": "Organic reach across Instagram"
+      }
+    ],
+    "facebookKPIs": [
+      {
+        "metric": "Total Views",
+        "value": "6.49M Views",
+        "growth": "+1,362% Growth"
+      },
+      {
+        "metric": "Follower & Organic Reach",
+        "value": "92.8%",
+        "growth": "Non-Follower Organic Discovery"
+      },
+      {
+        "metric": "Reels Distribution",
+        "value": "94.4% Reels",
+        "growth": "3.95M 3-Second Views"
+      }
+    ]
+  },
+  "personas": [
+    {
+      "id": "podcaster",
+      "role": "Raja’s Legacy Lounge",
+      "roleTe": "రాజాస్ లెగసీ లాంజ్",
+      "badge": "689.3K+ YT Subscribers",
+      "headline": "“జీవితం ఒక ప్రయాణం… ప్రతి మనిషి ఒక కథ” (Life is a journey… every person has a story)",
+      "description": "Stepping into the digital space on his official YouTube channel 'Raja Raveendar Talks', Raja’s Legacy Lounge moves far beyond standard celebrity interviews—welcoming Film Personalities, Political Leaders, Policy Makers, Doctors, Wellness Coaches, and Tech Innovators for unscripted, long-form dialogues.",
+      "highlights": [
+        "15 Landmark Episodes & 2.56 Crore+ Views",
+        "Multidisciplinary: Cinema, Politics, Healthcare & AI",
+        "Unscripted, Responsible & High-Retention Storytelling"
+      ],
+      "image": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": "actor",
+      "role": "Three-Decade Cinematic Journey",
+      "roleTe": "30 ఏళ్ల సినీ ప్రస్థానం",
+      "badge": "Hundreds of Films",
+      "headline": "A Familiar & Respected Face Across Generations of Telugu Cinema",
+      "description": "With a career spanning over three decades in the Telugu film industry, Raja Raveendar has witnessed the evolution of Tollywood from the inside, sharing screen space with generations of legendary actors and filmmakers.",
+      "highlights": [
+        "30+ Years in Telugu Cinema",
+        "Acted Across Hundreds of Feature Films",
+        "Deep Roots with Legendary Actors & Filmmakers"
+      ],
+      "image": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": "network",
+      "role": "The Raja Raveendar Network",
+      "roleTe": "రాజా రవీందర్ నెట్‌వర్క్",
+      "badge": "Talent & Brand Ecosystem",
+      "headline": "Empowering Creators, Influencers, Brands & Next-Gen Media Interns",
+      "description": "Beyond the screen and microphone, Raja Raveendar is building a collaborative ecosystem connecting original creators (Music, Short Films, Web Series), influencers for paid brand collaborations, and aspiring media/AI interns with real industry opportunities.",
+      "highlights": [
+        "Original Creators Talent Pool (Music, Short Films, Web Series)",
+        "Influencer Paid Brand Collaboration Network",
+        "Hands-On Internships in AI, DOP, Editing, SEO & Research"
+      ],
+      "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=80"
+    },
+    {
+      "id": "storyteller",
+      "role": "Authentic Storyteller & Strategist",
+      "roleTe": "కథకుడు & సెలబ్రిటీ మేనేజర్",
+      "badge": "Cross-Industry Bridge",
+      "headline": "Exploring the Realities Behind Successes & Lessons Hidden in Failures",
+      "description": "His deep industry roots give him a unique vantage point—not just as an artist who has navigated the highs and lows of the silver screen, but as a genuine storyteller who understands the heartbeat of entertainment and public life.",
+      "highlights": [
+        "Trusted Industry Insider & Strategist",
+        "Bridging Viewers Directly with Iconic Guests",
+        "High-Impact Brand & Content Curation"
+      ],
+      "image": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=900&q=80"
+    }
+  ],
+  "episodes": [
+    {
+      "id": "ep-15",
+      "epNumber": 15,
+      "category": "Politics & Society",
+      "categoryLabel": "Politics & Society",
+      "title": "AP Deputy Speaker Raghurama Krishnam Raju Uncensored: From Political Battles to Building Temples",
+      "titleTe": "AP డిప్యూటీ స్పీకర్ రఘురామ కృష్ణంరాజు అన్‌సెన్సార్డ్: రాజకీయ పోరాటాల నుండి ఆలయాల నిర్మాణం వరకు",
+      "guestId": "guest-15",
+      "guestName": "Sri Raghurama Krishnam Raju (RRR)",
+      "guestRole": "Hon'ble Deputy Speaker, Andhra Pradesh Legislative Assembly",
+      "duration": "Long-Form Special",
+      "views": "Viral Political Hit",
+      "releaseBadge": "EPISODE 15",
+      "thumbnail": "https://img.youtube.com/vi/GN9Kx8Q89Xc/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=GN9Kx8Q89Xc",
+      "summary": "A raw, unfiltered conversation with Andhra Pradesh Deputy Speaker Raghurama Krishnam Raju (RRR) discussing his intense political battles, past political rifts, temple construction initiatives, and grassroots constituency development models.",
+      "takeaways": [
+        "Inside story of RRR's resilience through intense political and legal battles",
+        "Vision for spiritual heritage and temple restoration alongside rural infrastructure",
+        "Candid reflections on legislative leadership as AP Deputy Speaker"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "Which segment of the Raghurama Krishnam Raju episode stood out to you most?",
+        "options": [
+          "His unfiltered account of political battles & resilience",
+          "Grassroots development & constituency governance model",
+          "Building temples & preserving cultural heritage",
+          "Candid camaraderie with Raja Raveendar"
+        ],
+        "couponCode": "LEGACY15",
+        "sponsorReward": "Exclusive Priority Invite to Legacy Lounge Townhall & Partner Privilege Voucher"
+      }
+    },
+    {
+      "id": "ep-14",
+      "epNumber": 14,
+      "category": "Healthcare",
+      "categoryLabel": "Healthcare",
+      "title": "Corporate Hospitals Reality: హాస్పటల్ కి వెలితే ఆస్తులు ఎందుకు అమ్ముకోవలసి వస్తుంది?",
+      "titleTe": "హాస్పటల్ కి వెలితే ఆస్తులు ఎందుకు అమ్ముకోవలసి వస్తుంది? Corporate Hospitals Reality",
+      "guestId": "guest-14",
+      "guestName": "Healthcare Policy & Medical Ethics Panel",
+      "guestRole": "Medical Transparency & Patient Rights Investigation",
+      "duration": "Full Episode 14",
+      "views": "High-Share Public Awareness",
+      "releaseBadge": "EPISODE 14",
+      "thumbnail": "https://img.youtube.com/vi/rmQHwdwpcXI/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=rmQHwdwpcXI",
+      "summary": "An eye-opening reality check examining the financial strains of corporate healthcare, why middle-class families are forced to sell assets during medical emergencies, and the pressing questions around modern medical expenses.",
+      "takeaways": [
+        "Why diagnostic and ICU billing escalates rapidly in corporate hospitals",
+        "How families can protect themselves with right health insurance & second opinions",
+        "Patient rights regarding generic medicines and itemized hospital billing"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "Have you or your family ever faced unexpected billing shocks at a corporate hospital?",
+        "options": [
+          "Yes, medical inflation is the #1 worry for families",
+          "Health insurance helped cover most of it",
+          "We always take a second medical opinion first",
+          "We need stricter transparency in hospital pricing"
+        ],
+        "couponCode": "HEALTHCARE14",
+        "sponsorReward": "Complimentary Second-Opinion & Preventive Health Check Guide from Legacy Lounge Partners"
+      }
+    },
+    {
+      "id": "ep-13",
+      "epNumber": 13,
+      "category": "Entertainment",
+      "categoryLabel": "Entertainment",
+      "title": "Divi M.Tech Gold Medalist to Bigg Boss & GodFather | Legacy Lounge Ep. 13",
+      "titleTe": "M.Tech గోల్డ్ మెడలిస్ట్ నుండి బిగ్ బాస్ & గాడ్ ఫాదర్ వరకు — దివి ప్రయాణం",
+      "guestId": "guest-13",
+      "guestName": "Divi Vadthya",
+      "guestRole": "Actor, Model & M.Tech Gold Medalist",
+      "duration": "Full Episode 13",
+      "views": "#1 Most Viewed Hit",
+      "releaseBadge": "EPISODE 13",
+      "thumbnail": "https://img.youtube.com/vi/-daDv_VKEdk/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=-daDv_VKEdk",
+      "summary": "Actor Divi Vadthya talks candidly about her remarkable journey from earning an M.Tech Gold Medal and modeling to entering films, her breakthrough experience in Bigg Boss and Megastar Chiranjeevi's GodFather, and overcoming industry rejections.",
+      "takeaways": [
+        "Balancing academic excellence (M.Tech Gold Medalist) with a passion for cinema",
+        "How Bigg Boss and sharing the screen in 'GodFather' changed her career trajectory",
+        "Handling casting rejections with dignity and mental strength"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "What inspired you most about Divi Vadthya's journey in Episode 13?",
+        "options": [
+          "Transitioning from M.Tech Gold Medalist to Cinema",
+          "Her honesty about facing rejections & struggles",
+          "Memorable experiences in Bigg Boss & GodFather",
+          "Her grounded attitude & clarity of thought"
+        ],
+        "couponCode": "MIRRORS20",
+        "sponsorReward": "20% OFF Luxury Styling & Grooming Session at Mirrors Luxury Salons"
+      }
+    },
+    {
+      "id": "ep-12",
+      "epNumber": 12,
+      "category": "Culture & Storytelling",
+      "categoryLabel": "Culture & Storytelling",
+      "title": "కథ కంచికి వెళ్లిపోకుండా… విను మరీ ప్రయాణం | Priya Chowdary | Legacy Lounge Ep. 12",
+      "titleTe": "కథ కంచికి వెళ్లిపోకుండా… విను మరీ ప్రయాణం | ప్రియా చౌదరి | Legacy Lounge Ep 12",
+      "guestId": "guest-12",
+      "guestName": "Priya Chowdary",
+      "guestRole": "Storyteller, Cultural Voice & Founder of VinuMaree",
+      "duration": "Full Episode 12",
+      "views": "Family Favorite",
+      "releaseBadge": "EPISODE 12",
+      "thumbnail": "https://img.youtube.com/vi/K4L9e0xVagY/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=K4L9e0xVagY",
+      "summary": "A heartwarming conversation exploring the importance of traditional storytelling, audio stories (VinuMaree), and how listening to Indian epics like the Ramayana and Mahabharata shapes children's imagination away from screens.",
+      "takeaways": [
+        "Why audio storytelling builds 3x deeper imagination in children than passive video screens",
+        "Introducing Ramayana, Mahabharata, and Telugu folk tales to the smartphone generation",
+        "Preserving the beauty and diction of spoken Telugu in modern households"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "How do you introduce Indian epics & stories to children in your family?",
+        "options": [
+          "Audio stories & podcasts during bedtime/travel",
+          "Grandparents narrating Ramayana & Mahabharata",
+          "Illustrated storybooks & comics",
+          "Looking to start audio storytelling now!"
+        ],
+        "couponCode": "ASHYA15",
+        "sponsorReward": "15% OFF Wholesome Family Packs from Ashya Foods"
+      }
+    },
+    {
+      "id": "ep-11",
+      "epNumber": 11,
+      "category": "Technology & Cinema",
+      "categoryLabel": "Technology & Cinema",
+      "title": "Macha BVS Ravi Unfiltered: Balayya Unstoppable Secrets & AI Film Future | Ep. 11",
+      "titleTe": "BVS రవి & కళ్యాణ్ అన్‌ఫిల్టర్డ్: బాలయ్య 'అన్‌స్టాపబుల్' సీక్రెట్స్ & సినిమాపై AI ప్రభావం",
+      "guestId": "guest-11",
+      "guestName": "Macha BVS Ravi & Kalyan",
+      "guestRole": "Acclaimed Writer, Filmmaker & Show Strategist",
+      "duration": "Full Episode 11",
+      "views": "#2 Top Performing Hit",
+      "releaseBadge": "EPISODE 11",
+      "thumbnail": "https://img.youtube.com/vi/mLgDHPa_7xo/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=mLgDHPa_7xo",
+      "summary": "A deep dive into Tollywood strategy, the behind-the-scenes creative process behind Nandamuri Balakrishna's blockbuster 'Unstoppable' show, the origins of in-film branding, and the transformative future of AI in cinema.",
+      "takeaways": [
+        "How Balakrishna's 'Unstoppable' broke every OTT talk-show record in India",
+        "The art and economics of seamless in-film brand integration in Telugu cinema",
+        "How screenwriters and directors are preparing for AI-driven visual storytelling"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "Which topic from Episode 11 with BVS Ravi & Kalyan fascinated you most?",
+        "options": [
+          "Behind-the-scenes secrets of Balayya's Unstoppable",
+          "How in-film branding & movie marketing evolved",
+          "The future of AI in scriptwriting & filmmaking",
+          "Tollywood industry anecdotes with Raja Raveendar"
+        ],
+        "couponCode": "360LIFE",
+        "sponsorReward": "VIP Private Tour Invitation at 360 Life Luxury Residences (Hitec City)"
+      }
+    },
+    {
+      "id": "ep-10",
+      "epNumber": 10,
+      "category": "Culture & Storytelling",
+      "categoryLabel": "Culture & Storytelling",
+      "title": "లవ్ అంటే 99% బ్రేకప్ఏ — Suvarna To Saradaga Special | Legacy Lounge Ep. 10",
+      "titleTe": "లవ్ అంటే 99% బ్రేకప్ఏ - Raja Raveendar - Suvarna To Saradaga (Ep 10)",
+      "guestId": "guest-10",
+      "guestName": "Suvarna (Suvarna To Saradaga Special)",
+      "guestRole": "Youth, Relationships & Real-Life Perspectives",
+      "duration": "Full Episode 10",
+      "views": "Viral Youth Debate",
+      "releaseBadge": "EPISODE 10",
+      "thumbnail": "https://img.youtube.com/vi/dDDdXai40M8/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=dDDdXai40M8",
+      "summary": "Candid thoughts and real-life insights on modern love, relationship dynamics, career focus for young adults, and an honest discussion on why many modern relationships face premature breakups.",
+      "takeaways": [
+        "Why career stability and emotional maturity matter before rushing into commitments",
+        "How social media comparisons create unrealistic relationship expectations",
+        "Balancing personal ambition, family trust, and mental well-being"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "What do you think is the biggest reason modern relationships struggle today?",
+        "options": [
+          "Lack of patience & instant gratification mindset",
+          "Social media pressure & unrealistic expectations",
+          "Career & financial instability in early 20s",
+          "Communication gap between partners"
+        ],
+        "couponCode": "KLCCLUB10",
+        "sponsorReward": "Complimentary Dining & Recreation Upgrade Voucher at Khammam Lakeview Club (KLC)"
+      }
+    },
+    {
+      "id": "ep-09",
+      "epNumber": 9,
+      "category": "Entertainment",
+      "categoryLabel": "Entertainment",
+      "title": "Tejaswi Madivada Unfiltered & Bold Interview | Legacy Lounge Episode 9",
+      "titleTe": "తేజస్వి మదివాడ అన్‌ఫిల్టర్డ్ & బోల్డ్ ఇంటర్వ్యూ | లెగసీ లాంజ్ ఎపిసోడ్ 9",
+      "guestId": "guest-09",
+      "guestName": "Tejaswi Madivada",
+      "guestRole": "Actor & Social Service Volunteer",
+      "duration": "Full Episode 09",
+      "views": "High-Energy Viral Hit",
+      "releaseBadge": "EPISODE 09",
+      "thumbnail": "https://img.youtube.com/vi/w1T3pet1W0c/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=w1T3pet1W0c",
+      "summary": "An explosive and high-energy episode featuring actor Tejaswi Madivada addressing media controversies, fake news, long-term relationships, the menace of AI deepfakes, and her heartfelt social service journey.",
+      "takeaways": [
+        "Confronting clickbait fake news and deepfake harassment faced by female artists",
+        "Her spiritual and social service transformation outside the glamour world",
+        "Unfiltered truths about friendships, heartbreak, and resilience in Tollywood"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "Should there be stricter laws against fake news & AI deepfakes targeting public figures?",
+        "options": [
+          "Yes, immediate strict legal action is essential",
+          "Platforms must auto-detect and block deepfakes",
+          "Viewers should also verify before sharing rumours",
+          "All of the above!"
+        ],
+        "couponCode": "DIAGRAND",
+        "sponsorReward": "Special Making-Charge Privilege Card from DiaGrand Fine Jewelry"
+      }
+    },
+    {
+      "id": "ep-08",
+      "epNumber": 8,
+      "category": "Healthcare",
+      "categoryLabel": "Healthcare",
+      "title": "Dr. K. Shilpi Reddy — సెక్స్ & ఆరోగ్య అపోహలపై బోల్డ్ Talk | Legacy Lounge Ep. 8",
+      "titleTe": "@drkshilpireddy | సెక్స్ & ఆరోగ్య అపోహలపై బోల్డ్ Talk | Legacy Lounge Ep 8",
+      "guestId": "guest-08",
+      "guestName": "Dr. K. Shilpi Reddy",
+      "guestRole": "Clinical Director – Obstetrics & Gynecology, KIMS Cuddles",
+      "duration": "Full Episode 08",
+      "views": "Millions of Views Across Reels",
+      "releaseBadge": "EPISODE 08",
+      "thumbnail": "https://img.youtube.com/vi/jiTXvwhsTxY/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=jiTXvwhsTxY",
+      "summary": "KIMS Cuddles Clinical Director Dr. K. Shilpi Reddy joins Raja Raveendar for a bold, science-backed conversation on women's health, modern relationship trends in Hyderabad, pregnancy myths, PCOS, and the truth about weight-loss medications.",
+      "takeaways": [
+        "Busting long-standing myths around pregnancy, fertility, and reproductive health",
+        "The medical truth and side-effects of trendy weight-loss injections/medications",
+        "Why preventive HPV vaccination and annual screenings are vital for every woman"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "Which health topic from Dr. Shilpi Reddy's episode needs more family awareness?",
+        "options": [
+          "PCOS, fertility & healthy pregnancy planning",
+          "Truth about crash diets & weight-loss medications",
+          "Breaking taboos around reproductive health education",
+          "Preventive screenings for women over 30"
+        ],
+        "couponCode": "SHILPIHEALTH",
+        "sponsorReward": "Priority Women's Wellness & Lifestyle Care Voucher from Series Partners"
+      }
+    },
+    {
+      "id": "ep-07",
+      "epNumber": 7,
+      "category": "Entertainment",
+      "categoryLabel": "Entertainment",
+      "title": "UNFILTERED TALK with J.D. Chakravarthy on Legacy Lounge 7th Episode",
+      "titleTe": "జె.డి. చక్రవర్తితో అన్‌ఫిల్టర్డ్ టాక్ | లెగసీ లాంజ్ ఎపిసోడ్ 7",
+      "guestId": "guest-07",
+      "guestName": "J.D. Chakravarthy",
+      "guestRole": "Acclaimed Actor, Director & Cult Cinema Icon",
+      "duration": "Full Episode 07",
+      "views": "Cult Fan Favorite",
+      "releaseBadge": "EPISODE 07",
+      "thumbnail": "https://img.youtube.com/vi/qn49DrLM0Fw/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=qn49DrLM0Fw",
+      "summary": "A nostalgic and candid conversation exploring J.D. Chakravarthy's early days in the film industry, his rise as a relatable star among strugglers, and his legendary creative bond with Ram Gopal Varma during 'Siva', 'Antham', 'Gulabi', and 'Satya'.",
+      "takeaways": [
+        "Untold stories from the making of 'Antham', 'Gulabi', and 'Satya'",
+        "What he learned from observing Ram Gopal Varma's Maverick direction style",
+        "Why staying authentic to one's craft matters more than box-office formulas"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "Which J.D. Chakravarthy classic remains your all-time favorite?",
+        "options": [
+          "Gulabi",
+          "Satya",
+          "Antham / Money",
+          "Bombay Priyudu & recent web series"
+        ],
+        "couponCode": "SUCHIR10",
+        "sponsorReward": "Exclusive Investor Preview Deck from Suchirindia ('Come... live the future')"
+      }
+    },
+    {
+      "id": "ep-06",
+      "epNumber": 6,
+      "category": "Healthcare",
+      "categoryLabel": "Healthcare",
+      "title": "How to Detect and Defeat Cancer Early | Padma Bhushan Dr. Nori Dattatreyudu",
+      "titleTe": "క్యాన్సర్‌ను ముందే గుర్తించి జయించడం ఎలా? | పద్మభూషణ్ డా. నోరి దత్తాత్రేయుడు | Ep 6",
+      "guestId": "guest-06",
+      "guestName": "Padma Bhushan Dr. Nori Dattatreyudu",
+      "guestRole": "World-Renowned Oncologist & Padma Bhushan Awardee",
+      "duration": "Full Episode 06",
+      "views": "Life-Saving Masterclass",
+      "releaseBadge": "EPISODE 06",
+      "thumbnail": "https://img.youtube.com/vi/CJIBJ2h2O3o/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=CJIBJ2h2O3o",
+      "summary": "Global oncology authority and Padma Bhushan awardee Dr. Nori Dattatreyudu delivers critical, life-saving insights on cancer prevention, early detection protocols, lifestyle carcinogens, and modern breakthroughs in affordable cancer care.",
+      "takeaways": [
+        "Why early detection cures over 80% of common cancers when caught in Stage 1",
+        "Warning signs and annual screening protocols every family must know",
+        "How precision oncology and immunotherapy are transforming survival rates"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "What is the most important takeaway from Dr. Nori Dattatreyudu's episode?",
+        "options": [
+          "Annual preventive screening for early detection",
+          "Eliminating tobacco, ultra-processed foods & plastics",
+          "Spreading awareness that cancer is curable when detected early",
+          "Supporting affordable oncology centers in Telugu states"
+        ],
+        "couponCode": "NORICARE",
+        "sponsorReward": "Free Downloadable Family Cancer Prevention & Early Screening Checklist"
+      }
+    },
+    {
+      "id": "ep-05",
+      "epNumber": 5,
+      "category": "Entertainment",
+      "categoryLabel": "Entertainment",
+      "title": "నాకు ఇప్పటికీ తెలుగు చదవడం రాదు! | Sahaja Nati Jayasudha (Part 1 & Part 2) | Ep. 5",
+      "titleTe": "నాకు ఇప్పటికీ తెలుగు చదవడం రాదు! | సహజనటి జయసుధ (Part 1 & 2) | Legacy Lounge Ep 5",
+      "guestId": "guest-05",
+      "guestName": "Smt. Jayasudha",
+      "guestRole": "Legendary 'Sahaja Nati' • 50 Years & 350+ Films",
+      "duration": "2-Part Mega Episode",
+      "views": "Evergreen Classic",
+      "releaseBadge": "EPISODE 05",
+      "thumbnail": "https://img.youtube.com/vi/0aJA8Tdr-tg/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=0aJA8Tdr-tg",
+      "summary": "Legendary 'Sahaja Nati' Jayasudha reflects on her extraordinary 50-year cinematic journey across 350+ movies—revealing how she delivered flawless Telugu performances without knowing how to read Telugu script, and sharing rare memories with NTR, ANR, Krishna, Sobhan Babu, and Chiranjeevi.",
+      "takeaways": [
+        "How she mastered emotional dialogue delivery across 350+ films by listening & memorizing",
+        "Rare golden-era memories with NTR, ANR, Savitri, Dasari Narayana Rao & K. Raghavendra Rao",
+        "Gracefully transitioning from reigning heroine to iconic mother roles"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "What makes 'Sahaja Nati' Jayasudha garu's acting timeless across generations?",
+        "options": [
+          "Effortless natural expressions (Sahaja Nati)",
+          "Iconic mother roles in modern blockbusters (Bommarillu, etc.)",
+          "Her golden-era classics in the 70s & 80s",
+          "Her humility and grace across 350+ films"
+        ],
+        "couponCode": "DIAGRAND5",
+        "sponsorReward": "Exclusive Heritage Jewelry Lookbook & Offer from DiaGrand"
+      }
+    },
+    {
+      "id": "ep-04",
+      "epNumber": 4,
+      "category": "Entertainment",
+      "categoryLabel": "Entertainment",
+      "title": "మన ఫ్యామిలీ కన్నా ఎవడూ ఎక్కువ కాదన్నా...! Bandla Ganesh Unfiltered | Ep. 4",
+      "titleTe": "మన ఫ్యామిలీ కన్నా ఎవడూ ఎక్కువ కాదన్నా...! Bandla Ganesh Unfiltered | Eps 4",
+      "guestId": "guest-04",
+      "guestName": "Bandla Ganesh",
+      "guestRole": "Blockbuster Film Producer & Actor",
+      "duration": "Full Episode 04",
+      "views": "Top-5 Viral Episode",
+      "releaseBadge": "EPISODE 04",
+      "thumbnail": "https://img.youtube.com/vi/X7pv61-_mGs/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=X7pv61-_mGs",
+      "summary": "A raw and unfiltered discussion where blockbuster producer and actor Bandla Ganesh shares practical life truths, his early struggles as a character artist, producing massive hits like 'Gabbar Singh', and the harsh realities of wealth, loyalty, and family value.",
+      "takeaways": [
+        "Why family stands above temporary fame, politics, and sycophancy",
+        "His rise from small comedic roles to producing Tollywood's biggest blockbusters",
+        "Hard-hitting practical lessons on money, betrayal, and self-respect"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "Which side of Bandla Ganesh in Episode 4 resonated with you most?",
+        "options": [
+          "His emotional truth: 'Nothing is bigger than family'",
+          "His hustle from small actor to blockbuster producer",
+          "His unfiltered, fearless style of speaking",
+          "His long-time friendship with Raja Raveendar"
+        ],
+        "couponCode": "BANDLA4",
+        "sponsorReward": "Special Gift Hamper Entry from Ashya Foods & Legacy Lounge"
+      }
+    },
+    {
+      "id": "ep-03",
+      "epNumber": 3,
+      "category": "Entertainment",
+      "categoryLabel": "Entertainment",
+      "title": "Angry Young Man Dr. Rajasekhar Untold Story | Legacy Lounge Full Episode 3",
+      "titleTe": "యాంగ్రీ యంగ్ మ్యాన్ డా. రాజశేఖర్ అన్‌టోల్డ్ స్టోరీ | లెగసీ లాంజ్ ఎపిసోడ్ 3",
+      "guestId": "guest-03",
+      "guestName": "Dr. Rajasekhar",
+      "guestRole": "The 'Angry Young Man' of Tollywood • Actor & Doctor",
+      "duration": "Full Episode 03",
+      "views": "Top-5 Viral Episode",
+      "releaseBadge": "EPISODE 03",
+      "thumbnail": "https://img.youtube.com/vi/H64RewofCUc/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=H64RewofCUc",
+      "summary": "The 'Angry Young Man' of Tollywood, Dr. Rajasekhar, opens up about his 40-year cinematic career, practicing medicine before films, overcoming a childhood stuttering struggle to become a powerful action star, career turning points, and untold personal stories.",
+      "takeaways": [
+        "How he conquered a childhood stammering challenge through sheer willpower",
+        "Landmark memories from 'Ankusam', 'agraham', 'Allari Priyudu', and 'Garuda Vega'",
+        "How Jeevitha Rajasekhar and his family stood as his pillar through every storm"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "What defines Dr. Rajasekhar's 40-year legacy for you?",
+        "options": [
+          "Unmatched intensity in cop & action classics ('Ankusam')",
+          "Versatility in family & musical hits ('Allari Priyudu')",
+          "Strong comeback in 'PSV Garuda Vega'",
+          "His inspiring real-life transparency & resilience"
+        ],
+        "couponCode": "LEGACY03",
+        "sponsorReward": "20% Privilege Voucher at Mirrors Luxury Salons"
+      }
+    },
+    {
+      "id": "ep-02",
+      "epNumber": 2,
+      "category": "Entertainment",
+      "categoryLabel": "Entertainment",
+      "title": "Conversation with Lakshmi Manchu",
+      "titleTe": "లక్ష్మీ మంచుతో ప్రత్యేక సంభాషణ | లెగసీ లాంజ్ ఎపిసోడ్ 2",
+      "guestId": "guest-02",
+      "guestName": "Lakshmi Manchu",
+      "guestRole": "Actor, Producer & Philanthropist",
+      "duration": "Full Episode 02",
+      "views": "High Engagement",
+      "releaseBadge": "EPISODE 02",
+      "thumbnail": "https://img.youtube.com/vi/2rtKrIzdA6M/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=2rtKrIzdA6M",
+      "summary": "A deep-dive conversation exploring the Manchu family legacy (Dr. Mohan Babu's discipline), her three-decade journey across diverse roles, cracking Hollywood auditions in Los Angeles (`Las Vegas`, `Desperate Housewives`), and insights into the evolving Indian entertainment landscape.",
+      "takeaways": [
+        "Behind-the-scenes of auditioning and working in American television & Hollywood",
+        "Growing up with Dr. Mohan Babu's legendary discipline and passion for education",
+        "Championing women-led narratives and government school transformation"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "Which facet of Lakshmi Manchu's career do you admire most?",
+        "options": [
+          "Her Hollywood stint & international work ethic",
+          "Memorable performances in 'Anaganaga O Dheerudu' & 'Gundello Godari'",
+          "Talk show hosting & independent production",
+          "Philanthropy & education initiatives"
+        ],
+        "couponCode": "360LUXURY",
+        "sponsorReward": "Exclusive Lifestyle Preview from 360 Life Luxury Residences"
+      }
+    },
+    {
+      "id": "ep-01",
+      "epNumber": 1,
+      "category": "Technology & Cinema",
+      "categoryLabel": "Technology & Cinema",
+      "title": "Ram Gopal Varma on the AI Revolution | Raja Raveendar's Legacy Lounge Ep. 01",
+      "titleTe": "AI విప్లవంపై రామ్ గోపాల్ వర్మ సంచలన విశ్లేషణ | లెగసీ లాంజ్ ఎపిసోడ్ 1",
+      "guestId": "guest-01",
+      "guestName": "Ram Gopal Varma (RGV)",
+      "guestRole": "Visionary Filmmaker & Disruptor",
+      "duration": "Full Episode 01 • Premiere",
+      "views": "Top-3 Viral Premiere",
+      "releaseBadge": "EPISODE 01",
+      "thumbnail": "https://img.youtube.com/vi/yoRiMgHnSbE/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=yoRiMgHnSbE",
+      "summary": "This video features a conversation between Raja Raveendar and the film director Ram Gopal Varma (RGV), where they discuss the disruptive impact of Artificial Intelligence (AI) on the film industry and society at large.",
+      "takeaways": [
+        "How generative AI will allow a single creator in a bedroom to make a ₹500-Crore scale film",
+        "Why traditional film production hierarchies will be disrupted within 3–5 years",
+        "RGV's unfiltered philosophy on technology, fear, and creative freedom"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "Do you agree with RGV that AI will completely transform big-budget filmmaking in 5 years?",
+        "options": [
+          "Yes, AI will democratize filmmaking for young creators",
+          "AI will transform VFX, but human actors & emotion remain king",
+          "It will create a brand-new hybrid cinema format",
+          "Excited to join Raja Raveendar's AI Creator Network!"
+        ],
+        "couponCode": "RGVAI01",
+        "sponsorReward": "Fast-Track Review for Raja Raveendar's AI Content Creator & Filmmaker Network"
+      }
+    }
+  ],
+  "viralReels": [
+    {
+      "id": "reel-1793094813844",
+      "title": "MS Narayana had a habit of addressing older individuals as \"uncle\" out of respect",
+      "titleTe": "మోహన్ బాబుని \"అంకుల్\" అన్న ఎమ్మెస్ నారాయణ.. అసలు ఏం జరిగిందంటే?",
+      "category": "Entertainment",
+      "views": "1,653,502 views",
+      "likes": "50K+ Likes",
+      "guest": "Anchor Suvarna",
+      "thumbnail": "https://img.youtube.com/vi/yHt6xzpRjmA/hqdefault.jpg",
+      "quote": "Soundarya and Raja Ravindra then playfully stirred the pot by telling Mohan Babu that MS Narayana was calling him \"uncle\" (0:53). In a lighthearted retaliation, Mohan Babu jokingly pretended to be annoyed and told the team to remove MS Narayana from the movie and send him home (1:05-1:10).",
+      "videoUrl": "https://www.youtube.com/shorts/yHt6xzpRjmA"
+    },
+    {
+      "id": "reel-1793094601127",
+      "title": "I saw RGV Raktacharitra in UP",
+      "titleTe": "యూపీలో నేను రామ్ గోపాల్ వర్మ, \"రక్త చరిత్ర\" సినిమాని లైవ్‌లో చూశాను",
+      "category": "Entertainment",
+      "views": "30,31,238 Views",
+      "likes": "50K+ Likes",
+      "guest": "Bandla Ganesh",
+      "thumbnail": "https://img.youtube.com/vi/-PGeL5ZBPsw/hqdefault.jpg",
+      "quote": "In a shocking turn of events, the jeep rammed the motorcycle, and armed individuals emerged to kill the rider on the spot, severing his head with a sword before fleeing with it",
+      "videoUrl": "https://www.youtube.com/shorts/-PGeL5ZBPsw"
+    }
+  ],
+  "wisdomQuotes": [
+    {
+      "id": "wq-1",
+      "quoteEn": "జీవితం ఒక ప్రయాణం… ప్రతి మనిషి ఒక కథ. Every person you meet carries a lesson that neither textbooks nor box-office numbers can teach.",
+      "quoteTe": "“జీవితం ఒక ప్రయాణం… ప్రతి మనిషి ఒక కథ.” ప్రతి మనిషి ప్రయాణంలోనూ మనకు స్ఫూర్తినిచ్చే ఒక గొప్ప పాఠం ఉంటుంది.",
+      "author": "Raja Raveendar",
+      "episode": "Raja’s Legacy Lounge • Guiding Philosophy",
+      "category": "Culture & Storytelling"
+    },
+    {
+      "id": "wq-2",
+      "quoteEn": "మన ఫ్యామిలీ కన్నా ఎవడూ ఎక్కువ కాదన్నా...! Fame, claps, and crowds are seasonal—your family is your only permanent wealth.",
+      "quoteTe": "“మన ఫ్యామిలీ కన్నా ఎవడూ ఎక్కువ కాదన్నా...!” పదవులు, చప్పట్లు తాత్కాలికం.. కుటుంబమే మన అసలైన ఆస్తి.",
+      "author": "Bandla Ganesh",
+      "episode": "Episode 04 • Entertainment",
+      "category": "Entertainment"
+    },
+    {
+      "id": "wq-3",
+      "quoteEn": "Cancer is no longer a death sentence when caught early. Preventive awareness is the greatest medicine we can give every household.",
+      "quoteTe": "క్యాన్సర్‌ను ప్రారంభ దశలోనే గుర్తిస్తే పూర్తిగా నయం చేయవచ్చు. అవగాహనే అన్నింటికంటే గొప్ప ఔషధం.",
+      "author": "Padma Bhushan Dr. Nori Dattatreyudu",
+      "episode": "Episode 06 • Healthcare",
+      "category": "Healthcare"
+    },
+    {
+      "id": "wq-4",
+      "quoteEn": "AI is not just another tool—it is a total revolution that will hand the power of ₹500-Crore cinema to a visionary storyteller with a laptop.",
+      "quoteTe": "AI అనేది కేవలం ఒక టూల్ మాత్రమే కాదు, సినిమా నిర్మాణాన్ని పూర్తిగా మార్చేసే ఒక మహా విప్లవం.",
+      "author": "Ram Gopal Varma",
+      "episode": "Episode 01 • Technology & Cinema",
+      "category": "Technology & Cinema"
+    }
+  ],
+  "guests": [
+    {
+      "id": "guest-1793167630974",
+      "name": "Ram Gopal Varma (RGV)",
+      "domain": "Entertainment",
+      "title": "Visionary Filmmaker & AI Cinema Pioneer",
+      "org": "Raja’s Legacy Lounge",
+      "episodeRef": "Episode 01",
+      "avatar": "/uploads/1793167618_rgv.jpg",
+      "bio": "One of Indian cinema's most influential disruptors. Featured in the premiere episode of Raja's Legacy Lounge dissecting the AI revolution in filmmaking.",
+      "specialties": [
+        "Entertainment",
+        "Legacy Lounge Guest"
+      ],
+      "messages": []
+    },
+    {
+      "id": "guest-06",
+      "name": "Padma Bhushan Dr. Nori Dattatreyudu",
+      "domain": "Healthcare",
+      "title": "Global Oncology Authority & Padma Bhushan Awardee",
+      "org": "International Cancer Care & Prevention Advisor",
+      "episodeRef": "Episode 06",
+      "avatar": "/uploads/1793168321_noori.jpg",
+      "bio": "World-renowned radiation oncologist who has shaped cancer care policy and early detection protocols in the US and India.",
+      "specialties": [
+        "Cancer Prevention",
+        "Early Detection",
+        "Global Oncology Policy"
+      ],
+      "messages": [
+        {
+          "sender": "Dr. Madhav Rao (Visakhapatnam)",
+          "type": "Important Query",
+          "text": "Respected Sir, how can rural diagnostic centers collaborate on your mobile early-screening protocol discussed in Episode 6?",
+          "reply": "Query logged and shared with Dr. Nori's outreach secretariat."
+        }
+      ]
+    },
+    {
+      "id": "guest-15",
+      "name": "Sri Raghurama Krishnam Raju (RRR)",
+      "domain": "Politics & Society",
+      "title": "Hon'ble Deputy Speaker, Andhra Pradesh Legislative Assembly",
+      "org": "Government of Andhra Pradesh • Undi Constituency",
+      "episodeRef": "Episode 15",
+      "avatar": "/uploads/1793168385_RRR.jpg",
+      "bio": "Senior political leader and AP Deputy Speaker known for his candid debates, constitutional advocacy, and temple/constituency development drives.",
+      "specialties": [
+        "Public Policy",
+        "Grassroots Development",
+        "Temple Restoration"
+      ],
+      "messages": [
+        {
+          "sender": "Surya Prakasa Rao (Bhimavaram)",
+          "type": "Feedback / Query",
+          "text": "Sir, your clarity in Episode 15 on village temple restoration and roads was deeply inspiring.",
+          "reply": "Thank you! Message shared with the Deputy Speaker's public relations desk."
+        }
+      ]
+    },
+    {
+      "id": "guest-08",
+      "name": "Dr. K. Shilpi Reddy",
+      "domain": "Healthcare",
+      "title": "Clinical Director – Obstetrics & Gynecology",
+      "org": "KIMS Cuddles, Kondapur, Hyderabad",
+      "episodeRef": "Episode 08",
+      "avatar": "/uploads/1793169686_dr_shilpi.jpg",
+      "bio": "Renowned specialist in high-risk pregnancy, women's preventive wellness, holistic fertility, and public health awareness.",
+      "specialties": [
+        "Women's Wellness",
+        "High-Risk Obstetrics",
+        "Metabolic Health"
+      ],
+      "messages": []
+    },
+    {
+      "id": "guest-05",
+      "name": "Sahaja Nati Smt. Jayasudha",
+      "domain": "Entertainment",
+      "title": "Legendary Actress • 50 Years & 350+ Films",
+      "org": "Indian & Telugu Cinema",
+      "episodeRef": "Episode 05 (Part 1 & 2)",
+      "avatar": "/uploads/1793169818_Jayasudha.png",
+      "bio": "Revered as 'Sahaja Nati' for bringing unmatched naturalism to Telugu cinema across five decades and over 350 motion pictures.",
+      "specialties": [
+        "50-Year Acting Legacy",
+        "350+ Feature Films",
+        "Cinema History"
+      ],
+      "messages": []
+    },
+    {
+      "id": "guest-03",
+      "name": "Dr. Rajasekhar",
+      "domain": "Entertainment",
+      "title": "Veteran Actor & Physician ('Angry Young Man')",
+      "org": "Telugu Film Industry",
+      "episodeRef": "Episode 03",
+      "avatar": "/uploads/1793169865_Dr__Rajasekhar.jpg",
+      "bio": "Celebrated across four decades for iconic action, family, and thriller classics from 'Ankusam' and 'Allari Priyudu' to 'PSV Garuda Vega'.",
+      "specialties": [
+        "40-Year Film Career",
+        "Action & Drama Icon",
+        "Medical Background"
+      ],
+      "messages": []
+    },
+    {
+      "id": "guest-13",
+      "name": "Divi Vadthya",
+      "domain": "Entertainment",
+      "title": "Actor, Model & M.Tech Gold Medalist",
+      "org": "Telugu Cinema & OTT (GodFather, Bigg Boss)",
+      "episodeRef": "Episode 13",
+      "avatar": "/uploads/1793169972_Divi-Vadthya.jpg",
+      "bio": "Featured in the #1 top-performing episode of Legacy Lounge, sharing her journey from engineering gold medalist to Tollywood.",
+      "specialties": [
+        "Feature Films & OTT",
+        "Brand Endorsements",
+        "Youth Inspiration"
+      ],
+      "messages": []
+    },
+    {
+      "id": "guest-11",
+      "name": "Macha BVS Ravi & Kalyan",
+      "domain": "Technology & Cinema",
+      "title": "Screenwriter, Filmmaker & Showrunner Strategist",
+      "org": "Telugu Cinema & Unstoppable Creative Team",
+      "episodeRef": "Episode 11",
+      "avatar": "/uploads/1793170056_bvs.jpg",
+      "bio": "Key creative minds behind blockbuster talk formats, screenwriting, in-film branding, and AI adoption in Telugu entertainment.",
+      "specialties": [
+        "Show Strategy",
+        "In-Film Branding",
+        "AI Cinema Future"
+      ],
+      "messages": []
+    },
+    {
+      "id": "guest-04",
+      "name": "Bandla Ganesh",
+      "domain": "Entertainment",
+      "title": "Blockbuster Film Producer, Actor & Entrepreneur",
+      "org": "Parameswara Art Productions",
+      "episodeRef": "Episode 04",
+      "avatar": "/uploads/1793170097_bandla.jpg",
+      "bio": "Known for producing massive commercial blockbusters like 'Gabbar Singh', 'Baadshah', and 'Temper', and for his unfiltered speeches.",
+      "specialties": [
+        "Film Production",
+        "Entrepreneurship",
+        "Unfiltered Talks"
+      ],
+      "messages": []
+    }
+  ],
+  "upcomingQuestions": [
+    {
+      "id": "q-101",
+      "upcomingGuest": "Upcoming Ep 16: Industrialist & Infrastructure Visionary",
+      "domain": "Technology & Cinema",
+      "author": "Sandeep Reddy (Hyderabad)",
+      "question": "How is Hyderabad's expansion beyond Kokapet and Hitec City creating opportunities for first-generation entrepreneurs and real estate investors?",
+      "upvotes": 184,
+      "status": "Shortlisted for Shoot"
+    },
+    {
+      "id": "q-102",
+      "upcomingGuest": "Upcoming Ep 17: Senior Preventive Cardiologist & Wellness Coach",
+      "domain": "Healthcare",
+      "author": "Dr. Meghana (Vijayawada)",
+      "question": "Following Episode 14 on Corporate Hospital bills, what are the 5 preventive annual tests under ₹2,000 that can prevent 80% of ICU emergencies?",
+      "upvotes": 156,
+      "status": "Top Viewer Pick"
+    },
+    {
+      "id": "q-103",
+      "upcomingGuest": "Upcoming Ep 18: Veteran Tollywood Character Artists Roundtable",
+      "domain": "Entertainment",
+      "author": "Chaitanya K. (Vizag)",
+      "question": "Raja Raveendar garu, can we have a nostalgia episode on how character artists in the 90s and 2000s shot 3 movies a day in Chennai and Hyderabad?",
+      "upvotes": 132,
+      "status": "In Pre-Production"
+    }
+  ],
+  "goodies": [
+    {
+      "id": "goodie-1",
+      "title": "Mirrors Luxury Salons — Complimentary Makeover & Styling Voucher",
+      "sponsor": "Mirrors Luxury Salons (Est. 2000)",
+      "category": "Lifestyle Partner Reward",
+      "badge": "15 Winners Monthly",
+      "pointsRequired": "Active Viewer / Poll Voter",
+      "description": "Experience signature hair, skin, and luxury grooming at Mirrors Luxury Salons for top contributors on Raja's Legacy Lounge.",
+      "claimedCount": 94
+    },
+    {
+      "id": "goodie-2",
+      "title": "Khammam Lakeview Club (KLC) — Family Dining & Recreation Pass",
+      "sponsor": "Khammam Lakeview Club (KLC)",
+      "category": "Hospitality Giveaway",
+      "badge": "10 Family Passes",
+      "pointsRequired": "Top Discussion Contributor",
+      "description": "Eat, play, and enjoy! Complimentary weekend family dining & recreation voucher at Khammam Lakeview Club.",
+      "claimedCount": 62
+    },
+    {
+      "id": "goodie-3",
+      "title": "Ashya Foods — Wholesome Culinary Gift Hamper",
+      "sponsor": "Ashya Foods",
+      "category": "Culinary Partner Box",
+      "badge": "25 Hampers / Month",
+      "pointsRequired": "Question Voter",
+      "description": "Curated household gift box featuring Ashya Foods' signature quality, wholesome taste, and culinary essentials.",
+      "claimedCount": 128
+    },
+    {
+      "id": "goodie-4",
+      "title": "VIP Studio Pass: Attend a Live 'Raja’s Legacy Lounge' Recording",
+      "sponsor": "Raja Raveendar Talks",
+      "category": "Insider Experience",
+      "badge": "5 VIP Passes",
+      "pointsRequired": "Knowledge Panel Reviewer",
+      "description": "Watch Raja Raveendar record an upcoming episode live in the studio and meet the team in person!",
+      "claimedCount": 47
+    }
+  ],
+  "sponsors": [
+    {
+      "id": "sp-1",
+      "name": "360 Life Luxury Residences (Hitec City)",
+      "tier": "Presenting Luxury Real Estate Partner",
+      "category": "Urban Luxury Living",
+      "logoText": "360 LIFE • HITEC CITY",
+      "accentColor": "#B8860B",
+      "tagline": "Redefining urban luxury living and architectural sophistication in the heart of Hyderabad's tech corridor.",
+      "integration": "Official Legacy Lounge Presenting Partner • Featured across High-HNI Episodes",
+      "exclusiveOffer": "Book a Private VVIP Sky-Residence Tour in Hitec City via Raja Raveendar Network.",
+      "website": "#sponsors-section"
+    },
+    {
+      "id": "sp-2",
+      "name": "Mirrors Luxury Salons",
+      "tier": "Official Grooming & Lifestyle Partner",
+      "category": "Luxury Styling (Est. 2000)",
+      "logoText": "MIRRORS LUXURY SALONS",
+      "accentColor": "#C8102E",
+      "tagline": "A premier name in grooming, lifestyle care, and styling elegance established since 2000.",
+      "integration": "Official Styling & Lifestyle Partner for Raja’s Legacy Lounge",
+      "exclusiveOffer": "Use code MIRRORS20 for Priority Appointment & 20% Privilege Benefit.",
+      "website": "#sponsors-section"
+    },
+    {
+      "id": "sp-3",
+      "name": "Suchirindia",
+      "tier": "Infrastructure & Real Estate Partner",
+      "category": "Infrastructure Powerhouse",
+      "logoText": "SUCHIRINDIA",
+      "accentColor": "#0D9488",
+      "tagline": "A trailblazing infrastructure and real estate powerhouse driven by the philosophy, 'Come... live the future.'",
+      "integration": "Official Legacy Lounge Series Partner",
+      "exclusiveOffer": "Connect directly for exclusive project previews & investment consultations.",
+      "website": "#sponsors-section"
+    },
+    {
+      "id": "sp-4",
+      "name": "Khammam Lakeview Club (KLC)",
+      "tier": "Official Leisure, Dining & Recreation Partner",
+      "category": "Hospitality & Club",
+      "logoText": "KLC • KHAMMAM LAKEVIEW CLUB",
+      "accentColor": "#2563EB",
+      "tagline": "A premier destination for community leisure, dining, and recreation where you can eat, play, and enjoy.",
+      "integration": "Official Hospitality & Community Giveaway Partner",
+      "exclusiveOffer": "Claim Priority Membership & Family Dining Privileges with code KLCCLUB10.",
+      "website": "#sponsors-section"
+    },
+    {
+      "id": "sp-5",
+      "name": "Ashya Foods",
+      "tier": "Official Culinary & FMCG Partner",
+      "category": "Wholesome Foods",
+      "logoText": "ASHYA FOODS",
+      "accentColor": "#D97706",
+      "tagline": "Bringing quality, wholesome taste, and culinary excellence to households across Telugu states.",
+      "integration": "Official Guest Gift Hamper & Household Nutrition Partner",
+      "exclusiveOffer": "Use code ASHYA15 for 15% OFF Family Culinary Packs & Hampers.",
+      "website": "#sponsors-section"
+    },
+    {
+      "id": "sp-6",
+      "name": "DiaGrand Fine Jewelry",
+      "tier": "Official Fine Jewelry & Craftsmanship Partner",
+      "category": "Fine Jewelry",
+      "logoText": "DIAGRAND JEWELRY",
+      "accentColor": "#7C3AED",
+      "tagline": "A trusted symbol of exquisite craftsmanship and timeless elegance in fine jewelry.",
+      "integration": "Official Luxury Partner – Raja’s Legacy Lounge",
+      "exclusiveOffer": "Connect for bespoke bridal & diamond consultations with special Legacy Lounge privileges.",
+      "website": "#sponsors-section"
+    }
+  ],
+  "creatorTalentPool": [
+    {
+      "name": "Siddharth V. (Hyderabad)",
+      "type": "Original Short Film & DOP",
+      "workTitle": "'Kala' — 18-Min Telugu Sci-Fi Short Film",
+      "skills": "Direction, Cinematography, Unreal Engine Pre-Viz",
+      "status": "Featured in Talent Pool"
+    },
+    {
+      "name": "keerthana R. (Vizag)",
+      "type": "Original Music & Indie Video",
+      "workTitle": "'Godavari Breeze' — Original Telugu Acoustic Single",
+      "skills": "Playback Vocals, Indie Composition, Lyricist",
+      "status": "Shortlisted for Brand Collab"
+    },
+    {
+      "name": "Rohit & Team (Vijayawada)",
+      "type": "Web Series Pitch & AI Visuals",
+      "workTitle": "'Startup Gully' — 6-Episode Telugu Web Series Pilot",
+      "skills": "Screenplay, AI Concept Art, Editing",
+      "status": "Under Production Review"
+    }
+  ],
+  "internshipTracks": [
+    {
+      "id": "ai",
+      "icon": "🤖",
+      "title": "AI Content Creators",
+      "desc": "Generative AI video, voice cloning, AI thumbnails, and next-gen visual storytelling."
+    },
+    {
+      "id": "editing",
+      "icon": "✂️",
+      "title": "Video Editing (Long-Form & Reels)",
+      "desc": "High-retention podcast cuts, 9:16 viral Instagram/FB reels, and color grading."
+    },
+    {
+      "id": "dop",
+      "icon": "🎥",
+      "title": "DOP & Multi-Cam Cinematography",
+      "desc": "Studio lighting, multi-camera podcast shoots, and outdoor production."
+    },
+    {
+      "id": "research",
+      "icon": "📚",
+      "title": "Content & Guest Research",
+      "desc": "Deep-dive biographical research, question drafting, and fact-checking for VVIP guests."
+    },
+    {
+      "id": "seo",
+      "icon": "📈",
+      "title": "YouTube & Social Media SEO",
+      "desc": "Title/thumbnail A/B testing, YouTube RPM optimization, and cross-platform analytics."
+    },
+    {
+      "id": "music",
+      "icon": "🎵",
+      "title": "Music & Sound Design",
+      "desc": "Podcast stems mixing, background scores, jingles, and original audio production."
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-all",
+      "name": "All Episodes",
+      "rowTitleEn": "🏆 Raja’s Legacy Lounge — All 15 Published Episodes",
+      "rowTitleTe": "🏆 రాజాస్ లెగసీ లాంజ్ — మొత్తం 15 ఎపిసోడ్‌లు",
+      "isAllRow": true,
+      "visible": true
+    },
+    {
+      "id": "cat-ent",
+      "name": "Entertainment",
+      "rowTitleEn": "🎬 Tollywood Icons & Unfiltered Cinema Stories",
+      "rowTitleTe": "🎬 సినిమా ప్రముఖుల అన్‌ఫిల్టర్డ్ ఎపిసోడ్‌లు (Entertainment)",
+      "isAllRow": false,
+      "visible": false
+    },
+    {
+      "id": "cat-health",
+      "name": "Healthcare",
+      "rowTitleEn": "🏥 Healthcare: Dr. Nori Dattatreyudu, Dr. K. Shilpi Reddy & Hospital Reality",
+      "rowTitleTe": "🏥 ఆరోగ్యం, క్యాన్సర్ అవగాహన & కార్పొరేట్ హాస్పిటల్స్ (Healthcare)",
+      "isAllRow": false,
+      "visible": false
+    },
+    {
+      "id": "cat-tech",
+      "name": "Technology & Cinema",
+      "rowTitleEn": "🤖 AI in Cinema & Show Strategy (RGV, Macha BVS Ravi)",
+      "rowTitleTe": "🤖 సినిమాపై AI ప్రభావం & వ్యూహాలు (Technology & Cinema)",
+      "isAllRow": false,
+      "visible": false
+    },
+    {
+      "id": "cat-culture",
+      "name": "Culture & Storytelling",
+      "rowTitleEn": "📚 Culture, Indian Epics & Youth Perspectives",
+      "rowTitleTe": "📚 సంస్కృతి, కథలు & యువత (Culture & Storytelling)",
+      "isAllRow": false,
+      "visible": false
+    },
+    {
+      "id": "cat-politics",
+      "name": "Politics & Society",
+      "rowTitleEn": "🏛️ Politics, Governance & Grassroots Leadership",
+      "rowTitleTe": "🏛️ రాజకీయాలు & ప్రజా పాలన (Politics & Society)",
+      "isAllRow": false,
+      "visible": false
+    }
+  ]
+}
