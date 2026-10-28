@@ -5,7 +5,7 @@
 window.RR_DATA = {
   "i18n": {
     "en": {
-      "brandSub": "ACTOR • PRODUCER • CELEBRITY MANAGER • HOST OF RAJA'S LEGACY LOUNGE",
+      "brandSub": "RAJA’S LEGACY LOUNGE",
       "navCatalog": "Legacy Lounge (15 Eps)",
       "navAnalytics": "Channel Analytics",
       "navGuests": "Guests & Connect",
@@ -46,7 +46,7 @@ window.RR_DATA = {
       "reelsBadge": "94.4% REELS DISTRIBUTION • 92.8% NON-FOLLOWER REACH"
     },
     "te": {
-      "brandSub": "నటుడు • నిర్మాత • సెలబ్రిటీ మేనేజర్ • రాజాస్ లెగసీ లాంజ్ హోస్ట్",
+      "brandSub": "RAJA’S LEGACY LOUNGE",
       "navCatalog": "లెగసీ లాంజ్ (15 ఎపిసోడ్స్)",
       "navAnalytics": "ఛానెల్ గణాంకాలు",
       "navGuests": "అతిథులు & మెసేజ్",
@@ -232,6 +232,74 @@ window.RR_DATA = {
     }
   ],
   "episodes": [
+    {
+      "id": "ep-17",
+      "epNumber": 17,
+      "category": "Entertainment",
+      "categoryLabel": "Entertainment",
+      "title": "Sai - Cyber Crime",
+      "titleTe": "Sai - Cyber Crime",
+      "guestId": "guest-17",
+      "guestName": "Sai - Cyber Crime",
+      "guestRole": "Sai - Cyber Crime",
+      "duration": "Full Episode",
+      "views": "Trending Episode",
+      "releaseBadge": "EPISODE 17",
+      "thumbnail": "https://img.youtube.com/vi/0PAHKE8t2k0/hqdefault.jpg",
+      "youtubeUrl": "https://www.youtube.com/watch?v=0PAHKE8t2k0",
+      "summary": "Sai - Cyber Crime",
+      "takeaways": [
+        "Unfiltered conversation on Raja's Legacy Lounge",
+        "Key insights shared by Sai - Cyber Crime"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "What did you enjoy most about this episode?",
+        "options": [
+          "Unfiltered honesty",
+          "Guest life lessons",
+          "Raja Raveendar's questions",
+          "Inspiring takeaways"
+        ],
+        "couponCode": "LEGACY17",
+        "sponsorReward": "Exclusive Partner Privilege Voucher"
+      }
+    },
+    {
+      "id": "ep-16",
+      "epNumber": 16,
+      "category": "Politics & Society",
+      "categoryLabel": "Politics & Society",
+      "title": "Suresh Kochati",
+      "titleTe": "Suresh Kochati",
+      "guestId": "guest-16",
+      "guestName": "Suresh Kochati",
+      "guestRole": "Suresh Kochattil is an Indian media professional, senior journalist, TEDx speaker, and political commentator based in Hyderabad, India.",
+      "duration": "Full Episode",
+      "views": "Trending Episode",
+      "releaseBadge": "EPISODE 16",
+      "thumbnail": "https://img.youtube.com/vi/99dfsBjHIx0/hqdefault.jpg",
+      "youtubeUrl": "https://youtu.be/99dfsBjHIx0",
+      "summary": "Suresh Kochattil is an Indian media professional, senior journalist, TEDx speaker, and political commentator based in Hyderabad, India.",
+      "takeaways": [
+        "Unfiltered conversation on Raja's Legacy Lounge",
+        "Key insights shared by Suresh Kochati"
+      ],
+      "references": [],
+      "discussions": [],
+      "poll": {
+        "question": "What did you enjoy most about this episode?",
+        "options": [
+          "Unfiltered honesty",
+          "Guest life lessons",
+          "Raja Raveendar's questions",
+          "Inspiring takeaways"
+        ],
+        "couponCode": "LEGACY16",
+        "sponsorReward": "Exclusive Partner Privilege Voucher"
+      }
+    },
     {
       "id": "ep-15",
       "epNumber": 15,
@@ -759,6 +827,42 @@ window.RR_DATA = {
     }
   ],
   "viralReels": [
+    {
+      "id": "reel-1793189551864",
+      "title": "త్రివిక్రమ్ 40 వేల జీతం వదిలేసి 3 వేలకి ఎందుకు పనిచేశాడో తెలుసా?",
+      "titleTe": "త్రివిక్రమ్ 40 వేల జీతం వదిలేసి 3 వేలకి ఎందుకు పనిచేశాడో తెలుసా?",
+      "category": "Entertainment",
+      "views": "1,60,000 Views",
+      "likes": "50K+ Likes",
+      "guest": "BVS Ravi",
+      "videoUrl": "https://www.youtube.com/shorts/bGjYtDWRK5c",
+      "thumbnail": "https://img.youtube.com/vi/bGjYtDWRK5c/hqdefault.jpg",
+      "quote": "త్రివిక్రమ్ 40 వేల జీతం వదిలేసి 3 వేలకి \nఎందుకు పనిచేశాడో తెలుసా?"
+    },
+    {
+      "id": "reel-1793189417632",
+      "title": "బాబుని అన్‌స్టాపబుల్ కి ఎలా ఒప్పించావ్ తమ్ముడు",
+      "titleTe": "బాబుని అన్‌స్టాపబుల్ కి ఎలా ఒప్పించావ్ తమ్ముడు",
+      "category": "Entertainment",
+      "views": "6,16,000 Views",
+      "likes": "50K+ Likes",
+      "guest": "BVS Ravi",
+      "videoUrl": "https://www.youtube.com/shorts/XJkCo8ZzAUA",
+      "thumbnail": "https://img.youtube.com/vi/XJkCo8ZzAUA/hqdefault.jpg",
+      "quote": "బాబుని అన్‌స్టాపబుల్ కి ఎలా ఒప్పించావ్ తమ్ముడు"
+    },
+    {
+      "id": "reel-1793189254226",
+      "title": "I saw RGV Raktacharitra in UP",
+      "titleTe": "యూపీలో నేను రామ్ గోపాల్ వర్మ, \"రక్త చరిత్ర\" సినిమాని లైవ్‌లో చూశాను",
+      "category": "Entertainment",
+      "views": "30,01,934 Views",
+      "likes": "50K+ Likes",
+      "guest": "Bandla Ganesh",
+      "videoUrl": "https://www.youtube.com/shorts/-PGeL5ZBPsw",
+      "thumbnail": "https://img.youtube.com/vi/-PGeL5ZBPsw/hqdefault.jpg",
+      "quote": "సినీ నిర్మాత, నటుడు బండ్ల గణేష్ (Bandla Ganesh) మనసు విప్పి మాట్లాడితే ఎలా ఉంటుందో ప్రత్యేకంగా చెప్పక్కర్లేదు."
+    },
     {
       "id": "reel-1793094813844",
       "title": "MS Narayana had a habit of addressing older individuals as \"uncle\" out of respect",
