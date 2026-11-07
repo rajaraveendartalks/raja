@@ -218,7 +218,7 @@ window.RR_DATA = {
     },
     {
       "id": "storyteller",
-      "role": "Authentic Storyteller & Strategist",
+      "role": "Authentic Podcaster & Strategist",
       "roleTe": "కథకుడు & సెలబ్రిటీ మేనేజర్",
       "badge": "Cross-Industry Bridge",
       "headline": "Exploring the Realities Behind Successes & Lessons Hidden in Failures",
