@@ -92,7 +92,7 @@ window.RR_DATA = {
       "id": "yt_subs",
       "label": "YouTube Subscribers",
       "labelTe": "యూట్యూబ్ సబ్‌స్క్రైబర్లు",
-      "value": "529.2",
+      "value": "689.3",
       "suffix": "K+",
       "subtext": "Official Channel: Raja Raveendar Talks",
       "platform": "YouTube Followers",
@@ -104,7 +104,7 @@ window.RR_DATA = {
       "id": "yt_views",
       "label": "YouTube Total Views",
       "labelTe": "యూట్యూబ్ మొత్తం వ్యూస్",
-      "value": "2.96",
+      "value": "2.56",
       "suffix": " Cr+",
       "subtext": "15 Episodes of Raja’s Legacy Lounge",
       "platform": "YouTube Views",
@@ -116,9 +116,9 @@ window.RR_DATA = {
       "id": "ig_performance",
       "label": "Instagram @rajaraveendar",
       "labelTe": "ఇన్‌స్టాగ్రామ్ రీల్ వ్యూస్ & ఫాలోవర్లు",
-      "value": "3.8",
-      "suffix": " Cr+ Views",
-      "subtext": "45K Followers",
+      "value": "8.2",
+      "suffix": "M Views",
+      "subtext": "38K Followers • 3.4M Unique Viewers",
       "platform": "Instagram Reels",
       "color": "#D97706",
       "icon": "📸",
@@ -128,9 +128,9 @@ window.RR_DATA = {
       "id": "fb_performance",
       "label": "Facebook Analytics",
       "labelTe": "ఫేస్‌బుక్ వ్యూస్ (+1,362%)",
-      "value": "1.49",
-      "suffix": " Cr+ Views",
-      "subtext": "150K Followers",
+      "value": "6.49",
+      "suffix": "M Views",
+      "subtext": "+1,362% Growth • 92.8% Non-Follower Reach",
       "platform": "Facebook Reach",
       "color": "#0D9488",
       "icon": "📈",
@@ -178,15 +178,15 @@ window.RR_DATA = {
       "id": "podcaster",
       "role": "Raja’s Legacy Lounge",
       "roleTe": "రాజాస్ లెగసీ లాంజ్",
-      "badge": "528.3K+ YT Subscribers",
-      "headline": "Life is a journey… every person has a story",
+      "badge": "689.3K+ YT Subscribers",
+      "headline": "“జీవితం ఒక ప్రయాణం… ప్రతి మనిషి ఒక కథ” (Life is a journey… every person has a story)",
       "description": "Stepping into the digital space on his official YouTube channel 'Raja Raveendar Talks', Raja’s Legacy Lounge moves far beyond standard celebrity interviews—welcoming Film Personalities, Political Leaders, Policy Makers, Doctors, Wellness Coaches, and Tech Innovators for unscripted, long-form dialogues.",
       "highlights": [
-        "16 Landmark Episodes & 7.4 Crore+ Views in 7 months",
+        "15 Landmark Episodes & 2.56 Crore+ Views",
         "Multidisciplinary: Cinema, Politics, Healthcare & AI",
         "Unscripted, Responsible & High-Retention Storytelling"
       ],
-      "image": "/uploads/1794052001_Golden_Journey__Temple_Sunset.png"
+      "image": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=900&q=80"
     },
     {
       "id": "actor",
@@ -200,7 +200,7 @@ window.RR_DATA = {
         "Acted Across Hundreds of Feature Films",
         "Deep Roots with Legendary Actors & Filmmakers"
       ],
-      "image": "/uploads/1794053186_Raja_Raveendar__Three_Decades_of_Cinema.png"
+      "image": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=900&q=80"
     },
     {
       "id": "network",
@@ -214,7 +214,7 @@ window.RR_DATA = {
         "Influencer Paid Brand Collaboration Network",
         "Hands-On Internships in AI, DOP, Editing, SEO & Research"
       ],
-      "image": "/uploads/1794052539_Raja_Raveendar_s_Creator_Ecosystem.png"
+      "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=900&q=80"
     },
     {
       "id": "storyteller",
@@ -228,7 +228,7 @@ window.RR_DATA = {
         "Bridging Viewers Directly with Iconic Guests",
         "High-Impact Brand & Content Curation"
       ],
-      "image": "/uploads/1794053308_Raja_Raveendar__The_Storyteller_s_Journey.png"
+      "image": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=900&q=80"
     }
   ],
   "episodes": [
@@ -1215,14 +1215,14 @@ window.RR_DATA = {
     },
     {
       "id": "sp-6",
-      "name": "DiaGrand Fine Jewelry",
-      "tier": "Official Fine Jewelry & Craftsmanship Partner",
-      "category": "Fine Jewelry",
-      "logoText": "DIAGRAND JEWELRY",
+      "name": "DiaGrand",
+      "tier": "Advanced Nutritional Supplement",
+      "category": "Advanced Nutritional Supplement",
+      "logoText": "DIAGRAND",
       "accentColor": "#7C3AED",
-      "tagline": "A trusted symbol of exquisite craftsmanship and timeless elegance in fine jewelry.",
+      "tagline": "A trusted symbol of Advanced Nutritional Supplement",
       "integration": "Official Luxury Partner – Raja’s Legacy Lounge",
-      "exclusiveOffer": "Connect for bespoke bridal & diamond consultations with special Legacy Lounge privileges.",
+      "exclusiveOffer": "Connect for DiaGrand Advanced Nutritional Supplement | Low GI Nutrition Powder",
       "website": "#sponsors-section"
     }
   ],
