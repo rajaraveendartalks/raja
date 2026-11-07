@@ -995,20 +995,6 @@ window.RR_DATA = {
       "messages": []
     },
     {
-      "id": "guest-1794058123689",
-      "name": "Lakshmi Manchu",
-      "domain": "Entertainment",
-      "title": "Actress",
-      "org": "Raja’s Legacy Lounge",
-      "episodeRef": "Episode 02",
-      "avatar": "/uploads/1794058065_lakshmi-manchu.webp",
-      "bio": "Manchu Lakshmi Prasanna, professionally known as Lakshmi Manchu, is an Indian actress, film producer, and television presenter renowned for her work across Telugu, Tamil, Hindi, and American entertainment industries",
-      "specialties": [
-        "Tollywood"
-      ],
-      "messages": []
-    },
-    {
       "id": "guest-1794058302537",
       "name": "Tejaswi Madivada",
       "domain": "Entertainment",
@@ -1019,6 +1005,20 @@ window.RR_DATA = {
       "bio": "Tejaswi Madivada is an Indian actress, model, and reality television personality who predominantly works in the Telugu entertainment industry.",
       "specialties": [
         "Tejaswi is well-known for her stints on reality television. She participated as a contestant on Bigg Boss Telugu Season 2 (2018) and later on Bigg Boss Non-Stop (2022). Her subsequent reality show and streaming projects include Reality Ranis of the Jungle (2024) and the star-studded show The 50 (2026)"
+      ],
+      "messages": []
+    },
+    {
+      "id": "guest-1794058123689",
+      "name": "Lakshmi Manchu",
+      "domain": "Entertainment",
+      "title": "Actress",
+      "org": "Raja’s Legacy Lounge",
+      "episodeRef": "Episode 02",
+      "avatar": "/uploads/1794058065_lakshmi-manchu.webp",
+      "bio": "Manchu Lakshmi Prasanna, professionally known as Lakshmi Manchu, is an Indian actress, film producer, and television presenter renowned for her work across Telugu, Tamil, Hindi, and American entertainment industries",
+      "specialties": [
+        "Tollywood"
       ],
       "messages": []
     },
