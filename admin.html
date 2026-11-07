@@ -105,11 +105,17 @@
       </div>
     </div>
     <div class="nav-actions">
+      <button class="btn btn-gold" id="top-deploy-btn" onclick="triggerOneClickDeploy()">
+        🚀 1-Click Deploy to GitHub & Vercel
+      </button>
       <button class="btn btn-primary" onclick="saveAllSiteDataToBackend()">
         💾 Save & Publish All Changes Live
       </button>
       <a href="index.html" target="_blank" class="btn btn-secondary">
-        🌐 View Live Website ↗
+        🌐 Local Preview ↗
+      </a>
+      <a href="https://vercel.com/rajaraveendar/raja-u6fs" target="_blank" class="btn btn-secondary">
+        🌍 Vercel Dashboard ↗
       </a>
     </div>
   </header>
@@ -143,6 +149,9 @@
       </button>
       <button class="admin-nav-btn" data-tab="stats" onclick="switchAdminTab('stats')">
         <span>📊 Views & Followers</span>
+      </button>
+      <button class="admin-nav-btn" data-tab="deploy" onclick="switchAdminTab('deploy')" style="border:1px dashed var(--accent-gold); background:#FFFBEB;">
+        <span>🚀 Cloud Deploy (GitHub & Vercel)</span>
       </button>
 
       <div style="font-size:0.73rem; font-weight:800; color:var(--text-muted); padding:14px 12px 4px; text-transform:uppercase;">
@@ -268,12 +277,56 @@
         });
         const json = await res.json();
         if (json.ok) {
-          showToast("✅ Published! All changes are now live on the main website.");
+          if (json.deploy && json.deploy.ok) {
+            showToast("🚀 Saved Locally AND Auto-Deployed to GitHub & Live Vercel!");
+          } else if (json.deploy && json.deploy.needsAuth) {
+            showToast("✅ Saved locally! Connect GitHub once in 🚀 Cloud Deploy tab for live Vercel push.");
+          } else {
+            showToast("✅ Published locally! Click '🚀 1-Click Deploy' to push to GitHub & Vercel.");
+          }
         } else {
           showToast("❌ Error saving: " + json.error);
         }
       } catch (err) {
         showToast("❌ Could not connect to server.py.");
+      }
+    }
+
+    async function triggerOneClickDeploy() {
+      const btn = document.getElementById("top-deploy-btn");
+      const origText = btn ? btn.innerHTML : "🚀 1-Click Deploy to GitHub & Vercel";
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = "⏳ Deploying to GitHub & Vercel...";
+      }
+      try {
+        // First ensure latest in-memory data is written to disk
+        await fetch("/api/admin/save-data", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ data: window.RR_DATA })
+        });
+
+        const res = await fetch("/api/deploy/push", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ commitMessage: "1-Click Admin CMS Deploy to GitHub & Vercel" })
+        });
+        const json = await res.json();
+        if (json.ok) {
+          showToast("🎉 " + json.message);
+          if (currentTab === "deploy") renderCurrentTab();
+        } else {
+          showToast("⚠️ " + (json.message || json.error));
+          switchAdminTab("deploy");
+        }
+      } catch (err) {
+        showToast("❌ Deploy error: " + err.message);
+      } finally {
+        if (btn) {
+          btn.disabled = false;
+          btn.innerHTML = origText;
+        }
       }
     }
 
@@ -334,6 +387,7 @@
       if (currentTab === "guests") return renderGuestsCMS(panel);
       if (currentTab === "sponsors") return renderSponsorsCMS(panel);
       if (currentTab === "stats") return renderStatsCMS(panel);
+      if (currentTab === "deploy") return renderDeployCMS(panel);
       if (currentTab.startsWith("inbox-")) return renderInboxTab(panel, currentTab);
     }
 
@@ -1381,6 +1435,165 @@
           <button class="btn btn-primary" onclick="saveAllSiteDataToBackend()">💾 Save Updated Views & Followers</button>
         </div>
       `;
+    }
+
+    // ========================================================================
+    // TAB 8B: 1-CLICK CLOUD DEPLOY (GITHUB & VERCEL)
+    // ========================================================================
+    async function renderDeployCMS(panel) {
+      panel.innerHTML = `<div class="cms-card"><p>Loading Cloud Deploy status...</p></div>`;
+      try {
+        const res = await fetch("/api/deploy/status");
+        const json = await res.json();
+        const cfg = json.config || {};
+        const git = json.git || { pendingChangesCount: 0, pendingFiles: [], uploadsCount: 0 };
+
+        panel.innerHTML = `
+          <div class="cms-card" style="border:2px solid var(--accent-gold);">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:14px; margin-bottom:16px;">
+              <div>
+                <span class="pill-badge pill-gold">CONNECTED TO GITHUB & VERCEL</span>
+                <h2 style="font-size:1.5rem; font-weight:900; margin-top:6px;">🚀 1-Click Auto-Deploy to GitHub & Live Vercel</h2>
+                <p style="font-size:0.88rem; color:var(--text-secondary); margin-top:4px;">
+                  Every time you click <strong>🚀 1-Click Deploy</strong> (or Save), this CMS commits your episodes, reels, guest profiles, and all <strong>${git.uploadsCount} uploaded photos in <code>uploads/</code></strong> directly to <code>rajaraveendartalks/raja</code>, which automatically updates your live Vercel website!
+                </p>
+              </div>
+              <button class="btn btn-primary" style="font-size:1rem; padding:12px 22px;" onclick="triggerOneClickDeploy()">
+                🚀 Push All Changes & Photos to Live Vercel Now
+              </button>
+            </div>
+
+            <!-- Live Status Banner -->
+            <div style="background:var(--bg-primary); border:1px solid var(--border-light); border-radius:12px; padding:16px; margin-bottom:20px; display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:14px;">
+              <div>
+                <div style="font-size:0.75rem; font-weight:800; color:var(--text-muted); text-transform:uppercase;">GitHub Repository</div>
+                <a href="https://github.com/rajaraveendartalks/raja" target="_blank" style="font-weight:800; color:var(--accent-crimson); text-decoration:underline;">
+                  github.com/rajaraveendartalks/raja ↗
+                </a>
+              </div>
+              <div>
+                <div style="font-size:0.75rem; font-weight:800; color:var(--text-muted); text-transform:uppercase;">Vercel Project</div>
+                <a href="${cfg.vercelDashboardUrl || "https://vercel.com/rajaraveendar/raja-u6fs"}" target="_blank" style="font-weight:800; color:var(--accent-crimson); text-decoration:underline;">
+                  vercel.com/rajaraveendar/raja-u6fs ↗
+                </a>
+              </div>
+              <div>
+                <div style="font-size:0.75rem; font-weight:800; color:var(--text-muted); text-transform:uppercase;">Uploaded Media Ready</div>
+                <div style="font-weight:800; color:var(--text-primary);">📸 ${git.uploadsCount} Photos in <code>uploads/</code></div>
+              </div>
+              <div>
+                <div style="font-size:0.75rem; font-weight:800; color:var(--text-muted); text-transform:uppercase;">Last Deploy Status</div>
+                <div style="font-weight:700; font-size:0.84rem; color:var(--text-primary);">${cfg.lastDeployStatus || "Ready to deploy"}</div>
+              </div>
+            </div>
+
+            <!-- One-Time GitHub Connection Setup -->
+            <div style="background:#FFFBEB; border:1px solid #FDE68A; border-radius:14px; padding:18px; margin-bottom:20px;">
+              <h3 style="font-size:1.05rem; font-weight:900; margin-bottom:6px; color:#92400E;">
+                🔑 One-Time GitHub Authorization (Choose Either Method)
+              </h3>
+              <p style="font-size:0.85rem; color:#78350F; margin-bottom:14px;">
+                To allow your local computer to push directly to <code>https://github.com/rajaraveendartalks/raja</code> without manual file uploads, connect your <strong>rajaraveendartalks</strong> GitHub account once using <strong>Method A</strong> or <strong>Method B</strong> below:
+              </p>
+
+              <div class="dual-forms-grid" style="gap:16px;">
+                <!-- Method A: 1-Click Browser Login -->
+                <div style="background:#FFFFFF; padding:16px; border-radius:12px; border:1px solid var(--border-light);">
+                  <div style="font-weight:800; font-size:0.92rem; margin-bottom:6px;">Method A: 1-Click Browser Login</div>
+                  <p style="font-size:0.82rem; color:var(--text-secondary); margin-bottom:12px;">
+                    Opens a tab in your web browser where you are signed into <strong>rajaraveendartalks</strong>. Just click <strong>"Authorize"</strong> and you're done!
+                  </p>
+                  <button type="button" class="btn btn-gold" style="width:100%;" onclick="startGithubBrowserLogin()">
+                    🌐 Authorize GitHub in Browser
+                  </button>
+                </div>
+
+                <!-- Method B: Personal Access Token -->
+                <div style="background:#FFFFFF; padding:16px; border-radius:12px; border:1px solid var(--border-light);">
+                  <div style="font-weight:800; font-size:0.92rem; margin-bottom:6px;">
+                    Method B: GitHub Personal Access Token ${cfg.hasGithubToken ? '<span class="pill-badge pill-crimson">✅ SAVED</span>' : ""}
+                  </div>
+                  <p style="font-size:0.8rem; color:var(--text-secondary); margin-bottom:8px;">
+                    Create a token at <a href="https://github.com/settings/tokens/new?scopes=repo&description=RajaRaveendarCMS" target="_blank" style="color:var(--accent-crimson); font-weight:700; text-decoration:underline;">GitHub Tokens (repo scope) ↗</a> and paste it below (saved strictly on your PC in <code>.deploy_config.json</code>, never uploaded):
+                  </p>
+                  <div style="display:flex; gap:8px;">
+                    <input type="password" id="dep-token" class="form-control" placeholder="${cfg.hasGithubToken ? "•••••••••••••••• (Token Saved)" : "Paste ghp_... token here"}" />
+                    <button type="button" class="btn btn-primary" style="white-space:nowrap; padding:8px 14px;" onclick="saveDeployConfigForm(true)">
+                      💾 Save & Deploy
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Repository & Auto-Deploy Settings -->
+            <form onsubmit="event.preventDefault(); saveDeployConfigForm(false);">
+              <div class="dual-forms-grid" style="gap:14px;">
+                <div class="form-group">
+                  <label>GitHub Repository URL</label>
+                  <input type="text" id="dep-repo" class="form-control" value="${cfg.repoUrl || "https://github.com/rajaraveendartalks/raja.git"}" required />
+                </div>
+                <div class="form-group">
+                  <label>Target Branch</label>
+                  <input type="text" id="dep-branch" class="form-control" value="${cfg.branch || "main"}" required />
+                </div>
+              </div>
+              <div class="form-group" style="display:flex; align-items:center; gap:10px;">
+                <input type="checkbox" id="dep-auto" style="width:18px; height:18px; accent-color:var(--accent-crimson);" ${cfg.autoDeployOnSave ? "checked" : ""} />
+                <label for="dep-auto" style="margin:0; font-size:0.9rem; cursor:pointer;">
+                  <strong>Auto-Deploy on Save:</strong> Automatically push to GitHub & trigger Vercel deployment every time I click Save in any CMS tab
+                </label>
+              </div>
+              <button type="submit" class="btn btn-secondary">💾 Save Cloud Deploy Preferences</button>
+            </form>
+          </div>
+        `;
+      } catch (e) {
+        panel.innerHTML = `<div class="cms-card"><p>Error loading Cloud Deploy settings: ${e.message}</p></div>`;
+      }
+    }
+
+    async function startGithubBrowserLogin() {
+      try {
+        const res = await fetch("/api/deploy/github-browser-login", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({})
+        });
+        const json = await res.json();
+        showToast(json.message || "Opened GitHub browser login!");
+      } catch (e) {
+        showToast("❌ Could not launch browser login: " + e.message);
+      }
+    }
+
+    async function saveDeployConfigForm(andDeployNow) {
+      const tokenEl = document.getElementById("dep-token");
+      const repoEl = document.getElementById("dep-repo");
+      const branchEl = document.getElementById("dep-branch");
+      const autoEl = document.getElementById("dep-auto");
+
+      const payload = {
+        repoUrl: repoEl ? repoEl.value.trim() : "https://github.com/rajaraveendartalks/raja.git",
+        branch: branchEl ? branchEl.value.trim() : "main",
+        autoDeployOnSave: autoEl ? autoEl.checked : true
+      };
+      if (tokenEl && tokenEl.value.trim()) {
+        payload.githubToken = tokenEl.value.trim();
+      }
+
+      await fetch("/api/deploy/config", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      showToast("✅ Cloud Deploy configuration saved!");
+
+      if (andDeployNow) {
+        await triggerOneClickDeploy();
+      } else {
+        renderCurrentTab();
+      }
     }
 
     // ========================================================================

@@ -178,15 +178,15 @@ window.RR_DATA = {
       "id": "podcaster",
       "role": "Raja’s Legacy Lounge",
       "roleTe": "రాజాస్ లెగసీ లాంజ్",
-      "badge": "689.3K+ YT Subscribers",
-      "headline": "“జీవితం ఒక ప్రయాణం… ప్రతి మనిషి ఒక కథ” (Life is a journey… every person has a story)",
+      "badge": "528.3K+ YT Subscribers",
+      "headline": "Life is a journey… every person has a story",
       "description": "Stepping into the digital space on his official YouTube channel 'Raja Raveendar Talks', Raja’s Legacy Lounge moves far beyond standard celebrity interviews—welcoming Film Personalities, Political Leaders, Policy Makers, Doctors, Wellness Coaches, and Tech Innovators for unscripted, long-form dialogues.",
       "highlights": [
-        "15 Landmark Episodes & 2.56 Crore+ Views",
+        "16 Landmark Episodes & 7.4 Crore+ Views in 7 months",
         "Multidisciplinary: Cinema, Politics, Healthcare & AI",
         "Unscripted, Responsible & High-Retention Storytelling"
       ],
-      "image": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=900&q=80"
+      "image": "/uploads/1794052001_Golden_Journey__Temple_Sunset.png"
     },
     {
       "id": "actor",
