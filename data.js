@@ -1109,22 +1109,6 @@ window.RR_DATA = {
       "messages": []
     },
     {
-      "id": "guest-11",
-      "name": "Macha BVS Ravi & Kalyan",
-      "domain": "Technology & Cinema",
-      "title": "Screenwriter, Filmmaker & Showrunner Strategist",
-      "org": "Telugu Cinema & Unstoppable Creative Team",
-      "episodeRef": "Episode 11",
-      "avatar": "/uploads/1793170056_bvs.jpg",
-      "bio": "Key creative minds behind blockbuster talk formats, screenwriting, in-film branding, and AI adoption in Telugu entertainment.",
-      "specialties": [
-        "Show Strategy",
-        "In-Film Branding",
-        "AI Cinema Future"
-      ],
-      "messages": []
-    },
-    {
       "id": "guest-04",
       "name": "Bandla Ganesh",
       "domain": "Entertainment",
@@ -1137,6 +1121,22 @@ window.RR_DATA = {
         "Film Production",
         "Entrepreneurship",
         "Unfiltered Talks"
+      ],
+      "messages": []
+    },
+    {
+      "id": "guest-11",
+      "name": "Macha BVS Ravi & Kalyan",
+      "domain": "Technology & Cinema",
+      "title": "Screenwriter, Filmmaker & Showrunner Strategist",
+      "org": "Telugu Cinema & Unstoppable Creative Team",
+      "episodeRef": "Episode 11",
+      "avatar": "/uploads/1793170056_bvs.jpg",
+      "bio": "Key creative minds behind blockbuster talk formats, screenwriting, in-film branding, and AI adoption in Telugu entertainment.",
+      "specialties": [
+        "Show Strategy",
+        "In-Film Branding",
+        "AI Cinema Future"
       ],
       "messages": []
     }
