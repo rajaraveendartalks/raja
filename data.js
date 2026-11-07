@@ -1048,22 +1048,6 @@ window.RR_DATA = {
       "messages": []
     },
     {
-      "id": "guest-05",
-      "name": "Sahaja Nati Smt. Jayasudha",
-      "domain": "Entertainment",
-      "title": "Legendary Actress • 50 Years & 350+ Films",
-      "org": "Indian & Telugu Cinema",
-      "episodeRef": "Episode 05 (Part 1 & 2)",
-      "avatar": "/uploads/1793169818_Jayasudha.png",
-      "bio": "Revered as 'Sahaja Nati' for bringing unmatched naturalism to Telugu cinema across five decades and over 350 motion pictures.",
-      "specialties": [
-        "50-Year Acting Legacy",
-        "350+ Feature Films",
-        "Cinema History"
-      ],
-      "messages": []
-    },
-    {
       "id": "guest-11",
       "name": "Macha BVS Ravi & Kalyan",
       "domain": "Technology & Cinema",
@@ -1076,6 +1060,22 @@ window.RR_DATA = {
         "Show Strategy",
         "In-Film Branding",
         "AI Cinema Future"
+      ],
+      "messages": []
+    },
+    {
+      "id": "guest-05",
+      "name": "Sahaja Nati Smt. Jayasudha",
+      "domain": "Entertainment",
+      "title": "Legendary Actress • 50 Years & 350+ Films",
+      "org": "Indian & Telugu Cinema",
+      "episodeRef": "Episode 05 (Part 1 & 2)",
+      "avatar": "/uploads/1793169818_Jayasudha.png",
+      "bio": "Revered as 'Sahaja Nati' for bringing unmatched naturalism to Telugu cinema across five decades and over 350 motion pictures.",
+      "specialties": [
+        "50-Year Acting Legacy",
+        "350+ Feature Films",
+        "Cinema History"
       ],
       "messages": []
     },
