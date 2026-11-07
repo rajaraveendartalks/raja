@@ -1025,6 +1025,22 @@ window.RR_DATA = {
       "messages": []
     },
     {
+      "id": "guest-08",
+      "name": "Dr. K. Shilpi Reddy",
+      "domain": "Healthcare",
+      "title": "Clinical Director – Obstetrics & Gynecology",
+      "org": "KIMS Cuddles, Kondapur, Hyderabad",
+      "episodeRef": "Episode 08",
+      "avatar": "/uploads/1793169686_dr_shilpi.jpg",
+      "bio": "Renowned specialist in high-risk pregnancy, women's preventive wellness, holistic fertility, and public health awareness.",
+      "specialties": [
+        "Women's Wellness",
+        "High-Risk Obstetrics",
+        "Metabolic Health"
+      ],
+      "messages": []
+    },
+    {
       "id": "guest-06",
       "name": "Padma Bhushan Dr. Nori Dattatreyudu",
       "domain": "Healthcare",
@@ -1046,22 +1062,6 @@ window.RR_DATA = {
           "reply": "Query logged and shared with Dr. Nori's outreach secretariat."
         }
       ]
-    },
-    {
-      "id": "guest-08",
-      "name": "Dr. K. Shilpi Reddy",
-      "domain": "Healthcare",
-      "title": "Clinical Director – Obstetrics & Gynecology",
-      "org": "KIMS Cuddles, Kondapur, Hyderabad",
-      "episodeRef": "Episode 08",
-      "avatar": "/uploads/1793169686_dr_shilpi.jpg",
-      "bio": "Renowned specialist in high-risk pregnancy, women's preventive wellness, holistic fertility, and public health awareness.",
-      "specialties": [
-        "Women's Wellness",
-        "High-Risk Obstetrics",
-        "Metabolic Health"
-      ],
-      "messages": []
     },
     {
       "id": "guest-04",
