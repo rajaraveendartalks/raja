@@ -1060,22 +1060,6 @@ window.RR_DATA = {
       "messages": []
     },
     {
-      "id": "guest-13",
-      "name": "Divi Vadthya",
-      "domain": "Entertainment",
-      "title": "Actor, Model & M.Tech Gold Medalist",
-      "org": "Telugu Cinema & OTT (GodFather, Bigg Boss)",
-      "episodeRef": "Episode 13",
-      "avatar": "/uploads/1793169972_Divi-Vadthya.jpg",
-      "bio": "Featured in the #1 top-performing episode of Legacy Lounge, sharing her journey from engineering gold medalist to Tollywood.",
-      "specialties": [
-        "Feature Films & OTT",
-        "Brand Endorsements",
-        "Youth Inspiration"
-      ],
-      "messages": []
-    },
-    {
       "id": "guest-03",
       "name": "Dr. Rajasekhar",
       "domain": "Entertainment",
@@ -1088,6 +1072,22 @@ window.RR_DATA = {
         "40-Year Film Career",
         "Action & Drama Icon",
         "Medical Background"
+      ],
+      "messages": []
+    },
+    {
+      "id": "guest-13",
+      "name": "Divi Vadthya",
+      "domain": "Entertainment",
+      "title": "Actor, Model & M.Tech Gold Medalist",
+      "org": "Telugu Cinema & OTT (GodFather, Bigg Boss)",
+      "episodeRef": "Episode 13",
+      "avatar": "/uploads/1793169972_Divi-Vadthya.jpg",
+      "bio": "Featured in the #1 top-performing episode of Legacy Lounge, sharing her journey from engineering gold medalist to Tollywood.",
+      "specialties": [
+        "Feature Films & OTT",
+        "Brand Endorsements",
+        "Youth Inspiration"
       ],
       "messages": []
     },
