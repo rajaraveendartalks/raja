@@ -967,21 +967,6 @@ window.RR_DATA = {
       "messages": []
     },
     {
-      "id": "guest-1793167630974",
-      "name": "Ram Gopal Varma (RGV)",
-      "domain": "Entertainment",
-      "title": "Visionary Filmmaker & AI Cinema Pioneer",
-      "org": "Raja’s Legacy Lounge",
-      "episodeRef": "Episode 01",
-      "avatar": "/uploads/1793167618_rgv.jpg",
-      "bio": "One of Indian cinema's most influential disruptors. Featured in the premiere episode of Raja's Legacy Lounge dissecting the AI revolution in filmmaking.",
-      "specialties": [
-        "Entertainment",
-        "Legacy Lounge Guest"
-      ],
-      "messages": []
-    },
-    {
       "id": "guest-15",
       "name": "Sri Raghurama Krishnam Raju (RRR)",
       "domain": "Politics & Society",
@@ -1003,6 +988,21 @@ window.RR_DATA = {
           "reply": "Thank you! Message shared with the Deputy Speaker's public relations desk."
         }
       ]
+    },
+    {
+      "id": "guest-1793167630974",
+      "name": "Ram Gopal Varma (RGV)",
+      "domain": "Entertainment",
+      "title": "Visionary Filmmaker & AI Cinema Pioneer",
+      "org": "Raja’s Legacy Lounge",
+      "episodeRef": "Episode 01",
+      "avatar": "/uploads/1793167618_rgv.jpg",
+      "bio": "One of Indian cinema's most influential disruptors. Featured in the premiere episode of Raja's Legacy Lounge dissecting the AI revolution in filmmaking.",
+      "specialties": [
+        "Entertainment",
+        "Legacy Lounge Guest"
+      ],
+      "messages": []
     },
     {
       "id": "guest-06",
