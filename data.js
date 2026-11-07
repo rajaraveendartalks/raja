@@ -924,6 +924,21 @@ window.RR_DATA = {
   ],
   "guests": [
     {
+      "id": "guest-1794057995863",
+      "name": "Suresh Kochattil",
+      "domain": "Culture & Storytelling",
+      "title": "Historian and Political Analysts",
+      "org": "Raja’s Legacy Lounge",
+      "episodeRef": "Episode 16",
+      "avatar": "/uploads/1794057967_1793171224_suresh.jpg",
+      "bio": "Suresh Kochattil is an Indian media professional, political commentator, senior journalist, and TEDx speaker based in Hyderabad",
+      "specialties": [
+        "Expert on History",
+        "National and Geo Politics"
+      ],
+      "messages": []
+    },
+    {
       "id": "guest-1793167630974",
       "name": "Ram Gopal Varma (RGV)",
       "domain": "Entertainment",
