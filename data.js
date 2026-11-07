@@ -990,21 +990,6 @@ window.RR_DATA = {
       "messages": []
     },
     {
-      "id": "guest-1793167630974",
-      "name": "Ram Gopal Varma (RGV)",
-      "domain": "Entertainment",
-      "title": "Visionary Filmmaker & AI Cinema Pioneer",
-      "org": "Raja’s Legacy Lounge",
-      "episodeRef": "Episode 01",
-      "avatar": "/uploads/1793167618_rgv.jpg",
-      "bio": "One of Indian cinema's most influential disruptors. Featured in the premiere episode of Raja's Legacy Lounge dissecting the AI revolution in filmmaking.",
-      "specialties": [
-        "Entertainment",
-        "Legacy Lounge Guest"
-      ],
-      "messages": []
-    },
-    {
       "id": "guest-13",
       "name": "Divi Vadthya",
       "domain": "Entertainment",
@@ -1017,6 +1002,21 @@ window.RR_DATA = {
         "Feature Films & OTT",
         "Brand Endorsements",
         "Youth Inspiration"
+      ],
+      "messages": []
+    },
+    {
+      "id": "guest-1793167630974",
+      "name": "Ram Gopal Varma (RGV)",
+      "domain": "Entertainment",
+      "title": "Visionary Filmmaker & AI Cinema Pioneer",
+      "org": "Raja’s Legacy Lounge",
+      "episodeRef": "Episode 01",
+      "avatar": "/uploads/1793167618_rgv.jpg",
+      "bio": "One of Indian cinema's most influential disruptors. Featured in the premiere episode of Raja's Legacy Lounge dissecting the AI revolution in filmmaking.",
+      "specialties": [
+        "Entertainment",
+        "Legacy Lounge Guest"
       ],
       "messages": []
     },
