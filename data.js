@@ -200,7 +200,7 @@ window.RR_DATA = {
         "Acted Across Hundreds of Feature Films",
         "Deep Roots with Legendary Actors & Filmmakers"
       ],
-      "image": "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=900&q=80"
+      "image": "/uploads/1794053186_Raja_Raveendar__Three_Decades_of_Cinema.png"
     },
     {
       "id": "network",
