@@ -1064,20 +1064,6 @@ window.RR_DATA = {
       "messages": []
     },
     {
-      "id": "guest-1794058123689",
-      "name": "Lakshmi Manchu",
-      "domain": "Entertainment",
-      "title": "Actress",
-      "org": "Raja’s Legacy Lounge",
-      "episodeRef": "Episode 02",
-      "avatar": "/uploads/1794058065_lakshmi-manchu.webp",
-      "bio": "Manchu Lakshmi Prasanna, professionally known as Lakshmi Manchu, is an Indian actress, film producer, and television presenter renowned for her work across Telugu, Tamil, Hindi, and American entertainment industries",
-      "specialties": [
-        "Tollywood"
-      ],
-      "messages": []
-    },
-    {
       "id": "guest-03",
       "name": "Dr. Rajasekhar",
       "domain": "Entertainment",
@@ -1090,6 +1076,20 @@ window.RR_DATA = {
         "40-Year Film Career",
         "Action & Drama Icon",
         "Medical Background"
+      ],
+      "messages": []
+    },
+    {
+      "id": "guest-1794058123689",
+      "name": "Lakshmi Manchu",
+      "domain": "Entertainment",
+      "title": "Actress",
+      "org": "Raja’s Legacy Lounge",
+      "episodeRef": "Episode 02",
+      "avatar": "/uploads/1794058065_lakshmi-manchu.webp",
+      "bio": "Manchu Lakshmi Prasanna, professionally known as Lakshmi Manchu, is an Indian actress, film producer, and television presenter renowned for her work across Telugu, Tamil, Hindi, and American entertainment industries",
+      "specialties": [
+        "Tollywood"
       ],
       "messages": []
     },
