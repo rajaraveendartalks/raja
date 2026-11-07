@@ -939,23 +939,6 @@ window.RR_DATA = {
       "messages": []
     },
     {
-      "id": "guest-1794058608018",
-      "name": "Dr. A. Sharath Reddy",
-      "domain": "Healthcare",
-      "title": "Senior Consultant Interventional Cardiologist",
-      "org": "Medicover Hospitals",
-      "episodeRef": "Episode 14",
-      "avatar": "/uploads/1794058603_dr-a-sharath-reddy.webp",
-      "bio": "Dr. A. Sharath Reddy is an eminent Senior Consultant Interventional Cardiologist and Founder-Director based in Hyderabad, India",
-      "specialties": [
-        "He is a noted expert and national proctor in Chronic Total Occlusion (CTO) percutaneous coronary interventions",
-        "Transcatheter Aortic Valve Replacement (TAVR/TAVI)",
-        "imaging-guided interventions (such as Intravascular Ultrasound - IVUS)",
-        "and complex angioplasties."
-      ],
-      "messages": []
-    },
-    {
       "id": "guest-15",
       "name": "Sri Raghurama Krishnam Raju (RRR)",
       "domain": "Politics & Society",
@@ -977,6 +960,23 @@ window.RR_DATA = {
           "reply": "Thank you! Message shared with the Deputy Speaker's public relations desk."
         }
       ]
+    },
+    {
+      "id": "guest-1794058608018",
+      "name": "Dr. A. Sharath Reddy",
+      "domain": "Healthcare",
+      "title": "Senior Consultant Interventional Cardiologist",
+      "org": "Medicover Hospitals",
+      "episodeRef": "Episode 14",
+      "avatar": "/uploads/1794058603_dr-a-sharath-reddy.webp",
+      "bio": "Dr. A. Sharath Reddy is an eminent Senior Consultant Interventional Cardiologist and Founder-Director based in Hyderabad, India",
+      "specialties": [
+        "He is a noted expert and national proctor in Chronic Total Occlusion (CTO) percutaneous coronary interventions",
+        "Transcatheter Aortic Valve Replacement (TAVR/TAVI)",
+        "imaging-guided interventions (such as Intravascular Ultrasound - IVUS)",
+        "and complex angioplasties."
+      ],
+      "messages": []
     },
     {
       "id": "guest-13",
