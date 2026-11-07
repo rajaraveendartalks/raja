@@ -1060,22 +1060,6 @@ window.RR_DATA = {
       "messages": []
     },
     {
-      "id": "guest-03",
-      "name": "Dr. Rajasekhar",
-      "domain": "Entertainment",
-      "title": "Veteran Actor & Physician ('Angry Young Man')",
-      "org": "Telugu Film Industry",
-      "episodeRef": "Episode 03",
-      "avatar": "/uploads/1793169865_Dr__Rajasekhar.jpg",
-      "bio": "Celebrated across four decades for iconic action, family, and thriller classics from 'Ankusam' and 'Allari Priyudu' to 'PSV Garuda Vega'.",
-      "specialties": [
-        "40-Year Film Career",
-        "Action & Drama Icon",
-        "Medical Background"
-      ],
-      "messages": []
-    },
-    {
       "id": "guest-13",
       "name": "Divi Vadthya",
       "domain": "Entertainment",
@@ -1088,6 +1072,22 @@ window.RR_DATA = {
         "Feature Films & OTT",
         "Brand Endorsements",
         "Youth Inspiration"
+      ],
+      "messages": []
+    },
+    {
+      "id": "guest-03",
+      "name": "Dr. Rajasekhar",
+      "domain": "Entertainment",
+      "title": "Veteran Actor & Physician ('Angry Young Man')",
+      "org": "Telugu Film Industry",
+      "episodeRef": "Episode 03",
+      "avatar": "/uploads/1793169865_Dr__Rajasekhar.jpg",
+      "bio": "Celebrated across four decades for iconic action, family, and thriller classics from 'Ankusam' and 'Allari Priyudu' to 'PSV Garuda Vega'.",
+      "specialties": [
+        "40-Year Film Career",
+        "Action & Drama Icon",
+        "Medical Background"
       ],
       "messages": []
     },
