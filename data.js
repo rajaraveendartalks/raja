@@ -1032,20 +1032,6 @@ window.RR_DATA = {
       ]
     },
     {
-      "id": "guest-1794058123689",
-      "name": "Lakshmi Manchu",
-      "domain": "Entertainment",
-      "title": "Actress",
-      "org": "Raja’s Legacy Lounge",
-      "episodeRef": "Episode 02",
-      "avatar": "/uploads/1794058065_lakshmi-manchu.webp",
-      "bio": "Manchu Lakshmi Prasanna, professionally known as Lakshmi Manchu, is an Indian actress, film producer, and television presenter renowned for her work across Telugu, Tamil, Hindi, and American entertainment industries",
-      "specialties": [
-        "Tollywood"
-      ],
-      "messages": []
-    },
-    {
       "id": "guest-08",
       "name": "Dr. K. Shilpi Reddy",
       "domain": "Healthcare",
@@ -1058,6 +1044,20 @@ window.RR_DATA = {
         "Women's Wellness",
         "High-Risk Obstetrics",
         "Metabolic Health"
+      ],
+      "messages": []
+    },
+    {
+      "id": "guest-1794058123689",
+      "name": "Lakshmi Manchu",
+      "domain": "Entertainment",
+      "title": "Actress",
+      "org": "Raja’s Legacy Lounge",
+      "episodeRef": "Episode 02",
+      "avatar": "/uploads/1794058065_lakshmi-manchu.webp",
+      "bio": "Manchu Lakshmi Prasanna, professionally known as Lakshmi Manchu, is an Indian actress, film producer, and television presenter renowned for her work across Telugu, Tamil, Hindi, and American entertainment industries",
+      "specialties": [
+        "Tollywood"
       ],
       "messages": []
     },
