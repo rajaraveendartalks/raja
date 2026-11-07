@@ -962,20 +962,6 @@ window.RR_DATA = {
       ]
     },
     {
-      "id": "guest-1794058302537",
-      "name": "Tejaswi Madivada",
-      "domain": "Entertainment",
-      "title": "Indian actress, model, and reality television personality",
-      "org": "Raja’s Legacy Lounge",
-      "episodeRef": "Episode 09",
-      "avatar": "/uploads/1794058235_Tejaswi-Madivada1.jpg",
-      "bio": "Tejaswi Madivada is an Indian actress, model, and reality television personality who predominantly works in the Telugu entertainment industry.",
-      "specialties": [
-        "Tejaswi is well-known for her stints on reality television. She participated as a contestant on Bigg Boss Telugu Season 2 (2018) and later on Bigg Boss Non-Stop (2022). Her subsequent reality show and streaming projects include Reality Ranis of the Jungle (2024) and the star-studded show The 50 (2026)"
-      ],
-      "messages": []
-    },
-    {
       "id": "guest-13",
       "name": "Divi Vadthya",
       "domain": "Entertainment",
@@ -988,6 +974,20 @@ window.RR_DATA = {
         "Feature Films & OTT",
         "Brand Endorsements",
         "Youth Inspiration"
+      ],
+      "messages": []
+    },
+    {
+      "id": "guest-1794058302537",
+      "name": "Tejaswi Madivada",
+      "domain": "Entertainment",
+      "title": "Indian actress, model, and reality television personality",
+      "org": "Raja’s Legacy Lounge",
+      "episodeRef": "Episode 09",
+      "avatar": "/uploads/1794058235_Tejaswi-Madivada1.jpg",
+      "bio": "Tejaswi Madivada is an Indian actress, model, and reality television personality who predominantly works in the Telugu entertainment industry.",
+      "specialties": [
+        "Tejaswi is well-known for her stints on reality television. She participated as a contestant on Bigg Boss Telugu Season 2 (2018) and later on Bigg Boss Non-Stop (2022). Her subsequent reality show and streaming projects include Reality Ranis of the Jungle (2024) and the star-studded show The 50 (2026)"
       ],
       "messages": []
     },
