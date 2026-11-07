@@ -186,7 +186,7 @@ window.RR_DATA = {
         "Multidisciplinary: Cinema, Politics, Healthcare & AI",
         "Unscripted, Responsible & High-Retention Storytelling"
       ],
-      "image": "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=900&q=80"
+      "image": "/uploads/1794055805_Golden_Journey__Temple_Sunset.png"
     },
     {
       "id": "actor",
