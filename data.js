@@ -1048,22 +1048,6 @@ window.RR_DATA = {
       ]
     },
     {
-      "id": "guest-04",
-      "name": "Bandla Ganesh",
-      "domain": "Entertainment",
-      "title": "Blockbuster Film Producer, Actor & Entrepreneur",
-      "org": "Parameswara Art Productions",
-      "episodeRef": "Episode 04",
-      "avatar": "/uploads/1793170097_bandla.jpg",
-      "bio": "Known for producing massive commercial blockbusters like 'Gabbar Singh', 'Baadshah', and 'Temper', and for his unfiltered speeches.",
-      "specialties": [
-        "Film Production",
-        "Entrepreneurship",
-        "Unfiltered Talks"
-      ],
-      "messages": []
-    },
-    {
       "id": "guest-08",
       "name": "Dr. K. Shilpi Reddy",
       "domain": "Healthcare",
@@ -1076,6 +1060,22 @@ window.RR_DATA = {
         "Women's Wellness",
         "High-Risk Obstetrics",
         "Metabolic Health"
+      ],
+      "messages": []
+    },
+    {
+      "id": "guest-04",
+      "name": "Bandla Ganesh",
+      "domain": "Entertainment",
+      "title": "Blockbuster Film Producer, Actor & Entrepreneur",
+      "org": "Parameswara Art Productions",
+      "episodeRef": "Episode 04",
+      "avatar": "/uploads/1793170097_bandla.jpg",
+      "bio": "Known for producing massive commercial blockbusters like 'Gabbar Singh', 'Baadshah', and 'Temper', and for his unfiltered speeches.",
+      "specialties": [
+        "Film Production",
+        "Entrepreneurship",
+        "Unfiltered Talks"
       ],
       "messages": []
     },
