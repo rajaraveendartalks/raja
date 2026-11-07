@@ -982,29 +982,6 @@ window.RR_DATA = {
       "messages": []
     },
     {
-      "id": "guest-06",
-      "name": "Padma Bhushan Dr. Nori Dattatreyudu",
-      "domain": "Healthcare",
-      "title": "Global Oncology Authority & Padma Bhushan Awardee",
-      "org": "International Cancer Care & Prevention Advisor",
-      "episodeRef": "Episode 06",
-      "avatar": "/uploads/1793168321_noori.jpg",
-      "bio": "World-renowned radiation oncologist who has shaped cancer care policy and early detection protocols in the US and India.",
-      "specialties": [
-        "Cancer Prevention",
-        "Early Detection",
-        "Global Oncology Policy"
-      ],
-      "messages": [
-        {
-          "sender": "Dr. Madhav Rao (Visakhapatnam)",
-          "type": "Important Query",
-          "text": "Respected Sir, how can rural diagnostic centers collaborate on your mobile early-screening protocol discussed in Episode 6?",
-          "reply": "Query logged and shared with Dr. Nori's outreach secretariat."
-        }
-      ]
-    },
-    {
       "id": "guest-15",
       "name": "Sri Raghurama Krishnam Raju (RRR)",
       "domain": "Politics & Society",
@@ -1024,6 +1001,29 @@ window.RR_DATA = {
           "type": "Feedback / Query",
           "text": "Sir, your clarity in Episode 15 on village temple restoration and roads was deeply inspiring.",
           "reply": "Thank you! Message shared with the Deputy Speaker's public relations desk."
+        }
+      ]
+    },
+    {
+      "id": "guest-06",
+      "name": "Padma Bhushan Dr. Nori Dattatreyudu",
+      "domain": "Healthcare",
+      "title": "Global Oncology Authority & Padma Bhushan Awardee",
+      "org": "International Cancer Care & Prevention Advisor",
+      "episodeRef": "Episode 06",
+      "avatar": "/uploads/1793168321_noori.jpg",
+      "bio": "World-renowned radiation oncologist who has shaped cancer care policy and early detection protocols in the US and India.",
+      "specialties": [
+        "Cancer Prevention",
+        "Early Detection",
+        "Global Oncology Policy"
+      ],
+      "messages": [
+        {
+          "sender": "Dr. Madhav Rao (Visakhapatnam)",
+          "type": "Important Query",
+          "text": "Respected Sir, how can rural diagnostic centers collaborate on your mobile early-screening protocol discussed in Episode 6?",
+          "reply": "Query logged and shared with Dr. Nori's outreach secretariat."
         }
       ]
     },
